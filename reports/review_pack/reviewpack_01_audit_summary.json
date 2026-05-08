@@ -1,0 +1,126 @@
+{
+  "active_process_check_result": {
+    "post_write_check": "no active k_gpcca_04, pygpcca, cellrank, rev_v2_cross45, terminal-state, fate_probability, M5, BranchSBM, barcode, or DARLIN computation process found; only the check command matched itself",
+    "pre_write_check": "no active k_gpcca_04, pygpcca, or cellrank analysis process found; only the check command matched itself",
+    "processes_killed": false
+  },
+  "environment_versions": {
+    "future_recommended_environment_names": [
+      "nichefate-core",
+      "nichefate-gpcca",
+      "nichefate-dev"
+    ],
+    "nichefate-gpcca": {
+      "anndata": "0.12.11",
+      "cellrank": "2.2.0",
+      "gpcca_method_note": "Configured standard pyGPCCA path uses method=\"krylov\" where enabled.",
+      "numpy": "2.4.3",
+      "pandas": "2.3.3",
+      "path": "/home/zhutao/software/conda_envs/nichefate-gpcca",
+      "pygpcca": "1.0.4",
+      "python": "3.12.13",
+      "scanpy": "1.12.1",
+      "scipy": "1.17.1"
+    },
+    "omicverse": {
+      "PyYAML": "6.0.3",
+      "anndata": "0.11.4",
+      "matplotlib": "3.10.8",
+      "naming_note": "The omicverse environment name is historical and should not define project identity.",
+      "networkx": "3.4.2",
+      "numpy": "1.26.4",
+      "omicverse": "1.7.9",
+      "pandas": "2.3.3",
+      "path": "/home/zhutao/software/conda_envs/omicverse",
+      "pyarrow": "23.0.1",
+      "pytest": "9.0.2",
+      "python": "3.10.14",
+      "scanpy": "1.11.5",
+      "scikit_learn": "1.7.2",
+      "scipy": "1.11.4",
+      "seaborn": "0.13.2"
+    }
+  },
+  "file_inventory": {
+    "path": "reports/review_pack/reviewpack_01_file_inventory.csv",
+    "row_count": 336,
+    "scope_note": "Repo files under scripts/configs/docs/tests plus selected scratch reports/summaries and representative external output roots only."
+  },
+  "generated_file_list": [
+    "docs/project_status_checkpoint.md",
+    "docs/pipeline_module_index.md",
+    "docs/reproducibility_guide.md",
+    "docs/environment_and_dependencies.md",
+    "docs/github_packaging_plan.md",
+    "reports/review_pack/reviewpack_01_audit_summary.json",
+    "reports/review_pack/reviewpack_01_file_inventory.csv",
+    "configs/reproducibility/reviewpack_01_module_manifest.yaml",
+    "README.md"
+  ],
+  "git_status_note": "Git repository not initialized/found here.",
+  "k_gpcca_safety_notes": {
+    "bounded_experimental_kernels_exist": true,
+    "downstream_k_gpcca_fate_outputs_claimed": false,
+    "existing_revision_root": "/home/zhutao/scratch/nichefate/k_gpcca_revision",
+    "production_k_gpcca_matrices_claimed": false,
+    "reviewpack_blocked_by_k_gpcca": false,
+    "status": "experimental/pilot-level"
+  },
+  "module_status_counts": {
+    "completed": 6,
+    "deferred": 2,
+    "experimental": 1,
+    "frozen": 3,
+    "pilot": 1
+  },
+  "module_status_summary": {
+    "completed": [
+      "M0",
+      "M1",
+      "M2",
+      "M3-v2",
+      "M4A/M4A-v2",
+      "M4E"
+    ],
+    "deferred": [
+      "DARLIN / barcode adapter",
+      "BranchSBM / Plan B"
+    ],
+    "experimental": [
+      "K_gpcca"
+    ],
+    "frozen": [
+      "M3-v1",
+      "M4C/P_fate",
+      "P_fate PlanA freeze"
+    ],
+    "pilot": [
+      "M4B terminal-state design and feasibility"
+    ]
+  },
+  "no_new_analysis_policy": {
+    "barcode_or_darlin_preprocessing_run": false,
+    "biological_analysis_run": false,
+    "branchsbm_run": false,
+    "data_moved": false,
+    "fate_probabilities_computed": false,
+    "gpcca_pygpcca_cellrank_run": false,
+    "m0_m1_m2_m3_m4_m5_run": false,
+    "p_fate_propagation_run": false,
+    "ssd_written": false,
+    "terminal_states_computed": false
+  },
+  "repo_root": "/home/zhutao/projects/nichefate",
+  "reviewpack_id": "Nichefate-ReviewPack-01",
+  "ssd_check_result": {
+    "command": "find /ssd -maxdepth 4 \\( -iname '*nichefate*' -o -iname '*gpcca*' \\)",
+    "matches": [],
+    "matching_outputs_found": false,
+    "note": "/ssd nichefate/GPCCA search found no matching outputs."
+  },
+  "timestamp_utc": "2026-05-08T14:00:56Z",
+  "upstream_scientific_output_mutation_status": {
+    "modified_by_reviewpack_01": false,
+    "note": "ReviewPack-01 wrote only documentation, review_pack reports, reproducibility config, and README checkpoint links in the project root."
+  }
+}

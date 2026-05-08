@@ -1,0 +1,11 @@
+path,action,category,include_in_github,reason,size_bytes,mtime_utc
+.gitignore,updated,gitignore,true,strict repository ignore policy for Git/GitHub readiness,1196,2026-05-08T14:06:01Z
+envs/nichefate-core.yml,created,environment_draft,true,draft core runtime environment,331,2026-05-08T14:06:01Z
+envs/nichefate-gpcca.yml,created,environment_draft,true,draft isolated GPCCA validation environment,452,2026-05-08T14:06:01Z
+envs/nichefate-dev.yml,created,environment_draft,true,draft development environment,281,2026-05-08T14:06:01Z
+docs/installation.md,created,documentation,true,installation and draft environment guidance,1965,2026-05-08T14:06:01Z
+docs/quickstart.md,created,documentation,true,conservative checkpoint inspection quickstart,2744,2026-05-08T14:06:01Z
+docs/git_initialization_plan.md,created,documentation,true,stepwise Git initialization plan without running git init,1767,2026-05-08T14:06:01Z
+README.md,updated,documentation,true,conservative ReviewPack-02 links and checkpoint status refinement,5429,2026-05-08T14:06:20Z
+reports/review_pack/reviewpack_02_packaging_summary.json,created,reviewpack_report,true,machine-readable packaging summary,1833,2026-05-08T14:06:49Z
+reports/review_pack/reviewpack_02_changed_files.csv,created,reviewpack_report,true,machine-readable changed files inventory,,

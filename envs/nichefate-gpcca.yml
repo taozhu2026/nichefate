@@ -1,0 +1,19 @@
+name: nichefate-gpcca
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy
+  - scipy
+  - pandas
+  - anndata
+  - scanpy
+  - pyarrow
+  - pyyaml
+  - pip
+  - pip:
+      - pygpcca==1.0.4
+      - cellrank==2.2.0
+  # Draft environment only. This file is not locked until regression validation.
+  # Standard pyGPCCA sparse-matrix runs should use method="krylov" where enabled.
+  # Set TMPDIR/TMP/TEMP away from /ssd before heavy GPCCA validation.

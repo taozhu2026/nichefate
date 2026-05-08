@@ -1,0 +1,204 @@
+reviewpack:
+  id: Nichefate-ReviewPack-01
+  generated_at_utc: "2026-05-08T13:53:20Z"
+  policy:
+    documentation_only: true
+    no_new_biological_analysis: true
+    no_gpcca_pygpcca_cellrank: true
+    no_terminal_states: true
+    no_fate_probabilities: true
+    no_data_movement: true
+    no_ssd_writes: true
+
+modules:
+  - module_name: SpatialDatasetAdapter
+    legacy_stage_name: M0
+    production_module_name: SpatialDatasetAdapter
+    status: completed
+    commands:
+      - "conda run -n omicverse python scripts/m0_00_check_environment.py --config configs/m0_merfish_colitis.yaml"
+      - "conda run -n omicverse python scripts/m0_01_inspect_raw_anndata.py --config configs/m0_merfish_colitis.yaml"
+      - "conda run -n omicverse python scripts/m0_02_build_m0_anndata.py --config configs/m0_merfish_colitis.yaml"
+      - "conda run -n omicverse python scripts/m0_03_compute_embeddings.py --config configs/m0_merfish_colitis.yaml"
+      - "conda run -n omicverse python scripts/m0_04_build_spatial_graphs.py --config configs/m0_merfish_colitis.yaml"
+      - "conda run -n omicverse python scripts/m0_05_export_m0_objects.py --config configs/m0_merfish_colitis.yaml"
+      - "conda run -n omicverse python scripts/m0_06_make_qc_report.py --config configs/m0_merfish_colitis.yaml"
+    inputs:
+      - "/data/zhutao/datasets/merfish_colitis_moffitt_2024/raw"
+    outputs:
+      - "/home/zhutao/scratch/nichefate/m0"
+    heavy_analysis: true
+    safe_to_run_in_reviewpack: false
+    include_in_github: false
+
+  - module_name: NicheBuilder
+    legacy_stage_name: M1
+    production_module_name: NicheBuilder
+    status: completed
+    commands:
+      - "conda run -n omicverse python scripts/m1_04_build_niche_full_by_slice.py --config configs/m1_niche_construction.yaml"
+    inputs:
+      - "/home/zhutao/scratch/nichefate/m0/by_slice"
+    outputs:
+      - "/home/zhutao/scratch/nichefate/m1/by_slice"
+      - "/home/zhutao/scratch/nichefate/m1/reports"
+    heavy_analysis: true
+    safe_to_run_in_reviewpack: false
+    include_in_github: false
+
+  - module_name: NicheEncoder
+    legacy_stage_name: M2
+    production_module_name: NicheEncoder
+    status: completed
+    commands:
+      - "conda run -n omicverse python scripts/m2_02_build_full_representation_by_slice.py --config configs/m2_niche_representation.yaml"
+    inputs:
+      - "/home/zhutao/scratch/nichefate/m1/by_slice"
+    outputs:
+      - "/home/zhutao/scratch/nichefate/m2/by_slice"
+      - "/home/zhutao/scratch/nichefate/m2/reports"
+    heavy_analysis: true
+    safe_to_run_in_reviewpack: false
+    include_in_github: false
+
+  - module_name: TransitionEvidenceBroad
+    legacy_stage_name: M3-v1
+    production_module_name: "TransitionEvidence[pseudo_broad]"
+    status: frozen
+    commands:
+      - "conda run -n omicverse python scripts/m3_15_run_full_m3_by_shard.py --config configs/m3_transition_kernel.yaml"
+      - "conda run -n omicverse python scripts/m3_16_freeze_full_m3_qc_report.py --config configs/m3_transition_kernel.yaml"
+    inputs:
+      - "/home/zhutao/scratch/nichefate/m2/by_slice"
+    outputs:
+      - "/home/zhutao/scratch/nichefate/m3/full_by_shard"
+      - "/home/zhutao/scratch/nichefate/m3/reports"
+    heavy_analysis: true
+    safe_to_run_in_reviewpack: false
+    include_in_github: false
+
+  - module_name: TransitionEvidenceSharpened
+    legacy_stage_name: M3-v2
+    production_module_name: "TransitionEvidence[pseudo_sharpened]"
+    status: completed
+    commands:
+      - "conda run -n omicverse python scripts/m3_v2_06_run_full_by_shard.py --config configs/m3_v2_full_production.yaml"
+      - "conda run -n omicverse python scripts/m3_v2_08_full_qc_and_benchmark.py --config configs/m3_v2_full_production.yaml"
+    inputs:
+      - "/home/zhutao/scratch/nichefate/m3/full_by_shard"
+      - "/home/zhutao/scratch/nichefate/m2/by_slice"
+    outputs:
+      - "/home/zhutao/scratch/nichefate/m3_v2/full_by_shard"
+      - "/home/zhutao/scratch/nichefate/m3_v2/reports"
+    heavy_analysis: true
+    safe_to_run_in_reviewpack: false
+    include_in_github: false
+
+  - module_name: KernelAssembly
+    legacy_stage_name: M4A
+    production_module_name: KernelAssembly
+    status: completed
+    commands:
+      - "conda run -n omicverse python scripts/m4a_01_assemble_global_transition_object.py --config configs/m4a_markov_assembly.yaml"
+      - "conda run -n omicverse python scripts/m4a_v2_01_assemble_sparse_matrices.py --config configs/m4a_v2_assembly.yaml"
+    inputs:
+      - "/home/zhutao/scratch/nichefate/m3/full_by_shard"
+      - "/home/zhutao/scratch/nichefate/m3_v2/full_by_shard"
+    outputs:
+      - "/home/zhutao/scratch/nichefate/m4a"
+      - "/home/zhutao/scratch/nichefate/m4a_v2"
+    heavy_analysis: true
+    safe_to_run_in_reviewpack: false
+    include_in_github: false
+
+  - module_name: TerminalStateDesign
+    legacy_stage_name: M4B
+    production_module_name: TerminalStateDesign
+    status: pilot
+    commands:
+      - "conda run -n omicverse python scripts/m4b_01_design_terminal_macrostates.py --config configs/m4b_markov_terminal_design.yaml"
+      - "conda run -n omicverse python scripts/m4b_02_review_markov_gpcca_feasibility.py --config configs/m4b_markov_terminal_design.yaml"
+    inputs:
+      - "/home/zhutao/scratch/nichefate/m4a"
+    outputs:
+      - "/home/zhutao/scratch/nichefate/m4b"
+    heavy_analysis: true
+    safe_to_run_in_reviewpack: false
+    include_in_github: false
+
+  - module_name: EndpointMarkovInference
+    legacy_stage_name: M4C / P_fate
+    production_module_name: "EndpointMarkovInference / P_fate"
+    status: frozen
+    commands:
+      - "conda run -n omicverse python scripts/m4c_01_compute_markov_fate_probabilities.py --config configs/m4c_fate_probability.yaml"
+      - "conda run -n omicverse python scripts/m4c_02_review_and_freeze_markov_fate_results.py --config configs/m4c_fate_probability.yaml"
+      - "conda run -n omicverse python scripts/planA_00_freeze_p_fate_branch.py"
+    inputs:
+      - "/home/zhutao/scratch/nichefate/m4a"
+      - "/home/zhutao/scratch/nichefate/m4b"
+    outputs:
+      - "/home/zhutao/scratch/nichefate/m4c"
+      - "/home/zhutao/scratch/nichefate/planA_freeze"
+    heavy_analysis: true
+    safe_to_run_in_reviewpack: false
+    include_in_github: false
+
+  - module_name: BiologicalAnnotation
+    legacy_stage_name: M4E
+    production_module_name: BiologicalAnnotation
+    status: completed
+    commands:
+      - "conda run -n omicverse python scripts/m4e_01_endpoint_annotation_review.py"
+      - "conda run -n omicverse python scripts/m4e_02_extract_neighborhood_annotation.py"
+      - "conda run -n omicverse python scripts/m4e_03_endpoint_refinement_freeze.py"
+    inputs:
+      - "/home/zhutao/scratch/nichefate/m4c"
+      - "/home/zhutao/scratch/nichefate/m2"
+    outputs:
+      - "/home/zhutao/scratch/nichefate/m4e"
+    heavy_analysis: true
+    safe_to_run_in_reviewpack: false
+    include_in_github: false
+
+  - module_name: GPCCAMacrostateInference
+    legacy_stage_name: K_gpcca
+    production_module_name: GPCCAMacrostateInference experimental branch
+    status: experimental
+    commands:
+      - "conda run -n omicverse python scripts/k_gpcca_00_design.py"
+      - "conda run -n omicverse python scripts/k_gpcca_04_kernel_revision_pilot.py --config configs/k_gpcca_revision.yaml"
+    inputs:
+      - "/home/zhutao/scratch/nichefate/m2"
+      - "/home/zhutao/scratch/nichefate/m3"
+      - "/home/zhutao/scratch/nichefate/m3_v2"
+    outputs:
+      - "/home/zhutao/scratch/nichefate/k_gpcca_design"
+      - "/home/zhutao/scratch/nichefate/k_gpcca_pilot"
+      - "/home/zhutao/scratch/nichefate/k_gpcca_pilot_benchmark"
+      - "/home/zhutao/scratch/nichefate/k_gpcca_revision"
+    heavy_analysis: true
+    safe_to_run_in_reviewpack: false
+    include_in_github: false
+
+  - module_name: BarcodeEvidenceAdapter
+    legacy_stage_name: DARLIN / barcode adapter
+    production_module_name: BarcodeEvidenceAdapter
+    status: deferred
+    commands: []
+    inputs: []
+    outputs: []
+    heavy_analysis: false
+    safe_to_run_in_reviewpack: false
+    include_in_github: false
+
+  - module_name: BranchingStructureModel
+    legacy_stage_name: BranchSBM / Plan B
+    production_module_name: BranchingStructureModel
+    status: deferred
+    commands: []
+    inputs: []
+    outputs: []
+    heavy_analysis: false
+    safe_to_run_in_reviewpack: false
+    include_in_github: false

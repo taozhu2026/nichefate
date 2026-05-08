@@ -1,0 +1,89 @@
+# NicheFate repository ignore policy
+#
+# Keep source code, tests, configs, docs, and curated small review-pack files
+# trackable. Keep raw data, scratch outputs, heavy scientific artifacts, local
+# environments, caches, and generated results out of Git.
+
+# Python caches and compiled extensions
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dylib
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local environments and secrets
+.env
+.venv/
+venv/
+env/
+conda-env/
+
+# Editors, notebooks, and OS metadata
+.vscode/
+.idea/
+.ipynb_checkpoints/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Local logs, caches, temporary files, and generated results
+*.log
+logs/
+tmp/
+temp/
+cache/
+scratch/
+outputs/
+output/
+results/
+processed/
+work/
+
+# Raw and external data roots
+data/
+raw/
+external/
+
+# Heavy scientific matrix/table/object formats
+*.h5ad
+*.h5
+*.hdf5
+*.loom
+*.zarr/
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.parquet
+*.feather
+*.mtx
+
+# Compressed generated tables
+*.csv.gz
+*.tsv.gz
+
+# Sequencing/genomics/raw signal artifacts
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.sam
+*.cram
+*.bw
+*.bigwig
+*.bedgraph
+
+# Curated small examples may be added later under:
+# - examples/
+# - tests/fixtures/
+# - docs/figures/

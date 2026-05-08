@@ -1,0 +1,337 @@
+scope,path,category,module,include_in_github,reason,size_bytes,mtime_utc
+repo,scripts/__pycache__/k_gpcca_00_design.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,35522,2026-05-08T10:54:19Z
+repo,scripts/__pycache__/k_gpcca_01_pilot_kernel_preflight.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,33753,2026-05-08T11:04:52Z
+repo,scripts/__pycache__/k_gpcca_02_construct_and_run_pilot.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,38941,2026-05-08T11:43:57Z
+repo,scripts/__pycache__/k_gpcca_03_biological_benchmark.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,35361,2026-05-08T12:19:47Z
+repo,scripts/__pycache__/k_gpcca_04_kernel_revision_pilot.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,31062,2026-05-08T13:45:20Z
+repo,scripts/__pycache__/m0_00_check_environment.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,3329,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m0_00_download_core_dryad_files.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,3224,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m0_00b_verify_raw_files.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,5674,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m0_01_inspect_raw_anndata.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6138,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m0_02_build_m0_anndata.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6288,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m0_03_compute_embeddings.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,2050,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m0_04_build_spatial_graphs.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,5424,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m0_05_export_m0_objects.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,1562,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m0_06_make_qc_report.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,9746,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m1_00_inspect_m0_for_niche.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,4712,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m1_01_build_niche_prototype.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,7511,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m1_02_review_niche_prototype.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,25241,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m1_03_build_niche_full.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,13400,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m1_03a_prepare_global_schema.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,8498,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m1_04_build_niche_full_by_slice.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,14082,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m2_00_audit_m1_outputs.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,7713,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m2_01_prepare_representation_matrix.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6001,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m2_02_build_full_representation_by_slice.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,17058,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m3_00_audit_m2_inputs.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6214,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m3_01_define_transition_contract.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6204,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m3_02_sample_candidate_edges.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,11985,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m3_03_review_sampled_transition_preflight.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,7578,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m3_04_design_full_transition_plan.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,14492,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m3_05_build_transition_pilot_shard.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,14649,2026-05-03T11:32:14Z
+repo,scripts/__pycache__/m3_06_run_transition_timepair_pilot.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,30626,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m3_07_review_timepair_pilot_and_plan_next.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,19218,2026-05-03T05:23:27Z
+repo,scripts/__pycache__/m3_08_inspect_ann_backends.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,4293,2026-05-03T11:33:03Z
+repo,scripts/__pycache__/m3_09_design_ann_validation.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,8284,2026-05-03T11:33:03Z
+repo,scripts/__pycache__/m3_10_design_slurm_full_m3_strategy.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,12283,2026-05-03T11:33:03Z
+repo,scripts/__pycache__/m3_11_validate_ann_backend_on_sampled_shard.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,31940,2026-05-03T11:48:55Z
+repo,scripts/__pycache__/m3_12_validate_ann_backend_on_full_shard.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,25253,2026-05-03T12:01:33Z
+repo,scripts/__pycache__/m3_13_stress_test_ann_large_target_pair.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,23017,2026-05-03T13:20:22Z
+repo,scripts/__pycache__/m3_14_freeze_backend_and_dryrun_full_m3.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,26393,2026-05-03T13:42:24Z
+repo,scripts/__pycache__/m3_15_run_full_m3_by_shard.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,30345,2026-05-04T06:28:54Z
+repo,scripts/__pycache__/m3_16_freeze_full_m3_qc_report.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,25623,2026-05-04T06:55:21Z
+repo,scripts/__pycache__/m3_v2_00_write_design_protocol.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,24233,2026-05-08T02:44:15Z
+repo,scripts/__pycache__/m3_v2_01_run_small_pilot.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,28742,2026-05-08T03:05:23Z
+repo,scripts/__pycache__/m3_v2_02_kernel_diagnostic_tuning.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,25504,2026-05-08T03:29:07Z
+repo,scripts/__pycache__/m3_v2_03_confirmatory_constrained_pilot.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,30725,2026-05-08T03:43:20Z
+repo,scripts/__pycache__/m3_v2_04_package_review.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,13928,2026-05-08T04:15:47Z
+repo,scripts/__pycache__/m3_v2_05_full_production_plan.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,18007,2026-05-08T04:22:16Z
+repo,scripts/__pycache__/m3_v2_06_run_full_by_shard.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,35986,2026-05-08T06:55:59Z
+repo,scripts/__pycache__/m3_v2_08_full_qc_and_benchmark.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,35948,2026-05-08T08:01:07Z
+repo,scripts/__pycache__/m4a_01_assemble_global_transition_object.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,36222,2026-05-04T07:39:16Z
+repo,scripts/__pycache__/m4a_v2_00_assembly_plan.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,28663,2026-05-08T08:15:22Z
+repo,scripts/__pycache__/m4a_v2_01_assemble_sparse_matrices.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,47390,2026-05-08T09:13:20Z
+repo,scripts/__pycache__/m4a_v2_03_full_qc_and_benchmark.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,35359,2026-05-08T09:28:57Z
+repo,scripts/__pycache__/m4b_01_design_terminal_macrostates.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,26119,2026-05-04T11:23:06Z
+repo,scripts/__pycache__/m4b_02_review_markov_gpcca_feasibility.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,12228,2026-05-04T08:03:52Z
+repo,scripts/__pycache__/m4c_01_compute_markov_fate_probabilities.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,34397,2026-05-04T08:54:59Z
+repo,scripts/__pycache__/m4c_02_review_and_freeze_markov_fate_results.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,34577,2026-05-04T11:23:06Z
+repo,scripts/__pycache__/m4c_v2_00_planning_and_handoff.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,38893,2026-05-08T09:57:22Z
+repo,scripts/__pycache__/m4c_v2_01_run_fate_propagation.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,43614,2026-05-08T10:16:46Z
+repo,scripts/__pycache__/m4c_v2_03_fate_benchmark.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,40841,2026-05-08T10:28:51Z
+repo,scripts/__pycache__/m4d_00_audit_coordinate_availability.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,18577,2026-05-04T09:56:31Z
+repo,scripts/__pycache__/m4d_01_inspect_pcca_backend.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,1807,2026-05-04T11:02:15Z
+repo,scripts/__pycache__/m4d_01a_review_standard_gpcca_backend.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,1578,2026-05-04T11:02:15Z
+repo,scripts/__pycache__/m4d_01b_validate_standard_gpcca_backend.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,19725,2026-05-04T11:33:42Z
+repo,scripts/__pycache__/m4d_01c_run_supernode_gpcca.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,1489,2026-05-07T08:14:11Z
+repo,scripts/__pycache__/m4e_01_endpoint_annotation_review.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,30037,2026-05-07T13:33:39Z
+repo,scripts/__pycache__/m4e_02_extract_neighborhood_annotation.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,28940,2026-05-07T13:54:06Z
+repo,scripts/__pycache__/m4e_03_endpoint_refinement_freeze.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,39166,2026-05-07T14:11:35Z
+repo,scripts/__pycache__/m4e_03_figure_report_qc_patch.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,16641,2026-05-08T02:30:08Z
+repo,scripts/__pycache__/m4v_01_visualize_m4c_m4d_markov_results.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,1515,2026-05-07T08:14:11Z
+repo,scripts/__pycache__/planA_00_freeze_p_fate_branch.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,29680,2026-05-08T10:44:15Z
+repo,scripts/__pycache__/storage_00_audit_nichefate_paths.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,10691,2026-05-07T01:44:31Z
+repo,scripts/__pycache__/storage_01_migrate_large_inputs_to_data.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,8185,2026-05-07T01:47:51Z
+repo,scripts/__pycache__/storage_02_validate_path_compatibility.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,8450,2026-05-07T01:44:31Z
+repo,scripts/k_gpcca_00_design.py,python_source,K_gpcca,true,source/config/doc/test file intended for repository review,38808,2026-05-08T10:53:46Z
+repo,scripts/k_gpcca_01_pilot_kernel_preflight.py,python_source,K_gpcca,true,source/config/doc/test file intended for repository review,40967,2026-05-08T11:04:11Z
+repo,scripts/k_gpcca_02_construct_and_run_pilot.py,python_source,K_gpcca,true,source/config/doc/test file intended for repository review,50674,2026-05-08T11:43:44Z
+repo,scripts/k_gpcca_03_biological_benchmark.py,python_source,K_gpcca,true,source/config/doc/test file intended for repository review,46055,2026-05-08T12:18:43Z
+repo,scripts/k_gpcca_04_kernel_revision_pilot.py,python_source,K_gpcca,true,source/config/doc/test file intended for repository review,40345,2026-05-08T12:30:38Z
+repo,scripts/m0_00_check_environment.py,python_source,M0,true,source/config/doc/test file intended for repository review,3589,2026-04-30T03:04:52Z
+repo,scripts/m0_00_download_core_dryad_files.py,python_source,M0,true,source/config/doc/test file intended for repository review,3336,2026-04-30T03:12:06Z
+repo,scripts/m0_00b_verify_raw_files.py,python_source,M0,true,source/config/doc/test file intended for repository review,5840,2026-04-30T08:27:25Z
+repo,scripts/m0_01_inspect_raw_anndata.py,python_source,M0,true,source/config/doc/test file intended for repository review,6775,2026-04-30T08:28:01Z
+repo,scripts/m0_02_build_m0_anndata.py,python_source,M0,true,source/config/doc/test file intended for repository review,6226,2026-04-30T14:41:12Z
+repo,scripts/m0_03_compute_embeddings.py,python_source,M0,true,source/config/doc/test file intended for repository review,1837,2026-04-30T08:28:05Z
+repo,scripts/m0_04_build_spatial_graphs.py,python_source,M0,true,source/config/doc/test file intended for repository review,6119,2026-04-30T08:28:32Z
+repo,scripts/m0_05_export_m0_objects.py,python_source,M0,true,source/config/doc/test file intended for repository review,1318,2026-04-30T03:04:52Z
+repo,scripts/m0_06_make_qc_report.py,python_source,M0,true,source/config/doc/test file intended for repository review,11033,2026-05-01T02:10:08Z
+repo,scripts/m1_00_inspect_m0_for_niche.py,python_source,M1,true,source/config/doc/test file intended for repository review,4580,2026-05-01T02:20:35Z
+repo,scripts/m1_01_build_niche_prototype.py,python_source,M1,true,source/config/doc/test file intended for repository review,7948,2026-05-01T02:20:35Z
+repo,scripts/m1_02_review_niche_prototype.py,python_source,M1,true,source/config/doc/test file intended for repository review,30277,2026-05-02T12:25:49Z
+repo,scripts/m1_03_build_niche_full.py,python_source,M1,true,source/config/doc/test file intended for repository review,16744,2026-05-02T12:40:47Z
+repo,scripts/m1_03a_prepare_global_schema.py,python_source,M1,true,source/config/doc/test file intended for repository review,10102,2026-05-02T12:40:25Z
+repo,scripts/m1_04_build_niche_full_by_slice.py,python_source,M1,true,source/config/doc/test file intended for repository review,16857,2026-05-02T12:42:48Z
+repo,scripts/m2_00_audit_m1_outputs.py,python_source,M2,true,source/config/doc/test file intended for repository review,7888,2026-05-03T01:45:34Z
+repo,scripts/m2_01_prepare_representation_matrix.py,python_source,M2,true,source/config/doc/test file intended for repository review,6847,2026-05-03T01:49:29Z
+repo,scripts/m2_02_build_full_representation_by_slice.py,python_source,M2,true,source/config/doc/test file intended for repository review,21088,2026-05-03T02:01:38Z
+repo,scripts/m3_00_audit_m2_inputs.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,7269,2026-05-03T03:11:42Z
+repo,scripts/m3_01_define_transition_contract.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,6107,2026-05-03T03:11:42Z
+repo,scripts/m3_02_sample_candidate_edges.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,14538,2026-05-03T03:19:36Z
+repo,scripts/m3_03_review_sampled_transition_preflight.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,8220,2026-05-03T03:19:36Z
+repo,scripts/m3_04_design_full_transition_plan.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,15865,2026-05-03T04:11:02Z
+repo,scripts/m3_05_build_transition_pilot_shard.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,17135,2026-05-03T11:25:43Z
+repo,scripts/m3_06_run_transition_timepair_pilot.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,42641,2026-05-03T04:51:29Z
+repo,scripts/m3_07_review_timepair_pilot_and_plan_next.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,23653,2026-05-03T05:22:55Z
+repo,scripts/m3_08_inspect_ann_backends.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,4306,2026-05-03T11:26:13Z
+repo,scripts/m3_09_design_ann_validation.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,9813,2026-05-03T11:30:35Z
+repo,scripts/m3_10_design_slurm_full_m3_strategy.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,14241,2026-05-03T11:30:25Z
+repo,scripts/m3_11_validate_ann_backend_on_sampled_shard.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,39365,2026-05-03T11:48:32Z
+repo,scripts/m3_12_validate_ann_backend_on_full_shard.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,30520,2026-05-03T11:59:34Z
+repo,scripts/m3_13_stress_test_ann_large_target_pair.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,30345,2026-05-03T13:18:02Z
+repo,scripts/m3_14_freeze_backend_and_dryrun_full_m3.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,32227,2026-05-03T13:41:51Z
+repo,scripts/m3_15_run_full_m3_by_shard.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,38137,2026-05-03T13:50:37Z
+repo,scripts/m3_16_freeze_full_m3_qc_report.py,python_source,M3-v1,true,source/config/doc/test file intended for repository review,31211,2026-05-04T06:54:45Z
+repo,scripts/m3_v2_00_write_design_protocol.py,python_source,M3-v2,true,source/config/doc/test file intended for repository review,24818,2026-05-08T02:44:02Z
+repo,scripts/m3_v2_01_run_small_pilot.py,python_source,M3-v2,true,source/config/doc/test file intended for repository review,39189,2026-05-08T03:05:11Z
+repo,scripts/m3_v2_02_kernel_diagnostic_tuning.py,python_source,M3-v2,true,source/config/doc/test file intended for repository review,32338,2026-05-08T03:26:17Z
+repo,scripts/m3_v2_03_confirmatory_constrained_pilot.py,python_source,M3-v2,true,source/config/doc/test file intended for repository review,38664,2026-05-08T03:42:30Z
+repo,scripts/m3_v2_04_package_review.py,python_source,M3-v2,true,source/config/doc/test file intended for repository review,16375,2026-05-08T04:15:23Z
+repo,scripts/m3_v2_05_full_production_plan.py,python_source,M3-v2,true,source/config/doc/test file intended for repository review,20460,2026-05-08T04:21:48Z
+repo,scripts/m3_v2_06_run_full_by_shard.py,python_source,M3-v2,true,source/config/doc/test file intended for repository review,45709,2026-05-08T06:55:09Z
+repo,scripts/m3_v2_08_full_qc_and_benchmark.py,python_source,M3-v2,true,source/config/doc/test file intended for repository review,44304,2026-05-08T08:00:39Z
+repo,scripts/m4a_01_assemble_global_transition_object.py,python_source,M4A,true,source/config/doc/test file intended for repository review,47847,2026-05-04T07:38:38Z
+repo,scripts/m4a_v2_00_assembly_plan.py,python_source,M4A-v2,true,source/config/doc/test file intended for repository review,34507,2026-05-08T08:15:02Z
+repo,scripts/m4a_v2_01_assemble_sparse_matrices.py,python_source,M4A-v2,true,source/config/doc/test file intended for repository review,64402,2026-05-08T09:12:30Z
+repo,scripts/m4a_v2_03_full_qc_and_benchmark.py,python_source,M4A-v2,true,source/config/doc/test file intended for repository review,45509,2026-05-08T09:27:23Z
+repo,scripts/m4b_01_design_terminal_macrostates.py,python_source,M4B,true,source/config/doc/test file intended for repository review,32245,2026-05-04T11:21:26Z
+repo,scripts/m4b_02_review_markov_gpcca_feasibility.py,python_source,M4B,true,source/config/doc/test file intended for repository review,14540,2026-05-04T08:02:45Z
+repo,scripts/m4c_01_compute_markov_fate_probabilities.py,python_source,M4C,true,source/config/doc/test file intended for repository review,46771,2026-05-04T08:54:32Z
+repo,scripts/m4c_02_review_and_freeze_markov_fate_results.py,python_source,M4C,true,source/config/doc/test file intended for repository review,44863,2026-05-04T11:22:52Z
+repo,scripts/m4c_v2_00_planning_and_handoff.py,python_source,M4C-v2,true,source/config/doc/test file intended for repository review,49868,2026-05-08T09:57:08Z
+repo,scripts/m4c_v2_01_run_fate_propagation.py,python_source,M4C-v2,true,source/config/doc/test file intended for repository review,59123,2026-05-08T10:16:32Z
+repo,scripts/m4c_v2_03_fate_benchmark.py,python_source,M4C-v2,true,source/config/doc/test file intended for repository review,53687,2026-05-08T10:28:38Z
+repo,scripts/m4d_00_audit_coordinate_availability.py,python_source,M4D,true,source/config/doc/test file intended for repository review,24478,2026-05-04T09:56:13Z
+repo,scripts/m4d_01_inspect_pcca_backend.py,python_source,M4D,true,source/config/doc/test file intended for repository review,1668,2026-05-04T10:55:50Z
+repo,scripts/m4d_01a_review_standard_gpcca_backend.py,python_source,M4D,true,source/config/doc/test file intended for repository review,1375,2026-05-04T10:56:07Z
+repo,scripts/m4d_01b_setup_standard_gpcca_env.sh,repo_file,M4D,true,source/config/doc/test file intended for repository review,4406,2026-05-04T11:33:00Z
+repo,scripts/m4d_01b_validate_standard_gpcca_backend.py,python_source,M4D,true,source/config/doc/test file intended for repository review,24652,2026-05-04T11:29:59Z
+repo,scripts/m4d_01c_run_supernode_gpcca.py,python_source,M4D,true,source/config/doc/test file intended for repository review,1252,2026-05-07T07:22:32Z
+repo,scripts/m4e_01_endpoint_annotation_review.py,python_source,M4E,true,source/config/doc/test file intended for repository review,37957,2026-05-07T13:33:28Z
+repo,scripts/m4e_02_extract_neighborhood_annotation.py,python_source,M4E,true,source/config/doc/test file intended for repository review,38328,2026-05-07T13:53:57Z
+repo,scripts/m4e_03_endpoint_refinement_freeze.py,python_source,M4E,true,source/config/doc/test file intended for repository review,56081,2026-05-07T14:11:26Z
+repo,scripts/m4e_03_figure_report_qc_patch.py,python_source,M4E,true,source/config/doc/test file intended for repository review,19389,2026-05-08T02:29:54Z
+repo,scripts/m4v_01_visualize_m4c_m4d_markov_results.py,python_source,M4D,true,source/config/doc/test file intended for repository review,1265,2026-05-07T07:22:32Z
+repo,scripts/planA_00_freeze_p_fate_branch.py,python_source,P_fate,true,source/config/doc/test file intended for repository review,35583,2026-05-08T10:44:03Z
+repo,scripts/storage_00_audit_nichefate_paths.py,python_source,storage,true,source/config/doc/test file intended for repository review,15858,2026-05-07T01:42:16Z
+repo,scripts/storage_01_migrate_large_inputs_to_data.py,python_source,storage,true,source/config/doc/test file intended for repository review,8931,2026-05-07T01:47:39Z
+repo,scripts/storage_02_validate_path_compatibility.py,python_source,storage,true,source/config/doc/test file intended for repository review,10228,2026-05-07T01:43:34Z
+repo,configs/k_gpcca_pilot.yaml,config,K_gpcca,true,source/config/doc/test file intended for repository review,2230,2026-05-08T11:02:33Z
+repo,configs/k_gpcca_revision.yaml,config,K_gpcca,true,source/config/doc/test file intended for repository review,3229,2026-05-08T12:27:28Z
+repo,configs/m0_merfish_colitis.yaml,config,M0,true,source/config/doc/test file intended for repository review,2297,2026-04-30T08:43:28Z
+repo,configs/m0_merfish_colitis_home.yaml,config,M0,true,source/config/doc/test file intended for repository review,2296,2026-04-30T14:36:59Z
+repo,configs/m1_niche_construction.yaml,config,M1,true,source/config/doc/test file intended for repository review,1235,2026-05-01T02:20:35Z
+repo,configs/m2_niche_representation.yaml,config,M2,true,source/config/doc/test file intended for repository review,2365,2026-05-03T01:59:30Z
+repo,configs/m3_transition_kernel.yaml,config,M3-v1,true,source/config/doc/test file intended for repository review,3832,2026-05-03T04:09:12Z
+repo,configs/m3_v2_full_production.yaml,config,M3-v2,true,source/config/doc/test file intended for repository review,2066,2026-05-08T06:55:19Z
+repo,configs/m3_v2_pilot.yaml,config,M3-v2,true,source/config/doc/test file intended for repository review,1607,2026-05-08T02:52:40Z
+repo,configs/m4a_markov_assembly.yaml,config,M4A,true,source/config/doc/test file intended for repository review,1206,2026-05-04T07:26:40Z
+repo,configs/m4a_v2_assembly.yaml,config,M4A-v2,true,source/config/doc/test file intended for repository review,2218,2026-05-08T08:33:11Z
+repo,configs/m4b_markov_terminal_design.yaml,config,M4B,true,source/config/doc/test file intended for repository review,1926,2026-05-04T07:58:05Z
+repo,configs/m4c_fate_probability.yaml,config,M4C,true,source/config/doc/test file intended for repository review,1259,2026-05-04T08:23:04Z
+repo,configs/m4c_v2_fate_propagation.yaml,config,M4C-v2,true,source/config/doc/test file intended for repository review,2670,2026-05-08T10:07:17Z
+repo,configs/m4d_markov_macrostate_visualization.yaml,config,M4D,true,source/config/doc/test file intended for repository review,3779,2026-05-07T07:11:50Z
+repo,configs/reproducibility/reviewpack_01_module_manifest.yaml,config,ReviewPack,true,source/config/doc/test file intended for repository review,8357,2026-05-08T13:59:38Z
+repo,docs/environment_and_dependencies.md,documentation,documentation,true,source/config/doc/test file intended for repository review,2202,2026-05-08T13:58:42Z
+repo,docs/github_packaging_plan.md,documentation,documentation,true,source/config/doc/test file intended for repository review,2871,2026-05-08T13:58:42Z
+repo,docs/m0_design.md,documentation,documentation,true,source/config/doc/test file intended for repository review,1904,2026-04-30T03:12:06Z
+repo,docs/pipeline_module_index.md,documentation,documentation,true,source/config/doc/test file intended for repository review,4947,2026-05-08T13:58:42Z
+repo,docs/project_status_checkpoint.md,documentation,documentation,true,source/config/doc/test file intended for repository review,3534,2026-05-08T13:58:42Z
+repo,docs/reproducibility_guide.md,documentation,documentation,true,source/config/doc/test file intended for repository review,4820,2026-05-08T13:58:42Z
+repo,docs/server_layout.md,documentation,documentation,true,source/config/doc/test file intended for repository review,1281,2026-04-30T03:06:49Z
+repo,docs/storage_policy.md,documentation,documentation,true,source/config/doc/test file intended for repository review,1367,2026-05-07T01:41:16Z
+repo,tests/__pycache__/test_config.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,4046,2026-04-30T08:29:05Z
+repo,tests/__pycache__/test_graph.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,5884,2026-04-30T08:29:06Z
+repo,tests/__pycache__/test_k_gpcca_benchmark.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,10848,2026-05-08T11:59:04Z
+repo,tests/__pycache__/test_k_gpcca_design.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,12696,2026-05-08T10:54:20Z
+repo,tests/__pycache__/test_k_gpcca_pilot_construction.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,13456,2026-05-08T11:19:03Z
+repo,tests/__pycache__/test_k_gpcca_pilot_preflight.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,12517,2026-05-08T11:04:53Z
+repo,tests/__pycache__/test_k_gpcca_revision.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,12837,2026-05-08T12:30:53Z
+repo,tests/__pycache__/test_m2_full_runner.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,7771,2026-05-03T02:02:44Z
+repo,tests/__pycache__/test_m2_representation.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6636,2026-05-03T01:50:04Z
+repo,tests/__pycache__/test_m3_ann_and_slurm_strategy.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,13562,2026-05-03T11:32:14Z
+repo,tests/__pycache__/test_m3_ann_and_slurm_strategy.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,7640,2026-05-03T11:33:03Z
+repo,tests/__pycache__/test_m3_ann_full_shard_validation.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,10302,2026-05-03T12:00:45Z
+repo,tests/__pycache__/test_m3_ann_full_shard_validation.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6861,2026-05-03T12:01:33Z
+repo,tests/__pycache__/test_m3_ann_large_target_stress.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,11738,2026-05-03T13:19:39Z
+repo,tests/__pycache__/test_m3_ann_large_target_stress.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,7324,2026-05-03T13:20:22Z
+repo,tests/__pycache__/test_m3_ann_validation.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,9680,2026-05-03T11:50:21Z
+repo,tests/__pycache__/test_m3_ann_validation.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6328,2026-05-03T11:48:55Z
+repo,tests/__pycache__/test_m3_backend_freeze_and_dryrun.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,12858,2026-05-03T13:40:10Z
+repo,tests/__pycache__/test_m3_backend_freeze_and_dryrun.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,7433,2026-05-03T13:42:24Z
+repo,tests/__pycache__/test_m3_final_qc_freeze.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,10262,2026-05-04T06:55:05Z
+repo,tests/__pycache__/test_m3_final_qc_freeze.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,8270,2026-05-04T06:55:21Z
+repo,tests/__pycache__/test_m3_full_design.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,7669,2026-05-03T04:12:15Z
+repo,tests/__pycache__/test_m3_full_runner.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,15404,2026-05-03T13:52:18Z
+repo,tests/__pycache__/test_m3_full_runner.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,8662,2026-05-04T06:28:54Z
+repo,tests/__pycache__/test_m3_pilot_review.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,10614,2026-05-03T05:22:33Z
+repo,tests/__pycache__/test_m3_pilot_shard.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,7504,2026-05-03T04:23:58Z
+repo,tests/__pycache__/test_m3_timepair_pilot_runner.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,13966,2026-05-03T05:02:02Z
+repo,tests/__pycache__/test_m3_transition_contract.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,8215,2026-05-03T03:16:19Z
+repo,tests/__pycache__/test_m3_v2_confirmatory.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,8048,2026-05-08T03:43:18Z
+repo,tests/__pycache__/test_m3_v2_confirmatory.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,4268,2026-05-08T03:43:20Z
+repo,tests/__pycache__/test_m3_v2_full_benchmark.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,10060,2026-05-08T08:01:17Z
+repo,tests/__pycache__/test_m3_v2_full_benchmark.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6043,2026-05-08T08:01:08Z
+repo,tests/__pycache__/test_m3_v2_full_runner.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,17289,2026-05-08T06:56:07Z
+repo,tests/__pycache__/test_m3_v2_full_runner.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,9669,2026-05-08T06:55:59Z
+repo,tests/__pycache__/test_m3_v2_pilot.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,13520,2026-05-08T03:01:23Z
+repo,tests/__pycache__/test_m3_v2_pilot.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,5729,2026-05-08T03:05:23Z
+repo,tests/__pycache__/test_m3_v2_tuning.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,7427,2026-05-08T03:27:44Z
+repo,tests/__pycache__/test_m3_v2_tuning.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,4400,2026-05-08T03:29:07Z
+repo,tests/__pycache__/test_m4a_markov_assembly.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,13462,2026-05-04T07:39:28Z
+repo,tests/__pycache__/test_m4a_markov_assembly.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,9278,2026-05-04T07:39:16Z
+repo,tests/__pycache__/test_m4a_v2_assembler.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,16504,2026-05-08T09:09:30Z
+repo,tests/__pycache__/test_m4a_v2_benchmark.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,7616,2026-05-08T09:28:57Z
+repo,tests/__pycache__/test_m4b_terminal_design.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,12403,2026-05-04T11:22:21Z
+repo,tests/__pycache__/test_m4b_terminal_design.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6373,2026-05-04T08:03:52Z
+repo,tests/__pycache__/test_m4c_fate_probability.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,21509,2026-05-04T08:54:57Z
+repo,tests/__pycache__/test_m4c_fate_probability.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,10073,2026-05-04T08:54:59Z
+repo,tests/__pycache__/test_m4c_final_review.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,10993,2026-05-04T09:06:52Z
+repo,tests/__pycache__/test_m4c_final_review.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6479,2026-05-04T09:09:57Z
+repo,tests/__pycache__/test_m4c_v2_fate_benchmark.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,10506,2026-05-08T10:27:10Z
+repo,tests/__pycache__/test_m4c_v2_planning.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,10518,2026-05-08T09:56:35Z
+repo,tests/__pycache__/test_m4c_v2_runner.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,14305,2026-05-08T10:14:59Z
+repo,tests/__pycache__/test_m4d_coordinate_audit.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,12540,2026-05-04T09:51:36Z
+repo,tests/__pycache__/test_m4d_coordinate_audit.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6589,2026-05-04T09:56:31Z
+repo,tests/__pycache__/test_m4d_standard_gpcca_backend.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,8167,2026-05-04T10:59:41Z
+repo,tests/__pycache__/test_m4d_standard_gpcca_backend.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,3704,2026-05-04T11:02:15Z
+repo,tests/__pycache__/test_m4d_standard_gpcca_env.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,10305,2026-05-04T11:23:11Z
+repo,tests/__pycache__/test_m4d_standard_gpcca_env.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,5321,2026-05-04T11:33:42Z
+repo,tests/__pycache__/test_m4d_supernode_gpcca.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,13418,2026-05-07T07:24:48Z
+repo,tests/__pycache__/test_m4d_supernode_gpcca.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6413,2026-05-07T08:14:11Z
+repo,tests/__pycache__/test_m4v_visualization_outputs.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6684,2026-05-07T07:25:36Z
+repo,tests/__pycache__/test_m4v_visualization_outputs.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,4476,2026-05-07T08:14:11Z
+repo,tests/__pycache__/test_metadata.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,6380,2026-04-30T14:49:05Z
+repo,tests/__pycache__/test_niche.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,10406,2026-05-02T12:43:59Z
+repo,tests/__pycache__/test_niche_qc.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,8824,2026-05-02T12:26:33Z
+repo,tests/__pycache__/test_planA_freeze.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,9941,2026-05-08T10:43:20Z
+repo,tests/__pycache__/test_spatial.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,3316,2026-04-30T08:29:08Z
+repo,tests/__pycache__/test_storage_tools.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,8262,2026-05-07T01:41:29Z
+repo,tests/__pycache__/test_storage_tools.cpython-310.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,4049,2026-05-07T01:41:29Z
+repo,tests/__pycache__/test_verify_raw_files.cpython-310-pytest-9.0.2.pyc,repo_file,repo,true,source/config/doc/test file intended for repository review,3593,2026-04-30T08:29:08Z
+repo,tests/test_config.py,test,repo,true,source/config/doc/test file intended for repository review,1569,2026-04-30T03:07:53Z
+repo,tests/test_graph.py,test,repo,true,source/config/doc/test file intended for repository review,2348,2026-04-30T08:28:49Z
+repo,tests/test_k_gpcca_benchmark.py,test,K_gpcca,true,source/config/doc/test file intended for repository review,7488,2026-05-08T11:58:55Z
+repo,tests/test_k_gpcca_design.py,test,K_gpcca,true,source/config/doc/test file intended for repository review,4612,2026-05-08T10:54:07Z
+repo,tests/test_k_gpcca_pilot_construction.py,test,K_gpcca,true,source/config/doc/test file intended for repository review,7869,2026-05-08T11:18:53Z
+repo,tests/test_k_gpcca_pilot_preflight.py,test,K_gpcca,true,source/config/doc/test file intended for repository review,6934,2026-05-08T11:04:40Z
+repo,tests/test_k_gpcca_revision.py,test,K_gpcca,true,source/config/doc/test file intended for repository review,7732,2026-05-08T12:30:45Z
+repo,tests/test_m2_full_runner.py,test,M2,true,source/config/doc/test file intended for repository review,6357,2026-05-03T02:02:32Z
+repo,tests/test_m2_representation.py,test,M2,true,source/config/doc/test file intended for repository review,5216,2026-05-03T01:49:29Z
+repo,tests/test_m3_ann_and_slurm_strategy.py,test,M3-v1,true,source/config/doc/test file intended for repository review,8396,2026-05-03T11:31:50Z
+repo,tests/test_m3_ann_full_shard_validation.py,test,M3-v1,true,source/config/doc/test file intended for repository review,7318,2026-05-03T12:00:23Z
+repo,tests/test_m3_ann_large_target_stress.py,test,M3-v1,true,source/config/doc/test file intended for repository review,7307,2026-05-03T13:19:29Z
+repo,tests/test_m3_ann_validation.py,test,M3-v1,true,source/config/doc/test file intended for repository review,7370,2026-05-03T11:48:42Z
+repo,tests/test_m3_backend_freeze_and_dryrun.py,test,M3-v1,true,source/config/doc/test file intended for repository review,9003,2026-05-03T13:39:40Z
+repo,tests/test_m3_final_qc_freeze.py,test,M3-v1,true,source/config/doc/test file intended for repository review,10534,2026-05-04T06:54:54Z
+repo,tests/test_m3_full_design.py,test,M3-v1,true,source/config/doc/test file intended for repository review,3744,2026-05-03T04:11:56Z
+repo,tests/test_m3_full_runner.py,test,M3-v1,true,source/config/doc/test file intended for repository review,10638,2026-05-03T13:51:53Z
+repo,tests/test_m3_pilot_review.py,test,M3-v1,true,source/config/doc/test file intended for repository review,6794,2026-05-03T05:22:13Z
+repo,tests/test_m3_pilot_shard.py,test,M3-v1,true,source/config/doc/test file intended for repository review,5740,2026-05-03T04:21:42Z
+repo,tests/test_m3_timepair_pilot_runner.py,test,M3-v1,true,source/config/doc/test file intended for repository review,8823,2026-05-03T05:01:43Z
+repo,tests/test_m3_transition_contract.py,test,M3-v1,true,source/config/doc/test file intended for repository review,5456,2026-05-03T03:16:10Z
+repo,tests/test_m3_v2_confirmatory.py,test,M3-v2,true,source/config/doc/test file intended for repository review,4307,2026-05-08T03:43:01Z
+repo,tests/test_m3_v2_full_benchmark.py,test,M3-v2,true,source/config/doc/test file intended for repository review,7091,2026-05-08T08:00:54Z
+repo,tests/test_m3_v2_full_runner.py,test,M3-v2,true,source/config/doc/test file intended for repository review,11828,2026-05-08T06:55:41Z
+repo,tests/test_m3_v2_pilot.py,test,M3-v2,true,source/config/doc/test file intended for repository review,5746,2026-05-08T03:01:04Z
+repo,tests/test_m3_v2_tuning.py,test,M3-v2,true,source/config/doc/test file intended for repository review,4905,2026-05-08T03:27:33Z
+repo,tests/test_m4a_markov_assembly.py,test,M4A,true,source/config/doc/test file intended for repository review,11295,2026-05-04T07:39:00Z
+repo,tests/test_m4a_v2_assembler.py,test,M4A-v2,true,source/config/doc/test file intended for repository review,9185,2026-05-08T09:09:14Z
+repo,tests/test_m4a_v2_benchmark.py,test,M4A-v2,true,source/config/doc/test file intended for repository review,4730,2026-05-08T09:28:38Z
+repo,tests/test_m4b_terminal_design.py,test,M4B,true,source/config/doc/test file intended for repository review,6318,2026-05-04T11:21:48Z
+repo,tests/test_m4c_fate_probability.py,test,M4C,true,source/config/doc/test file intended for repository review,10419,2026-05-04T08:54:45Z
+repo,tests/test_m4c_final_review.py,test,M4C,true,source/config/doc/test file intended for repository review,7096,2026-05-04T09:06:33Z
+repo,tests/test_m4c_v2_fate_benchmark.py,test,M4C-v2,true,source/config/doc/test file intended for repository review,5581,2026-05-08T10:26:18Z
+repo,tests/test_m4c_v2_planning.py,test,M4C-v2,true,source/config/doc/test file intended for repository review,4856,2026-05-08T09:56:15Z
+repo,tests/test_m4c_v2_runner.py,test,M4C-v2,true,source/config/doc/test file intended for repository review,9383,2026-05-08T10:13:33Z
+repo,tests/test_m4d_coordinate_audit.py,test,M4D,true,source/config/doc/test file intended for repository review,7216,2026-05-04T09:51:09Z
+repo,tests/test_m4d_standard_gpcca_backend.py,test,M4D,true,source/config/doc/test file intended for repository review,3723,2026-05-04T10:59:28Z
+repo,tests/test_m4d_standard_gpcca_env.py,test,M4D,true,source/config/doc/test file intended for repository review,4938,2026-05-04T11:22:38Z
+repo,tests/test_m4d_supernode_gpcca.py,test,M4D,true,source/config/doc/test file intended for repository review,6816,2026-05-07T07:24:06Z
+repo,tests/test_m4v_visualization_outputs.py,test,M4D,true,source/config/doc/test file intended for repository review,5123,2026-05-07T07:25:18Z
+repo,tests/test_metadata.py,test,repo,true,source/config/doc/test file intended for repository review,3455,2026-04-30T14:41:28Z
+repo,tests/test_niche.py,test,repo,true,source/config/doc/test file intended for repository review,6799,2026-05-02T12:42:28Z
+repo,tests/test_niche_qc.py,test,repo,true,source/config/doc/test file intended for repository review,5012,2026-05-02T12:24:56Z
+repo,tests/test_planA_freeze.py,test,P_fate,true,source/config/doc/test file intended for repository review,4315,2026-05-08T10:43:11Z
+repo,tests/test_spatial.py,test,repo,true,source/config/doc/test file intended for repository review,1552,2026-04-30T03:06:05Z
+repo,tests/test_storage_tools.py,test,storage,true,source/config/doc/test file intended for repository review,4156,2026-05-07T01:41:16Z
+repo,tests/test_verify_raw_files.py,test,repo,true,source/config/doc/test file intended for repository review,1461,2026-04-30T08:28:49Z
+scratch,/home/zhutao/scratch/nichefate/m0/reports/m0_report.md,key_report_or_summary,M0,false,existing external scientific artifact; document path but do not upload,2916,2026-05-01T02:10:58Z
+scratch,/home/zhutao/scratch/nichefate/m1/reports/m1_full_by_slice_summary.md,key_report_or_summary,M1,false,existing external scientific artifact; document path but do not upload,24287,2026-05-02T12:59:05Z
+scratch,/home/zhutao/scratch/nichefate/m2/reports/m2_full_by_slice_summary.md,key_report_or_summary,M2,false,existing external scientific artifact; document path but do not upload,450,2026-05-03T02:07:37Z
+scratch,/home/zhutao/scratch/nichefate/m3/reports/m3_full_m3_final_freeze_manifest.json,key_report_or_summary,M3-v1,false,existing external scientific artifact; document path but do not upload,60492,2026-05-04T07:05:42Z
+scratch,/home/zhutao/scratch/nichefate/m3/reports/m3_full_m3_run_summary.md,key_report_or_summary,M3-v1,false,existing external scientific artifact; document path but do not upload,5980,2026-05-03T16:47:35Z
+scratch,/home/zhutao/scratch/nichefate/m3_v2/reports/m3_v2_full_production_report.md,key_report_or_summary,M3-v2,false,existing external scientific artifact; document path but do not upload,1359,2026-05-08T07:12:42Z
+scratch,/home/zhutao/scratch/nichefate/m3_v2_benchmark/m3_v1_vs_v2_edge_benchmark_summary.json,key_report_or_summary,M3-v2,false,existing external scientific artifact; document path but do not upload,9909,2026-05-08T08:04:18Z
+scratch,/home/zhutao/scratch/nichefate/m4a/reports/m4a_assembly_report.md,key_report_or_summary,M4A,false,existing external scientific artifact; document path but do not upload,2398,2026-05-04T07:41:28Z
+scratch,/home/zhutao/scratch/nichefate/m4a_v2/reports/m4a_v2_02_full_assembly_report.md,key_report_or_summary,M4A-v2,false,existing external scientific artifact; document path but do not upload,1095,2026-05-08T09:11:09Z
+scratch,/home/zhutao/scratch/nichefate/m4b/reports/m4b_terminal_macrostate_design_summary.json,key_report_or_summary,M4B,false,existing external scientific artifact; document path but do not upload,3060,2026-05-04T08:05:45Z
+scratch,/home/zhutao/scratch/nichefate/m4b/reports/m4b_markov_gpcca_feasibility_summary.json,key_report_or_summary,M4B,false,existing external scientific artifact; document path but do not upload,2625,2026-05-04T08:06:04Z
+scratch,/home/zhutao/scratch/nichefate/m4c/reports/m4c_markov_fate_final_freeze_summary.json,key_report_or_summary,M4C,false,existing external scientific artifact; document path but do not upload,11652,2026-05-04T09:10:15Z
+scratch,/home/zhutao/scratch/nichefate/m4c/reports/m4c_markov_fate_probability_report.md,key_report_or_summary,M4C,false,existing external scientific artifact; document path but do not upload,4385,2026-05-04T08:55:22Z
+scratch,/home/zhutao/scratch/nichefate/m4c_v2_benchmark/m4c_v2_benchmark_summary.json,key_report_or_summary,M4C-v2,false,existing external scientific artifact; document path but do not upload,2469,2026-05-08T10:30:00Z
+scratch,/home/zhutao/scratch/nichefate/m4e/reports/m4e_endpoint_biological_annotation_report.md,key_report_or_summary,M4E,false,existing external scientific artifact; document path but do not upload,2789,2026-05-07T13:34:02Z
+scratch,/home/zhutao/scratch/nichefate/m4e/reports/m4e_neighborhood_annotation_report.md,key_report_or_summary,M4E,false,existing external scientific artifact; document path but do not upload,1419,2026-05-07T13:54:55Z
+scratch,/home/zhutao/scratch/nichefate/planA_freeze/planA_freeze_summary.json,key_report_or_summary,P_fate,false,existing external scientific artifact; document path but do not upload,2226,2026-05-08T10:44:17Z
+scratch,/home/zhutao/scratch/nichefate/planA_freeze/p_fate_frozen_artifact_inventory.csv,key_report_or_summary,P_fate,false,existing external scientific artifact; document path but do not upload,2029,2026-05-08T10:44:17Z
+scratch,/home/zhutao/scratch/nichefate/planA_freeze/planA_stage_status_matrix.csv,key_report_or_summary,P_fate,false,existing external scientific artifact; document path but do not upload,1987,2026-05-08T10:44:17Z
+scratch,/home/zhutao/scratch/nichefate/planA_freeze/reports/p_fate_branch_freeze_report.md,key_report_or_summary,P_fate,false,existing external scientific artifact; document path but do not upload,1637,2026-05-08T10:44:17Z
+scratch,/home/zhutao/scratch/nichefate/planA_freeze/reports/p_fate_vs_k_gpcca_kernel_distinction.md,key_report_or_summary,P_fate,false,existing external scientific artifact; document path but do not upload,1219,2026-05-08T10:44:17Z
+scratch,/home/zhutao/scratch/nichefate/planA_freeze/reports/standard_gpcca_only_policy.md,key_report_or_summary,P_fate,false,existing external scientific artifact; document path but do not upload,704,2026-05-08T10:44:17Z
+scratch,/home/zhutao/scratch/nichefate/planA_freeze/reports/planA_barcode_adapter_positioning.md,key_report_or_summary,P_fate,false,existing external scientific artifact; document path but do not upload,851,2026-05-08T10:44:17Z
+scratch,/home/zhutao/scratch/nichefate/planA_freeze/reports/planA_branchSBM_positioning.md,key_report_or_summary,P_fate,false,existing external scientific artifact; document path but do not upload,478,2026-05-08T10:44:17Z
+scratch,/home/zhutao/scratch/nichefate/k_gpcca_design/k_gpcca_design_summary.json,key_report_or_summary,K_gpcca,false,existing external scientific artifact; document path but do not upload,2066,2026-05-08T10:54:39Z
+scratch,/home/zhutao/scratch/nichefate/k_gpcca_pilot/k_gpcca_01_dryrun_summary.json,key_report_or_summary,K_gpcca,false,existing external scientific artifact; document path but do not upload,1526,2026-05-08T11:05:52Z
+scratch,/home/zhutao/scratch/nichefate/k_gpcca_pilot/k_gpcca_02_summary.json,key_report_or_summary,K_gpcca,false,existing external scientific artifact; document path but do not upload,3108,2026-05-08T11:44:14Z
+scratch,/home/zhutao/scratch/nichefate/k_gpcca_pilot/reports/k_gpcca_01_preflight_report.md,key_report_or_summary,K_gpcca,false,existing external scientific artifact; document path but do not upload,891,2026-05-08T11:05:52Z
+scratch,/home/zhutao/scratch/nichefate/k_gpcca_pilot_benchmark/k_gpcca_03_summary.json,key_report_or_summary,K_gpcca,false,existing external scientific artifact; document path but do not upload,930,2026-05-08T12:19:25Z
+scratch,/home/zhutao/scratch/nichefate/k_gpcca_pilot_benchmark/k_gpcca_03_selected_k_summary.json,key_report_or_summary,K_gpcca,false,existing external scientific artifact; document path but do not upload,146,2026-05-08T12:19:21Z
+scratch,/home/zhutao/scratch/nichefate/k_gpcca_pilot_benchmark/reports/k_gpcca_03_benchmark_decision_report.md,key_report_or_summary,K_gpcca,false,existing external scientific artifact; document path but do not upload,75,2026-05-08T12:19:25Z
+scratch,/home/zhutao/scratch/nichefate/k_gpcca_revision/k_gpcca_04_summary.json,key_report_or_summary,K_gpcca,false,existing external scientific artifact; document path but do not upload,1194,2026-05-08T13:16:11Z
+scratch,/home/zhutao/scratch/nichefate/k_gpcca_revision/reports/k_gpcca_04_completion_check.md,key_report_or_summary,K_gpcca,false,existing external scientific artifact; document path but do not upload,1279,2026-05-08T13:46:22Z
+scratch,/home/zhutao/scratch/nichefate/k_gpcca_revision/reports/k_gpcca_04_revision_decision_report.md,key_report_or_summary,K_gpcca,false,existing external scientific artifact; document path but do not upload,235,2026-05-08T13:16:11Z
+scratch,/home/zhutao/scratch/nichefate/k_gpcca_revision/reports/k_gpcca_04_safety_report.md,key_report_or_summary,K_gpcca,false,existing external scientific artifact; document path but do not upload,346,2026-05-08T13:16:11Z
+external_root,/data/zhutao/datasets/merfish_colitis_moffitt_2024/raw,external_output_root,M0,false,representative heavy output/data root; document only,4096,2026-04-30T08:33:58Z
+external_root,/home/zhutao/scratch/nichefate/m0,external_output_root,M0,false,representative heavy output/data root; document only,4096,2026-05-07T02:10:05Z
+external_root,/home/zhutao/scratch/nichefate/m1/by_slice,external_output_root,M1,false,representative heavy output/data root; document only,4096,2026-05-02T12:58:50Z
+external_root,/home/zhutao/scratch/nichefate/m2/by_slice,external_output_root,M2,false,representative heavy output/data root; document only,4096,2026-05-03T02:07:36Z
+external_root,/home/zhutao/scratch/nichefate/m3/full_by_shard,external_output_root,M3-v1,false,representative heavy output/data root; document only,4096,2026-05-03T16:47:33Z
+external_root,/home/zhutao/scratch/nichefate/m3_v2/full_by_shard,external_output_root,M3-v2,false,representative heavy output/data root; document only,4096,2026-05-08T07:10:32Z
+external_root,/home/zhutao/scratch/nichefate/m4a,external_output_root,M4A,false,representative heavy output/data root; document only,4096,2026-05-04T07:41:27Z
+external_root,/home/zhutao/scratch/nichefate/m4a_v2,external_output_root,M4A-v2,false,representative heavy output/data root; document only,4096,2026-05-08T09:11:04Z
+external_root,/home/zhutao/scratch/nichefate/m4b,external_output_root,M4B,false,representative heavy output/data root; document only,4096,2026-05-04T08:05:45Z
+external_root,/home/zhutao/scratch/nichefate/m4c,external_output_root,M4C,false,representative heavy output/data root; document only,4096,2026-05-04T08:52:28Z
+external_root,/home/zhutao/scratch/nichefate/m4c_v2,external_output_root,M4C-v2,false,representative heavy output/data root; document only,4096,2026-05-08T10:18:31Z
+external_root,/home/zhutao/scratch/nichefate/m4e,external_output_root,M4E,false,representative heavy output/data root; document only,4096,2026-05-07T14:10:16Z
+external_root,/home/zhutao/scratch/nichefate/planA_freeze,external_output_root,P_fate,false,representative heavy output/data root; document only,4096,2026-05-08T10:44:17Z
+external_root,/home/zhutao/scratch/nichefate/k_gpcca_revision,external_output_root,K_gpcca,false,representative heavy output/data root; document only,4096,2026-05-08T13:16:11Z

@@ -1,0 +1,21 @@
+name: nichefate-core
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - anndata
+  - scanpy
+  - pyarrow
+  - pyyaml
+  - tqdm
+  - psutil
+  - networkx
+  - pytest
+  - pip
+  # Draft environment only. This file is not locked until regression validation.

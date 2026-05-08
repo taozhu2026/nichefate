@@ -1,0 +1,23 @@
+path,category,size_bytes,include_in_first_commit,reason
+.gitignore,gitignore,1196,true,documentation or packaging file selected for controlled first commit
+README.md,readme,5429,true,documentation or packaging file selected for controlled first commit
+configs/reproducibility/reviewpack_01_module_manifest.yaml,reproducibility_config,8357,true,documentation or packaging file selected for controlled first commit
+docs/environment_and_dependencies.md,documentation,2202,true,documentation or packaging file selected for controlled first commit
+docs/git_initialization_plan.md,documentation,1767,true,documentation or packaging file selected for controlled first commit
+docs/github_packaging_plan.md,documentation,2871,true,documentation or packaging file selected for controlled first commit
+docs/installation.md,documentation,1965,true,documentation or packaging file selected for controlled first commit
+docs/m0_design.md,documentation,1904,true,documentation or packaging file selected for controlled first commit
+docs/pipeline_module_index.md,documentation,4947,true,documentation or packaging file selected for controlled first commit
+docs/project_status_checkpoint.md,documentation,3534,true,documentation or packaging file selected for controlled first commit
+docs/quickstart.md,documentation,2744,true,documentation or packaging file selected for controlled first commit
+docs/reproducibility_guide.md,documentation,4820,true,documentation or packaging file selected for controlled first commit
+docs/server_layout.md,documentation,1281,true,documentation or packaging file selected for controlled first commit
+docs/storage_policy.md,documentation,1367,true,documentation or packaging file selected for controlled first commit
+envs/nichefate-core.yml,environment_draft,331,true,documentation or packaging file selected for controlled first commit
+envs/nichefate-dev.yml,environment_draft,281,true,documentation or packaging file selected for controlled first commit
+envs/nichefate-gpcca.yml,environment_draft,452,true,documentation or packaging file selected for controlled first commit
+reports/review_pack/reviewpack_01_audit_summary.json,reviewpack_audit,4247,true,ReviewPack audit artifact; small and intended for documentation/packaging checkpoint
+reports/review_pack/reviewpack_01_file_inventory.csv,reviewpack_audit,57343,true,ReviewPack audit artifact; small and intended for documentation/packaging checkpoint
+reports/review_pack/reviewpack_02_changed_files.csv,reviewpack_audit,1323,true,ReviewPack audit artifact; small and intended for documentation/packaging checkpoint
+reports/review_pack/reviewpack_02_packaging_summary.json,reviewpack_audit,1833,true,ReviewPack audit artifact; small and intended for documentation/packaging checkpoint
+reports/review_pack/reviewpack_03_git_candidate_files.csv,reviewpack_audit,2973,true,ReviewPack-03 Git initialization audit artifact; small and intended for first documentation/packaging checkpoint
