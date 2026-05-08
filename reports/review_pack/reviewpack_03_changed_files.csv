@@ -1,0 +1,4 @@
+path,action,category,include_in_github,reason,size_bytes,mtime_utc
+reports/review_pack/reviewpack_03_git_init_summary.json,created,reviewpack_git_audit,true,ReviewPack-03 Git initialization audit report,4948,2026-05-08T14:13:09Z
+reports/review_pack/reviewpack_03_changed_files.csv,created,reviewpack_git_audit,true,ReviewPack-03 Git initialization audit report,532,2026-05-08T14:13:09Z
+reports/review_pack/reviewpack_03_first_commit_manifest.csv,created,reviewpack_git_audit,true,ReviewPack-03 Git initialization audit report,3321,2026-05-08T14:13:09Z

@@ -1,0 +1,135 @@
+{
+  "committed_categories": [
+    "documentation",
+    "environment_draft",
+    "gitignore",
+    "readme",
+    "reproducibility_config",
+    "reviewpack_audit"
+  ],
+  "committed_file_count": 22,
+  "exact_next_step": "ReviewPack-04: add source/config/test code in a controlled second commit after inspecting tracked scripts/configs/tests and excluding legacy/heavy artifacts, or GitHub remote setup if code was already included intentionally.",
+  "first_commit_created": true,
+  "first_commit_hash": "b46141d35b37f7336e0c8a4a7148087b2fb7f1be",
+  "first_commit_message": "Initialize review checkpoint documentation and packaging",
+  "git_existed_before_task": false,
+  "git_initialized": true,
+  "github_push_done": false,
+  "github_remote_added": false,
+  "heavy_analysis_launched": false,
+  "ignored_pattern_check_summary": [
+    {
+      "git_check_ignore_matched": true,
+      "local_representative_exists": false,
+      "note": "pattern present, no local representative file to test",
+      "pattern": "scratch/",
+      "representative_path": "scratch/",
+      "rule": ".gitignore:43:scratch/\tscratch/"
+    },
+    {
+      "git_check_ignore_matched": true,
+      "local_representative_exists": false,
+      "note": "pattern present, no local representative file to test",
+      "pattern": "data/",
+      "representative_path": "data/",
+      "rule": ".gitignore:51:data/\tdata/"
+    },
+    {
+      "git_check_ignore_matched": true,
+      "local_representative_exists": false,
+      "note": "pattern present, no local representative file to test",
+      "pattern": "outputs/",
+      "representative_path": "outputs/",
+      "rule": ".gitignore:44:outputs/\toutputs/"
+    },
+    {
+      "git_check_ignore_matched": true,
+      "local_representative_exists": false,
+      "note": "pattern present, no local representative file to test",
+      "pattern": "results/",
+      "representative_path": "results/",
+      "rule": ".gitignore:46:results/\tresults/"
+    },
+    {
+      "git_check_ignore_matched": true,
+      "local_representative_exists": false,
+      "note": "pattern present, no local representative file to test",
+      "pattern": "logs/",
+      "representative_path": "logs/",
+      "rule": ".gitignore:39:logs/\tlogs/"
+    },
+    {
+      "git_check_ignore_matched": true,
+      "local_representative_exists": false,
+      "note": "pattern present, no local representative file to test",
+      "pattern": "tmp/",
+      "representative_path": "tmp/",
+      "rule": ".gitignore:40:tmp/\ttmp/"
+    },
+    {
+      "git_check_ignore_matched": true,
+      "local_representative_exists": false,
+      "note": "pattern present, no local representative file to test",
+      "pattern": "*.h5ad",
+      "representative_path": "example.h5ad",
+      "rule": ".gitignore:56:*.h5ad\texample.h5ad"
+    },
+    {
+      "git_check_ignore_matched": true,
+      "local_representative_exists": false,
+      "note": "pattern present, no local representative file to test",
+      "pattern": "*.npz",
+      "representative_path": "example.npz",
+      "rule": ".gitignore:61:*.npz\texample.npz"
+    },
+    {
+      "git_check_ignore_matched": true,
+      "local_representative_exists": false,
+      "note": "pattern present, no local representative file to test",
+      "pattern": "*.parquet",
+      "representative_path": "example.parquet",
+      "rule": ".gitignore:65:*.parquet\texample.parquet"
+    },
+    {
+      "git_check_ignore_matched": true,
+      "local_representative_exists": false,
+      "note": "pattern present, no local representative file to test",
+      "pattern": "*.pkl",
+      "representative_path": "example.pkl",
+      "rule": ".gitignore:63:*.pkl\texample.pkl"
+    },
+    {
+      "git_check_ignore_matched": true,
+      "local_representative_exists": false,
+      "note": "pattern present, no local representative file to test",
+      "pattern": "*.fastq.gz",
+      "representative_path": "example.fastq.gz",
+      "rule": ".gitignore:75:*.fastq.gz\texample.fastq.gz"
+    },
+    {
+      "git_check_ignore_matched": true,
+      "local_representative_exists": false,
+      "note": "pattern present, no local representative file to test",
+      "pattern": "*.bam",
+      "representative_path": "example.bam",
+      "rule": ".gitignore:78:*.bam\texample.bam"
+    }
+  ],
+  "large_file_findings": {
+    "files_over_20m": [],
+    "scientific_artifact_files_in_repo": [],
+    "tracked_heavy_scientific_files": []
+  },
+  "no_data_moved": true,
+  "no_ssd_write": true,
+  "repo_root": "/home/zhutao/projects/nichefate",
+  "repo_root_verified": true,
+  "reviewpack_03_reports": [
+    "reports/review_pack/reviewpack_03_git_init_summary.json",
+    "reports/review_pack/reviewpack_03_changed_files.csv",
+    "reports/review_pack/reviewpack_03_first_commit_manifest.csv"
+  ],
+  "reviewpack_id": "Nichefate-ReviewPack-03",
+  "staged_file_count": 22,
+  "timestamp_utc": "2026-05-08T14:13:09Z"
+}
