@@ -1,0 +1,153 @@
+project:
+  name: nichefate
+
+paths:
+  m2_by_slice_dir: /home/zhutao/scratch/nichefate/m2/by_slice
+  m2_summary: /home/zhutao/scratch/nichefate/m2/reports/m2_full_by_slice_summary.csv
+  m2_schema: /home/zhutao/scratch/nichefate/m2/reports/m2_full_feature_schema.json
+  m3_output_dir: /home/zhutao/scratch/nichefate/m3
+  reports_dir: /home/zhutao/scratch/nichefate/m3/reports
+  prototype_dir: /home/zhutao/scratch/nichefate/m3/prototype
+  logs_dir: /home/zhutao/scratch/nichefate/m3/logs
+  use_ssd: false
+
+input:
+  metadata_columns:
+    - slice_id
+    - slice_file
+    - time
+    - time_day
+    - mouse_id
+    - anchor_index
+    - anchor_cell_id
+    - cell_type_l1
+    - cell_type_l2
+    - cell_type_l3
+
+time:
+  time_column: time
+  time_day_column: time_day
+  infer_adjacent_pairs_from_time_day: true
+  require_time_delta: true
+
+feature_groups:
+  molecular_state:
+    include_patterns:
+      - "__emb_mean_pc"
+      - "__emb_var_pc"
+  cell_type_composition:
+    include_patterns:
+      - "__ct_l1__"
+      - "__ct_l3__"
+    exclude_patterns:
+      - "__ct_l2__"
+    note: "cell_type_l2 is excluded from default cost because some benchmark layers can be fallback-label dominated."
+  entropy:
+    include_patterns:
+      - "__ct_l1_entropy"
+      - "__ct_l3_entropy"
+  spatial_summary:
+    include_patterns:
+      - "__mean_neighbor_distance"
+      - "__pseudo_local_density"
+  topology:
+    include_patterns:
+      - "__local_topology_anchor_degree"
+      - "__local_topology_mean_member_degree"
+
+cost:
+  scaling_method: robust_median_iqr_with_fallback
+  min_scale: 1e-6
+  epsilon: 1e-8
+  evidence_weights:
+    molecular_state: 1.0
+    cell_type_composition: 1.0
+    entropy: 0.5
+    spatial_summary: 0.5
+    topology: 0.25
+    pseudotime: 0.0
+    barcode: 0.0
+  rerank_feature_groups:
+    - molecular_state
+    - cell_type_composition
+    - entropy
+    - spatial_summary
+    - topology
+  time_delta_mode: record_only
+  temperature_mode: pair_adaptive_median_cost
+  min_temperature: 1e-3
+  transition_temperature: 1.0
+  report_entropy: true
+
+candidate_edges:
+  mode: sampled_knn_preflight
+  max_source_niches_per_pair: 5000
+  max_target_niches_per_pair: 5000
+  k_candidates: 30
+  random_seed: 1
+  sample_aware: true
+  preserve_slice_and_sample_ids: true
+  neighbor_backend: sklearn_exact
+  future_supported_backends:
+    - faiss
+    - hnswlib
+    - pynndescent
+  retrieval_feature_groups:
+    - molecular_state
+    - cell_type_composition
+    - entropy
+  retrieval_metric: euclidean
+  numpy_chunk_size: 512
+
+mass:
+  mode: uniform
+  write_unbalanced_placeholders: true
+
+within_time_regularization:
+  enabled: false
+  write_contract_placeholders: true
+
+outputs:
+  write_raw_evidence: true
+  write_scaled_evidence: true
+  write_sampled_transition_prob: true
+  write_kernel_contract: true
+
+full_m3:
+  enabled: false
+  execution_mode: design_only
+  sharding_strategy: by_time_pair_and_source_slice
+  output_root: /home/zhutao/scratch/nichefate/m3/by_pair
+  summary_dir: /home/zhutao/scratch/nichefate/m3/reports
+  candidate_k: 30
+  candidate_k_mode: fixed
+  adaptive_k_options:
+    fraction_of_target: null
+    min_k: 30
+    max_k: 100
+  neighbor_backend: sklearn_exact
+  future_supported_backends:
+    - faiss
+    - hnswlib
+    - pynndescent
+  retrieval_feature_groups:
+    - molecular_state
+    - cell_type_composition
+    - entropy
+  rerank_feature_groups:
+    - molecular_state
+    - cell_type_composition
+    - entropy
+    - spatial_summary
+    - topology
+  preserve_raw_weights: true
+  preserve_mass_adjusted_weights: true
+  write_local_transition_prob: true
+  write_global_kernel: false
+  row_normalization_scope: source_niche_candidate_set
+  sample_aware: true
+  sample_paired: false
+  time_delta_aware: true
+  unbalanced_transport_mode: placeholders_only
+  within_time_regularization_mode: contract_only
+  max_memory_gb_warning: 80

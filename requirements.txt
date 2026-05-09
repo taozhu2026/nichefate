@@ -1,0 +1,26 @@
+scanpy
+anndata
+pandas
+numpy
+scipy
+scikit-learn
+matplotlib
+seaborn
+h5py
+zarr
+pyarrow
+pyyaml
+tqdm
+networkx
+pynndescent
+omicverse
+jupyterlab
+ipykernel
+pytest
+black
+ruff
+
+# Optional after M0 v1; not required by the current pipeline:
+# harmonypy
+# squidpy
+# spatialdata

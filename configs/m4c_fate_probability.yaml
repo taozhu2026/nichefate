@@ -1,0 +1,30 @@
+paths:
+  m4a_node_table: /home/zhutao/scratch/nichefate/m4a/node_table/global_node_table.parquet
+  p_forward: /home/zhutao/scratch/nichefate/m4a/transition_objects/P_forward_no_terminal_selfloops.npz
+  p_absorbing: /home/zhutao/scratch/nichefate/m4a/transition_objects/P_absorbing_terminal_selfloops.npz
+  terminal_assignments: /home/zhutao/scratch/nichefate/m4b/terminal_states/terminal_macrostate_assignments.parquet
+  terminal_summary: /home/zhutao/scratch/nichefate/m4b/terminal_states/terminal_macrostate_summary.csv
+  output_root: /home/zhutao/scratch/nichefate/m4c
+  reports_dir: /home/zhutao/scratch/nichefate/m4c/reports
+  figures_dir: /home/zhutao/scratch/nichefate/m4c/reports/figures
+
+fate:
+  method: time_layered_backward_propagation
+  terminal_macrostate_column: terminal_macrostate_id
+  probability_dtype: float32
+  entropy_base: natural
+  directionality_evidence_source: pseudo_lineage_time_coupled_transition
+  barcode_compatible_contract: true
+
+validation:
+  expected_global_nodes: 1439542
+  expected_terminal_nodes: 90960
+  expected_terminal_macrostates: 12
+  row_sum_tolerance: 1e-5
+  fail_on_nan: true
+  fail_on_negative_probability: true
+
+visualization:
+  make_figures: true
+  figure_failure_is_warning: true
+  use_r_if_available: false

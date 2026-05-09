@@ -1,0 +1,82 @@
+project:
+  name: nichefate
+  stage: K_gpcca-01
+
+paths:
+  output_root: /home/zhutao/scratch/nichefate/k_gpcca_pilot
+  reports_dir: /home/zhutao/scratch/nichefate/k_gpcca_pilot/reports
+  m2_root: /home/zhutao/scratch/nichefate/m2
+  m3_v1_root: /home/zhutao/scratch/nichefate/m3
+  m3_v2_root: /home/zhutao/scratch/nichefate/m3_v2
+  m4a_root: /home/zhutao/scratch/nichefate/m4a
+  m4a_v2_root: /home/zhutao/scratch/nichefate/m4a_v2
+  m4e_root: /home/zhutao/scratch/nichefate/m4e
+  design_root: /home/zhutao/scratch/nichefate/k_gpcca_design
+
+pilot:
+  preferred_time_points:
+    - D9
+    - D21
+    - D35
+  fallback_time_points:
+    - D21
+    - D35
+  preferred_time_pairs:
+    - D9_to_D21
+    - D21_to_D35
+  fallback_time_pairs:
+    - D21_to_D35
+  target_max_nodes: 100000
+  deterministic_sort_columns:
+    - time_day
+    - time
+    - slice_id
+    - mouse_id
+    - global_node_index
+
+kernel:
+  within_time_k_values:
+    - 10
+    - 20
+    - 30
+    - 50
+  similarity_metrics:
+    - cosine
+    - euclidean_rbf
+  gamma_values:
+    - 0.01
+    - 0.03
+    - 0.05
+    - 0.10
+  bytes_per_sparse_nnz_estimate: 16
+
+cross_time:
+  m3_v1_edge_root: /home/zhutao/scratch/nichefate/m3/full_by_shard
+  m3_v2_edge_root: /home/zhutao/scratch/nichefate/m3_v2/full_by_shard
+  m3_v1_probability_column: row_normalized_transition_prob
+  m3_v2_probability_column: v2_row_normalized_transition_prob
+  source_id_column: source_anchor_id
+  target_id_column: target_anchor_id
+  source_time_column: source_time
+  target_time_column: target_time
+  batch_rows: 250000
+  max_edge_scan_rows_per_source: 0
+
+protected_roots:
+  - /home/zhutao/scratch/nichefate/m3
+  - /home/zhutao/scratch/nichefate/m3_v2
+  - /home/zhutao/scratch/nichefate/m4a
+  - /home/zhutao/scratch/nichefate/m4a_v2
+  - /home/zhutao/scratch/nichefate/m4b
+  - /home/zhutao/scratch/nichefate/m4c
+  - /home/zhutao/scratch/nichefate/m4c_v2
+  - /home/zhutao/scratch/nichefate/planA_freeze
+
+forbidden_downstream_roots:
+  - /home/zhutao/scratch/nichefate/k_gpcca
+  - /home/zhutao/scratch/nichefate/m4d
+  - /home/zhutao/scratch/nichefate/gpcca
+  - /home/zhutao/scratch/nichefate/m5
+  - /home/zhutao/scratch/nichefate/branchsbm
+  - /home/zhutao/scratch/nichefate/barcode
+  - /home/zhutao/scratch/nichefate/darlin

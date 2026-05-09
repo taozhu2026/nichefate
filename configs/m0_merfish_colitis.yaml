@@ -1,0 +1,97 @@
+project:
+  name: nichefate
+  root: /home/zhutao/projects/nichefate
+
+paths:
+  raw_dir: /data/zhutao/datasets/merfish_colitis_moffitt_2024/raw
+  external_dir: /data/zhutao/datasets/merfish_colitis_moffitt_2024/external
+  output_dir: /data/zhutao/work/nichefate/m0
+  future_ssd_output_dir: /ssd/zhutao/nichefate/m0
+  use_ssd: false
+
+environment:
+  conda_env: omicverse
+  require_squidpy: false
+  require_spatialdata: false
+  require_harmony: false
+
+raw_files:
+  adata_main: adata.h5ad
+  adata_day35: adata_day35.h5ad
+  readme: README.md
+  ligand_receptor: ligand_receptor_pair_masterlist.csv
+
+download:
+  enabled: true
+  # Dryad-listed core sizes:
+  # - adata.h5ad: 17.96 GB
+  # - adata_day35.h5ad: 1.51 GB
+  # Required M0 core download: about 19.5 GB plus tiny README/LR files.
+  # Full Dryad dataset: 108.70 GB; do not download it for M0.
+  files:
+    adata.h5ad: https://datadryad.org/downloads/file_stream/3040600
+    adata_day35.h5ad: https://datadryad.org/downloads/file_stream/3040613
+    README.md: https://datadryad.org/downloads/file_stream/3040667
+    ligand_receptor_pair_masterlist.csv: https://datadryad.org/downloads/file_stream/3040619
+
+metadata:
+  required_obs_fields:
+    - x
+    - y
+    - Mouse_ID
+    - Technical_repeat_number
+    - Sample_type
+    - Slice_ID
+    - FOV
+    - Tier1
+    - Tier3
+    - Leiden_neigh
+  optional_obs_fields:
+    - Cell_ID
+    - cell_IDs
+    - index
+    - N_genes
+    - sample
+    - Tier2
+    - Neigh_umap_x
+    - Neigh_umap_y
+    - Tier1_umap_x
+    - Tier1_umap_y
+    - Tier2_umap_x
+    - Tier2_umap_y
+    - Tier3_umap_x
+    - Tier3_umap_y
+  time_map:
+    Healthy: 0
+    DSS3: 3
+    DSS9: 9
+    DSS21: 21
+    DSS35: 35
+    Day35: 35
+
+preprocessing:
+  preserve_input_X: true
+  input_X_is_lognormalized: true
+  renormalize: false
+  hvg_filter: false
+  pca_n_comps: 50
+  scale_before_pca: true
+  enable_harmony: false
+  enable_scvi: false
+
+spatial:
+  coordinate_fields: [x, y]
+  spatial_key: spatial
+  raw_spatial_key: X_spatial
+  normalized_spatial_key: X_spatial_norm
+  adaptive_radius_multipliers: [2, 4, 8]
+  knn_values: [6, 12]
+  build_delaunay: true
+  min_cells_per_slice_for_graph: 30
+  use_squidpy: false
+  use_spatialdata: false
+
+performance:
+  backed_inspection: true
+  full_pipeline_requires_confirmation: true
+  max_test_cells_per_slice: 5000

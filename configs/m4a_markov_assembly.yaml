@@ -1,0 +1,36 @@
+project:
+  name: nichefate
+
+paths:
+  m3_edge_root: /home/zhutao/scratch/nichefate/m3/full_by_shard
+  m3_manifest: /home/zhutao/scratch/nichefate/m3/reports/m3_full_m3_final_freeze_manifest.csv
+  m3_schema: /home/zhutao/scratch/nichefate/m3/reports/m3_full_m3_final_schema.json
+  m2_by_slice_root: /home/zhutao/scratch/nichefate/m2/by_slice
+  output_root: /home/zhutao/scratch/nichefate/m4a
+  reports_dir: /home/zhutao/scratch/nichefate/m4a/reports
+  figures_dir: /home/zhutao/scratch/nichefate/m4a/reports/figures
+
+assembly:
+  edge_probability_column: row_normalized_transition_prob
+  raw_weight_column: raw_edge_weight
+  mass_adjusted_weight_column: mass_adjusted_weight
+  source_id_column: source_anchor_id
+  target_id_column: target_anchor_id
+  terminal_time_policy: final_time_no_outgoing
+  write_absorbing_terminal_variant: true
+  final_time_self_loop_weight: 1.0
+  dtype: float32
+  index_dtype: int64
+
+validation:
+  expected_edge_rows: 40457460
+  expected_source_candidate_k: 30
+  row_sum_tolerance: 1e-6
+  fail_on_nan: true
+  fail_on_negative_probability: true
+  collapse_warnings_are_failure: false
+
+visualization:
+  make_figures: true
+  figure_failure_is_warning: true
+  use_r_if_available: false

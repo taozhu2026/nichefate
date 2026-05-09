@@ -1,0 +1,51 @@
+project:
+  name: nichefate
+
+paths:
+  m4a_root: /home/zhutao/scratch/nichefate/m4a
+  transition_objects_dir: /home/zhutao/scratch/nichefate/m4a/transition_objects
+  node_table: /home/zhutao/scratch/nichefate/m4a/node_table/global_node_table.parquet
+  m2_by_slice_root: /home/zhutao/scratch/nichefate/m2/by_slice
+  m2_schema: /home/zhutao/scratch/nichefate/m2/reports/m2_full_feature_schema.json
+  m3_feature_groups: /home/zhutao/scratch/nichefate/m3/reports/m3_feature_groups.json
+  output_root: /home/zhutao/scratch/nichefate/m4b
+  reports_dir: /home/zhutao/scratch/nichefate/m4b/reports
+  figures_dir: /home/zhutao/scratch/nichefate/m4b/reports/figures
+
+inputs:
+  p_forward: /home/zhutao/scratch/nichefate/m4a/transition_objects/P_forward_no_terminal_selfloops.npz
+  p_absorbing: /home/zhutao/scratch/nichefate/m4a/transition_objects/P_absorbing_terminal_selfloops.npz
+  w_raw: /home/zhutao/scratch/nichefate/m4a/transition_objects/W_raw_edge_weight.npz
+  w_mass_adjusted: /home/zhutao/scratch/nichefate/m4a/transition_objects/W_mass_adjusted_weight.npz
+
+terminal_design:
+  infer_final_time_from_time_day: true
+  terminal_node_policy: final_time_nodes
+  terminal_macrostate_method: minibatch_kmeans
+  candidate_n_macrostates: [8, 12, 16, 24]
+  default_n_macrostates: 12
+  feature_groups:
+    - molecular_state
+    - cell_type_composition
+    - entropy
+    - spatial_summary
+    - topology
+  scale_handling: use_all_scale_pivot_features
+  standardization: robust
+  near_constant_iqr_threshold: 1e-6
+  severe_imbalance_min_fraction: 0.001
+  random_seed: 1
+
+markov_feasibility:
+  do_not_run_full_gpcca: true
+  estimate_gpcca_feasibility_only: true
+  check_time_layered_structure: true
+  check_absorbing_structure: true
+  check_sparse_matrix_memory: true
+  check_connected_components: true
+  check_terminal_macrostate_sizes: true
+
+visualization:
+  make_figures: true
+  figure_failure_is_warning: true
+  use_r_if_available: false

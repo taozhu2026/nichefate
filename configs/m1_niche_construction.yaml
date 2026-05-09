@@ -1,0 +1,45 @@
+project:
+  name: nichefate
+  root: /home/zhutao/projects/nichefate
+
+paths:
+  m0_by_slice_dir: /home/zhutao/scratch/nichefate/m0/by_slice
+  m1_output_dir: /home/zhutao/scratch/nichefate/m1
+  reports_dir: /home/zhutao/scratch/nichefate/m1/reports
+  logs_dir: /home/zhutao/scratch/nichefate/m1/logs
+  use_ssd: false
+
+input:
+  graph_keys_main: [radius_x2, radius_x4, radius_x8]
+  graph_key_topology: delaunay
+  graph_keys_ablation: [knn_k6, knn_k12]
+  embedding_key: X_pca_m0
+  spatial_key: X_spatial_norm
+  cell_type_keys: [cell_type_l1, cell_type_l2, cell_type_l3]
+
+niche:
+  anchor_mode: all_cells
+  scales: [radius_x2, radius_x4, radius_x8]
+  include_anchor: true
+  min_neighbors: 1
+  max_neighbors_warning: 500
+  save_neighbor_index: true
+  save_feature_table: true
+  save_point_clouds: false
+
+features:
+  compute_n_neighbors: true
+  compute_celltype_composition: true
+  compute_celltype_entropy: true
+  compute_anchor_embedding: true
+  compute_neighbor_embedding_mean: true
+  compute_neighbor_embedding_var: true
+  compute_mean_neighbor_distance: true
+  compute_local_degree: true
+  compute_local_density: true
+  compute_topology_features_from_delaunay: true
+
+prototype:
+  max_slices: 2
+  max_anchors_per_slice: 5000
+  random_seed: 1

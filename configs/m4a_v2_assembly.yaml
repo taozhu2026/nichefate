@@ -1,0 +1,67 @@
+project:
+  name: nichefate
+  stage: M4A-v2-01
+
+paths:
+  output_root: /home/zhutao/scratch/nichefate/m4a_v2
+  reports_dir: /home/zhutao/scratch/nichefate/m4a_v2/reports
+  tmp_dir: /home/zhutao/scratch/nichefate/m4a_v2/tmp
+  transition_objects_dir: /home/zhutao/scratch/nichefate/m4a_v2/transition_objects
+  node_table_dir: /home/zhutao/scratch/nichefate/m4a_v2/node_table
+
+inputs:
+  m3_v2_edge_root: /home/zhutao/scratch/nichefate/m3_v2/full_by_shard
+  m3_v2_qc_summary: /home/zhutao/scratch/nichefate/m3_v2/reports/m3_v2_full_qc_summary.csv
+  m3_v2_benchmark_summary: /home/zhutao/scratch/nichefate/m3_v2_benchmark/m3_v1_vs_v2_edge_benchmark_summary.json
+  m4a_v1_node_table: /home/zhutao/scratch/nichefate/m4a/node_table/global_node_table.parquet
+  m2_by_slice_root: /home/zhutao/scratch/nichefate/m2/by_slice
+  m4e_annotation_root: /home/zhutao/scratch/nichefate/m4e
+
+assembly:
+  source_id_column: source_anchor_id
+  target_id_column: target_anchor_id
+  probability_column: v2_row_normalized_transition_prob
+  weight_column: v2_unnormalized_weight
+  terminal_time_policy: final_time_no_outgoing
+  write_absorbing_terminal_variant: true
+  final_time_label: D35
+  final_time_self_loop_weight: 1.0
+  dtype: float32
+  index_dtype: int64
+
+expected:
+  shards: 52
+  nodes: 1439542
+  final_time_nodes: 90960
+  source_rows: 1348582
+  retained_v2_edges: 13485820
+  absorbing_nnz: 13576780
+  time_pairs:
+    - D0_to_D3
+    - D3_to_D9
+    - D9_to_D21
+    - D21_to_D35
+
+validation:
+  row_sum_tolerance: 1.0e-5
+  batch_rows: 500000
+  full_duplicate_check: true
+  fail_on_nan: true
+  fail_on_negative_probability: true
+  fail_on_negative_weight: true
+
+protected_roots:
+  - /home/zhutao/scratch/nichefate/m3
+  - /home/zhutao/scratch/nichefate/m3_v2
+  - /home/zhutao/scratch/nichefate/m4a
+  - /home/zhutao/scratch/nichefate/m4b
+  - /home/zhutao/scratch/nichefate/m4c
+
+forbidden_downstream_roots:
+  - /home/zhutao/scratch/nichefate/m4c_v2
+  - /home/zhutao/scratch/nichefate/m4a_v2/gpcca
+  - /home/zhutao/scratch/nichefate/m4a_v2/pygpcca
+  - /home/zhutao/scratch/nichefate/m4a_v2/k_gpcca
+  - /home/zhutao/scratch/nichefate/m4a_v2/barcode
+  - /home/zhutao/scratch/nichefate/m4a_v2/m5
+  - /home/zhutao/scratch/nichefate/m4a_v2/branchsbm

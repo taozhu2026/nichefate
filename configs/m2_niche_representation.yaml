@@ -1,0 +1,97 @@
+project:
+  name: nichefate
+  root: /home/zhutao/projects/nichefate
+
+paths:
+  m1_by_slice_dir: /home/zhutao/scratch/nichefate/m1/by_slice
+  m1_reports_dir: /home/zhutao/scratch/nichefate/m1/reports
+  m1_global_schema: /home/zhutao/scratch/nichefate/m1/reports/m1_global_schema.json
+  m1_summary_csv: /home/zhutao/scratch/nichefate/m1/reports/m1_full_by_slice_summary.csv
+  m1_summary_md: /home/zhutao/scratch/nichefate/m1/reports/m1_full_by_slice_summary.md
+  m1_celltype_vocabulary: /home/zhutao/scratch/nichefate/m1/reports/m1_global_celltype_vocabulary.csv
+  m2_output_dir: /home/zhutao/scratch/nichefate/m2
+  m2_reports_dir: /home/zhutao/scratch/nichefate/m2/reports
+  m2_prototype_dir: /home/zhutao/scratch/nichefate/m2/prototype
+  use_ssd: false
+
+expected:
+  n_slices: 58
+  total_anchors: 1439542
+  total_feature_rows: 4318626
+  feature_columns: 268
+  scales: [radius_x2, radius_x4, radius_x8]
+
+representation:
+  version: m2_v1
+  row_granularity: one_row_per_anchor
+  source_row_granularity: one_row_per_anchor_per_scale
+  scale_column: scale
+  anchor_keys: [slice_id, anchor_index]
+  metadata_columns:
+    - slice_id
+    - slice_file
+    - time
+    - time_day
+    - mouse_id
+    - anchor_index
+    - anchor_cell_id
+    - cell_type_l1
+    - cell_type_l2
+    - cell_type_l3
+  scale_prefix_separator: "__"
+  pivot_scale_rows: true
+  scaling:
+    method: none_for_preflight
+    exclude_columns:
+      - slice_id
+      - slice_file
+      - scale
+      - time
+      - time_day
+      - mouse_id
+      - anchor_index
+      - anchor_cell_id
+      - cell_type_l1
+      - cell_type_l2
+      - cell_type_l3
+
+feature_groups:
+  metadata:
+    columns:
+      - slice_id
+      - slice_file
+      - time
+      - time_day
+      - mouse_id
+      - anchor_index
+      - anchor_cell_id
+  scale:
+    values:
+      - radius_x2
+      - radius_x4
+      - radius_x8
+  neighborhood_size:
+    columns:
+      - n_neighbors
+  cell_type_composition:
+    patterns:
+      - ct_l1__*
+      - ct_l2__*
+      - ct_l3__*
+  entropy:
+    columns:
+      - ct_l1_entropy
+      - ct_l2_entropy
+      - ct_l3_entropy
+  molecular_state:
+    ranges:
+      - emb_mean_pc001..pc050
+      - emb_var_pc001..pc050
+  spatial_summary:
+    columns:
+      - mean_neighbor_distance
+      - pseudo_local_density
+  topology:
+    columns:
+      - local_topology_anchor_degree
+      - local_topology_mean_member_degree

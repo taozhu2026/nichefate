@@ -1,0 +1,32 @@
+name: nichefate
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - scanpy
+  - anndata
+  - pandas
+  - numpy
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - h5py
+  - zarr
+  - pyarrow
+  - pyyaml
+  - tqdm
+  - networkx
+  - pynndescent
+  - jupyterlab
+  - ipykernel
+  - pytest
+  - black
+  - ruff
+  - pip
+  - pip:
+      - omicverse
+      # Optional after M0 v1, not required by the current pipeline:
+      # - harmonypy
+      # - squidpy
+      # - spatialdata

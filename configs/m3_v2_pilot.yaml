@@ -1,0 +1,47 @@
+project:
+  name: nichefate
+  stage: m3_v2_01_small_pilot
+
+paths:
+  output_root: /home/zhutao/scratch/nichefate/m3_v2_pilot
+  m3_v1_d9_d21_edges_root: /home/zhutao/scratch/nichefate/m3/full_by_shard/D9_to_D21
+  m2_by_slice_dir: /home/zhutao/scratch/nichefate/m2/by_slice
+  m3_feature_groups: /home/zhutao/scratch/nichefate/m3/reports/m3_feature_groups.json
+  m4a_global_node_table: /home/zhutao/scratch/nichefate/m4a/node_table/global_node_table.parquet
+  m4c_node_summary: /home/zhutao/scratch/nichefate/m4c/fate_probabilities/fate_probability_node_summary.parquet
+  m4e_node_neighborhood: /home/zhutao/scratch/nichefate/m4e/neighborhood_annotation/node_neighborhood_annotation.parquet
+  refined_endpoint_mapping: /home/zhutao/scratch/nichefate/m4e/endpoint_refinement/refined_endpoint_mapping.csv
+  benchmark_metrics: /home/zhutao/scratch/nichefate/m3_v2_design/reports/m3_v1_vs_v2_benchmark_metrics.csv
+
+pilot:
+  source_time: D9
+  target_time: D21
+  source_anchor_cap: 50000
+  random_seed: 1729
+  candidate_k: 30
+  preserve_existing_candidates: true
+  overwrite_outputs: true
+
+features:
+  state_feature_group: molecular_state
+  state_feature_limit: 150
+  composition_feature_group: cell_type_composition
+  composition_feature_limit: 120
+  spatial_topology_feature_groups:
+    - spatial_summary
+    - topology
+
+kernel:
+  min_scale: 1.0e-6
+  min_tau: 1.0e-6
+  tau_quantile: 0.5
+  composition_gate_strength: 1.0
+  spatial_topology_gate_strength: 1.0
+  slice_mouse_gate_strength: 0.25
+  slice_mouse_gate_min: 0.2
+  barcode_gate: 1.0
+  distance_chunk_size: 100000
+
+figures:
+  dpi: 180
+  max_bar_categories: 18

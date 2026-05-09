@@ -1,0 +1,62 @@
+project:
+  name: nichefate
+  stage: M4C-v2-01/02
+
+paths:
+  output_root: /home/zhutao/scratch/nichefate/m4c_v2
+  reports_dir: /home/zhutao/scratch/nichefate/m4c_v2/reports
+  tmp_dir: /home/zhutao/scratch/nichefate/m4c_v2/tmp
+  fate_dir: /home/zhutao/scratch/nichefate/m4c_v2/fate_probabilities
+
+inputs:
+  p_absorbing: /home/zhutao/scratch/nichefate/m4a_v2/transition_objects/P_absorbing_terminal_selfloops_v2.npz
+  p_forward: /home/zhutao/scratch/nichefate/m4a_v2/transition_objects/P_forward_no_terminal_selfloops_v2.npz
+  m4a_v2_node_table: /home/zhutao/scratch/nichefate/m4a_v2/node_table/global_node_table.parquet
+  m4a_v2_qc_summary: /home/zhutao/scratch/nichefate/m4a_v2/reports/m4a_v2_02_qc_summary.csv
+  endpoint_mapping: /home/zhutao/scratch/nichefate/m4e/endpoint_refinement/refined_endpoint_mapping.csv
+  endpoint_node_annotation: /home/zhutao/scratch/nichefate/m4e/endpoint_annotation/endpoint_node_annotation.parquet
+  neighborhood_annotation: /home/zhutao/scratch/nichefate/m4e/neighborhood_annotation/node_neighborhood_annotation.parquet
+  m4c_v1_fate_matrix: /home/zhutao/scratch/nichefate/m4c/fate_probabilities/fate_probability_matrix.npz
+  m4c_v1_node_summary: /home/zhutao/scratch/nichefate/m4c/fate_probabilities/fate_probability_node_summary.parquet
+  m3_v2_benchmark_summary: /home/zhutao/scratch/nichefate/m3_v2_benchmark/m3_v1_vs_v2_edge_benchmark_summary.json
+
+fate:
+  method: time_layered_backward_propagation
+  probability_dtype: float32
+  endpoint_macrostate_column: candidate_endpoint
+  raw_terminal_column: raw_terminal_macrostate
+  preserve_raw_terminal_columns: true
+  endpoint_count: 12
+  final_time_label: D35
+  directionality_evidence_source: pseudo_lineage_time_coupled_transition_m3_v2
+  barcode_compatible_contract: false
+
+validation:
+  expected_global_nodes: 1439542
+  expected_terminal_nodes: 90960
+  expected_source_rows: 1348582
+  expected_endpoint_count: 12
+  expected_forward_nnz: 13485820
+  expected_absorbing_nnz: 13576780
+  row_sum_tolerance: 1.0e-5
+  fail_on_nan: true
+  fail_on_negative_probability: true
+
+smoke:
+  default_max_sources: 5000
+
+protected_roots:
+  - /home/zhutao/scratch/nichefate/m3
+  - /home/zhutao/scratch/nichefate/m3_v2
+  - /home/zhutao/scratch/nichefate/m4a
+  - /home/zhutao/scratch/nichefate/m4a_v2
+  - /home/zhutao/scratch/nichefate/m4b
+  - /home/zhutao/scratch/nichefate/m4c
+
+forbidden_downstream_roots:
+  - /home/zhutao/scratch/nichefate/m4c_v2/gpcca
+  - /home/zhutao/scratch/nichefate/m4c_v2/pygpcca
+  - /home/zhutao/scratch/nichefate/m4c_v2/k_gpcca
+  - /home/zhutao/scratch/nichefate/m4c_v2/barcode
+  - /home/zhutao/scratch/nichefate/m4c_v2/m5
+  - /home/zhutao/scratch/nichefate/m4c_v2/branchsbm

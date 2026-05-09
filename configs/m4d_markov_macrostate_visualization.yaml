@@ -1,0 +1,109 @@
+project:
+  name: nichefate
+
+paths:
+  m4a_node_table: /home/zhutao/scratch/nichefate/m4a/node_table/global_node_table.parquet
+  p_forward: /home/zhutao/scratch/nichefate/m4a/transition_objects/P_forward_no_terminal_selfloops.npz
+  p_absorbing: /home/zhutao/scratch/nichefate/m4a/transition_objects/P_absorbing_terminal_selfloops.npz
+  m4c_node_summary: /home/zhutao/scratch/nichefate/m4c/fate_probabilities/fate_probability_node_summary.parquet
+  m2_by_slice_root: /home/zhutao/scratch/nichefate/m2/by_slice
+  m2_feature_groups: /home/zhutao/scratch/nichefate/m2/reports/m2_feature_groups.json
+  m1_by_slice_root: /home/zhutao/scratch/nichefate/m1/by_slice
+  m0_processed_dir: /home/zhutao/scratch/nichefate/m0/processed
+  output_root: /home/zhutao/scratch/nichefate/m4d
+  reports_dir: /home/zhutao/scratch/nichefate/m4d/reports
+  visualization_dir: /home/zhutao/scratch/nichefate/m4d/visualization_layer
+  coordinate_cache: /home/zhutao/scratch/nichefate/m4d/visualization_layer/node_coordinates.parquet
+
+coordinates:
+  expected_global_nodes: 1439542
+  preferred_join_key: slice_id_anchor_index
+  m1_coordinate_scale: radius_x2
+  scale_column: scale
+  x_column: x
+  y_column: y
+  coordinate_consistency_tolerance: 1e-9
+  allow_m0_h5ad_fallback: false
+  enable_tissue_maps_only_if_missing_zero: true
+  cross_time_physical_arrows_allowed: false
+
+validation:
+  fail_on_ssd_path: true
+  fail_on_nonidentical_m1_coordinates_across_scales: true
+
+supernode_pcca:
+  mode: supernode_pcca
+  infer_final_time_from_time_day: true
+  n_supernodes_per_time:
+    D0: 32
+    D3: 32
+    D9: 48
+    D21: 32
+    final_time: 24
+  clustering_method: minibatch_kmeans
+  feature_groups:
+    - molecular_state
+    - cell_type_composition
+    - entropy
+    - spatial_summary
+    - topology
+  standardization: robust_safe_iqr
+  scaling_sample_rows: 200000
+  training_epochs: 2
+  minibatch_size: 8192
+  random_seed: 1
+  max_supernode_size_fraction_per_time_warning: 0.15
+  max_supernode_size_to_median_ratio_warning: 5.0
+
+coarse_markov:
+  aggregate_transition_method: sum_then_row_normalize
+  preserve_time_layered_structure: true
+  add_final_time_self_loops: true
+  row_sum_tolerance: 1e-6
+
+pcca:
+  backend_preference:
+    - pygpcca
+    - cellrank_gpcca_if_available
+    - scipy_pcca_like_diagnostic_fallback
+  candidate_n_macrostates: [8, 12, 16]
+  default_n_macrostates: 12
+  terminal_macrostate_policy: final_time_enriched_and_absorbing_mass
+  label_fallback_clearly: true
+
+projection:
+  project_supernode_macrostate_to_nodes: true
+  project_memberships_to_nodes: true
+  compare_to_m4c_baseline: true
+
+visualization:
+  consume_coordinate_cache: true
+  coordinate_cache: /home/zhutao/scratch/nichefate/m4d/visualization_layer/node_coordinates.parquet
+  tissue_maps_enabled: true
+  cross_time_physical_arrows_allowed: false
+  make_figures: true
+  figure_failure_is_warning: true
+
+standard_gpcca:
+  enabled: true
+  backend: pygpcca
+  target_supernodes: 10000
+  allowed_supernode_range: [5000, 20000]
+  candidate_n_macrostates: [5, 8, 10, 12, 16, 20]
+  pygpcca_method: krylov
+  row_sum_tolerance: 1e-6
+  random_seed: 1
+  output_supernode_root: /home/zhutao/scratch/nichefate/m4d/supernode
+  output_gpcca_root: /home/zhutao/scratch/nichefate/m4d/gpcca
+
+m4_visualization:
+  enabled: true
+  m4c_baseline_node_summary: /home/zhutao/scratch/nichefate/m4c/fate_probabilities/fate_probability_node_summary.parquet
+  m4c_fate_matrix: /home/zhutao/scratch/nichefate/m4c/fate_probabilities/fate_probability_matrix.npz
+  m4d_coordinate_cache: /home/zhutao/scratch/nichefate/m4d/visualization_layer/node_coordinates.parquet
+  representative_plus_summary: true
+  all_slice_maps: false
+  state_space_embedding: pca
+  tissue_maps_enabled: true
+  cross_time_physical_arrows_allowed: false
+  figure_failure_is_warning: true

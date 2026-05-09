@@ -1,0 +1,56 @@
+project:
+  name: nichefate
+  stage: M3-v2-06
+
+mode:
+  schema: /home/zhutao/scratch/nichefate/m3_v2_package_review/m3_v2_constrained_mode_schema.json
+  mode_name: constrained_v1prior_sharpening
+  locked_parameters:
+    lambda: 1.0
+    tau_scale: 0.5
+    top_k: 10
+    G_barcode: 1.0
+    row_normalization: per_source_anchor
+
+paths:
+  output_root: /home/zhutao/scratch/nichefate/m3_v2
+  full_by_shard_dir: /home/zhutao/scratch/nichefate/m3_v2/full_by_shard
+  reports_dir: /home/zhutao/scratch/nichefate/m3_v2/reports
+  logs_dir: /home/zhutao/scratch/nichefate/m3_v2/logs
+  figures_dir: /home/zhutao/scratch/nichefate/m3_v2/reports/figures
+
+inputs:
+  m3_v1_candidate_edges_root: /home/zhutao/scratch/nichefate/m3/full_by_shard
+  m2_by_slice_dir: /home/zhutao/scratch/nichefate/m2/by_slice
+  m3_feature_groups_json: /home/zhutao/scratch/nichefate/m3/reports/m3_feature_groups.json
+  m4a_global_node_table: /home/zhutao/scratch/nichefate/m4a/node_table/global_node_table.parquet
+  m4c_v1_node_summary: /home/zhutao/scratch/nichefate/m4c/fate_probabilities/fate_probability_node_summary.parquet
+  m4e_node_neighborhood_annotation: /home/zhutao/scratch/nichefate/m4e/neighborhood_annotation/node_neighborhood_annotation.parquet
+  m4e_refined_endpoint_mapping: /home/zhutao/scratch/nichefate/m4e/endpoint_refinement/refined_endpoint_mapping.csv
+
+protected_roots:
+  - /home/zhutao/scratch/nichefate/m3
+  - /home/zhutao/scratch/nichefate/m4a
+  - /home/zhutao/scratch/nichefate/m4b
+  - /home/zhutao/scratch/nichefate/m4c
+  - /home/zhutao/scratch/nichefate/m3_v2_pilot
+  - /home/zhutao/scratch/nichefate/m3_v2_pilot_tuning
+  - /home/zhutao/scratch/nichefate/m3_v2_pilot_confirmatory
+  - /home/zhutao/scratch/nichefate/m3_v2_package_review
+
+expected:
+  candidate_k: 30
+  full_shards: 52
+  full_sources: 1348582
+  v1_candidate_edges: 40457460
+  retained_top10_edges: 13485820
+  time_pairs:
+    - D0_to_D3
+    - D3_to_D9
+    - D9_to_D21
+    - D21_to_D35
+
+preflight:
+  validate_all_m3_v1_shard_columns: true
+  validate_input_table_columns: true
+  dry_run_writes_edge_parquet: false

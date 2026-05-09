@@ -1,0 +1,118 @@
+project:
+  name: nichefate
+  stage: K_gpcca-04
+
+paths:
+  output_root: /home/zhutao/scratch/nichefate/k_gpcca_revision
+  reports_dir: /home/zhutao/scratch/nichefate/k_gpcca_revision/reports
+  m2_root: /home/zhutao/scratch/nichefate/m2
+  m3_v1_root: /home/zhutao/scratch/nichefate/m3
+  m3_v2_root: /home/zhutao/scratch/nichefate/m3_v2
+  m4a_root: /home/zhutao/scratch/nichefate/m4a
+  m4a_v2_root: /home/zhutao/scratch/nichefate/m4a_v2
+  m4e_root: /home/zhutao/scratch/nichefate/m4e
+  k03_benchmark_root: /home/zhutao/scratch/nichefate/k_gpcca_pilot_benchmark
+
+pilot:
+  preferred_time_points:
+    - D9
+    - D21
+    - D35
+  preferred_time_pairs:
+    - D9_to_D21
+    - D21_to_D35
+  target_max_nodes: 100000
+
+feature_processing:
+  mode: group_balanced_zscore_svd50
+  svd_components: 50
+  metadata_denylist:
+    - time
+    - time_day
+    - slice
+    - mouse
+    - sample
+    - global_node
+    - anchor_index
+    - x
+    - y
+
+cross_time:
+  m3_v1_edge_root: /home/zhutao/scratch/nichefate/m3/full_by_shard
+  m3_v2_edge_root: /home/zhutao/scratch/nichefate/m3_v2/full_by_shard
+  m3_v1_probability_column: row_normalized_transition_prob
+  m3_v2_probability_column: v2_row_normalized_transition_prob
+  source_id_column: source_anchor_id
+  target_id_column: target_anchor_id
+  source_time_column: source_time
+  target_time_column: target_time
+  batch_rows: 250000
+
+revision_candidates:
+  - grid_id: rev_v1_cross45
+    route: full_resolution_subset
+    cross_time_source: M3-v1
+    alpha: 0.50
+    beta: 0.45
+    gamma: 0.05
+    delta: 0.0
+    within_time_k: 30
+    similarity_metric: cosine
+    priority: bounded_revision
+  - grid_id: rev_v1_cross50
+    route: full_resolution_subset
+    cross_time_source: M3-v1
+    alpha: 0.45
+    beta: 0.50
+    gamma: 0.05
+    delta: 0.0
+    within_time_k: 30
+    similarity_metric: cosine
+    priority: bounded_revision
+  - grid_id: rev_v1_k50_cross40
+    route: full_resolution_subset
+    cross_time_source: M3-v1
+    alpha: 0.55
+    beta: 0.40
+    gamma: 0.05
+    delta: 0.0
+    within_time_k: 50
+    similarity_metric: cosine
+    priority: bounded_revision
+  - grid_id: rev_v2_cross45
+    route: full_resolution_subset
+    cross_time_source: M3-v2
+    alpha: 0.50
+    beta: 0.45
+    gamma: 0.05
+    delta: 0.0
+    within_time_k: 30
+    similarity_metric: cosine
+    priority: bounded_revision
+
+acceptance:
+  k: 10
+  largest_macrostate_fraction_lt: 0.40
+  smallest_macrostate_fraction_gte: 0.005
+  mean_max_membership_gt: 0.60
+
+protected_roots:
+  - /home/zhutao/scratch/nichefate/m3
+  - /home/zhutao/scratch/nichefate/m3_v2
+  - /home/zhutao/scratch/nichefate/m4a
+  - /home/zhutao/scratch/nichefate/m4a_v2
+  - /home/zhutao/scratch/nichefate/m4b
+  - /home/zhutao/scratch/nichefate/m4c
+  - /home/zhutao/scratch/nichefate/m4c_v2
+  - /home/zhutao/scratch/nichefate/planA_freeze
+  - /home/zhutao/scratch/nichefate/k_gpcca_pilot
+  - /home/zhutao/scratch/nichefate/k_gpcca_pilot_benchmark
+
+forbidden_downstream_roots:
+  - /home/zhutao/scratch/nichefate/k_gpcca
+  - /home/zhutao/scratch/nichefate/m4d
+  - /home/zhutao/scratch/nichefate/gpcca
+  - /home/zhutao/scratch/nichefate/m5
+  - /home/zhutao/scratch/nichefate/branchsbm
+  - /home/zhutao/scratch/nichefate/barcode
+  - /home/zhutao/scratch/nichefate/darlin
