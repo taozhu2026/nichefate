@@ -1,0 +1,9 @@
+path,filename,lane,read_label,size_bytes,pair_status,notes
+/data/zhutao/nichefate_data/202604271751_2211180001_B_1_ZHY_XBB_E_PE100_100/Res/Lane01/Lane01_ZHY_XBB_E_PE100_100_R1.fastq.gz,Lane01_ZHY_XBB_E_PE100_100_R1.fastq.gz,Lane01,R1,13753345438,paired,E_PE100_100 lane FASTQ; read-only inventory.
+/data/zhutao/nichefate_data/202604271751_2211180001_B_1_ZHY_XBB_E_PE100_100/Res/Lane01/Lane01_ZHY_XBB_E_PE100_100_R2.fastq.gz,Lane01_ZHY_XBB_E_PE100_100_R2.fastq.gz,Lane01,R2,15073914686,paired,E_PE100_100 lane FASTQ; read-only inventory.
+/data/zhutao/nichefate_data/202604271751_2211180001_B_1_ZHY_XBB_E_PE100_100/Res/Lane02/Lane02_ZHY_XBB_E_PE100_100_R1.fastq.gz,Lane02_ZHY_XBB_E_PE100_100_R1.fastq.gz,Lane02,R1,13740372092,paired,E_PE100_100 lane FASTQ; read-only inventory.
+/data/zhutao/nichefate_data/202604271751_2211180001_B_1_ZHY_XBB_E_PE100_100/Res/Lane02/Lane02_ZHY_XBB_E_PE100_100_R2.fastq.gz,Lane02_ZHY_XBB_E_PE100_100_R2.fastq.gz,Lane02,R2,15045612387,paired,E_PE100_100 lane FASTQ; read-only inventory.
+/data/zhutao/nichefate_data/202604271751_2211180001_B_1_ZHY_XBB_E_PE100_100/Res/Lane03/Lane03_ZHY_XBB_E_PE100_100_R1.fastq.gz,Lane03_ZHY_XBB_E_PE100_100_R1.fastq.gz,Lane03,R1,13674788231,paired,E_PE100_100 lane FASTQ; read-only inventory.
+/data/zhutao/nichefate_data/202604271751_2211180001_B_1_ZHY_XBB_E_PE100_100/Res/Lane03/Lane03_ZHY_XBB_E_PE100_100_R2.fastq.gz,Lane03_ZHY_XBB_E_PE100_100_R2.fastq.gz,Lane03,R2,14964717588,paired,E_PE100_100 lane FASTQ; read-only inventory.
+/data/zhutao/nichefate_data/202604271751_2211180001_B_1_ZHY_XBB_E_PE100_100/Res/Lane04/Lane04_ZHY_XBB_E_PE100_100_R1.fastq.gz,Lane04_ZHY_XBB_E_PE100_100_R1.fastq.gz,Lane04,R1,13954619321,paired,E_PE100_100 lane FASTQ; read-only inventory.
+/data/zhutao/nichefate_data/202604271751_2211180001_B_1_ZHY_XBB_E_PE100_100/Res/Lane04/Lane04_ZHY_XBB_E_PE100_100_R2.fastq.gz,Lane04_ZHY_XBB_E_PE100_100_R2.fastq.gz,Lane04,R2,15243820695,paired,E_PE100_100 lane FASTQ; read-only inventory.

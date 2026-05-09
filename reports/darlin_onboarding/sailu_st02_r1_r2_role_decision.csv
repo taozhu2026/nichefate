@@ -1,0 +1,11 @@
+read_label,lane,role_inference,confidence,evidence,notes
+R1,all,likely_barcode_umi_read,low,Leading short windows are barcode/UMI-like and low-diversity motif fraction is 18.00%.,Aggregate role call across four lanes; does not use alignment or provider chemistry documentation.
+R1,Lane01,likely_barcode_umi_read,low,mean_entropy=1.645; high_positions=38/100; low_positions=18/100,Per-lane support for aggregate role call.
+R1,Lane02,likely_barcode_umi_read,low,mean_entropy=1.645; high_positions=39/100; low_positions=17/100,Per-lane support for aggregate role call.
+R1,Lane03,likely_barcode_umi_read,low,mean_entropy=1.626; high_positions=39/100; low_positions=19/100,Per-lane support for aggregate role call.
+R1,Lane04,likely_barcode_umi_read,low,mean_entropy=1.642; high_positions=39/100; low_positions=18/100,Per-lane support for aggregate role call.
+R2,all,mixed_or_unknown,low,"Some leading windows are barcode/UMI-like, but full-read profile is not diagnostic.",Aggregate role call across four lanes; does not use alignment or provider chemistry documentation.
+R2,Lane01,mixed_or_unknown,low,mean_entropy=1.954; high_positions=75/100; low_positions=0/100,Per-lane support for aggregate role call.
+R2,Lane02,mixed_or_unknown,low,mean_entropy=1.938; high_positions=78/100; low_positions=0/100,Per-lane support for aggregate role call.
+R2,Lane03,mixed_or_unknown,low,mean_entropy=1.945; high_positions=76/100; low_positions=0/100,Per-lane support for aggregate role call.
+R2,Lane04,mixed_or_unknown,low,mean_entropy=1.952; high_positions=78/100; low_positions=0/100,Per-lane support for aggregate role call.

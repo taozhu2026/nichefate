@@ -1,0 +1,9 @@
+lane,read_label,records_sampled,min_read_length,median_read_length,max_read_length,modal_read_length,example_header_redacted,header_lane_tile_xy_present,header_index_field_present,notes
+Lane01,R1,10000,100,100,100,100,@2211180001:S:00000000000000:1:000016:R001:C003 1:L:0,true,false,First 10000 read pairs sampled for this lane; no full FASTQ scan.
+Lane01,R2,10000,100,100,100,100,@2211180001:S:00000000000000:1:000016:R001:C003 2:L:0,true,false,First 10000 read pairs sampled for this lane; no full FASTQ scan.
+Lane02,R1,10000,100,100,100,100,@2211180001:S:00000000000000:2:000022:R001:C002 1:L:0,true,false,First 10000 read pairs sampled for this lane; no full FASTQ scan.
+Lane02,R2,10000,100,100,100,100,@2211180001:S:00000000000000:2:000022:R001:C002 2:L:0,true,false,First 10000 read pairs sampled for this lane; no full FASTQ scan.
+Lane03,R1,10000,100,100,100,100,@2211180001:S:00000000000000:3:000137:R001:C001 1:L:0,true,false,First 10000 read pairs sampled for this lane; no full FASTQ scan.
+Lane03,R2,10000,100,100,100,100,@2211180001:S:00000000000000:3:000137:R001:C001 2:L:0,true,false,First 10000 read pairs sampled for this lane; no full FASTQ scan.
+Lane04,R1,10000,100,100,100,100,@2211180001:S:00000000000000:4:000015:R001:C001 1:L:0,true,false,First 10000 read pairs sampled for this lane; no full FASTQ scan.
+Lane04,R2,10000,100,100,100,100,@2211180001:S:00000000000000:4:000015:R001:C001 2:L:0,true,false,First 10000 read pairs sampled for this lane; no full FASTQ scan.
