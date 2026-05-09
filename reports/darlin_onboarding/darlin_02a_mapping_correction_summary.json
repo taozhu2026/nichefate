@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-05-09T12:51:43Z",
+  "branch": "darlin-onboarding",
+  "official_ca_ta_ra_mapping_applied": true,
+  "deprecated_wrong_ra_ta_mapping": true,
+  "deprecated_wrong_mapping_from_prior_plan": "RA=Tigre / TA=Rosa",
+  "ra_locus": "Rosa",
+  "ta_locus": "Tigre",
+  "ca_locus": "Col1a1/cCARLIN",
+  "meiji_corrected_sample_interpretation": {
+    "Brain_E1_all_RA": "Rosa candidate track",
+    "Brain_E1_all_TA": "Tigre candidate track",
+    "Brain_E1_all_CA": "absent/deferred"
+  },
+  "official_evidence": [
+    "Custom_CARLIN README maps CC/TC/RC to Col1a1/Tigre/Rosa26.",
+    "snakemake_DARLIN README states support for CA/TA/RA loci.",
+    "Custom_CARLIN template files support cCARLIN, Tigre, Tigre_2022, Tigre_2022_v2, Rosa, and Rosa_v2.",
+    "Custom_CARLIN cfg files include BulkDNA/BulkRNA Tigre and Rosa variants.",
+    "MosaicLineage reference files include CA, TA, and RA references."
+  ],
+  "remaining_blockers": [
+    "Exact Tigre template variant for Brain_E1_all_TA is unresolved.",
+    "Exact Rosa template variant for Brain_E1_all_RA is unresolved.",
+    "Exact cfg_type values for RA and TA are unresolved.",
+    "Read/UMI/allele/QC cutoffs are unresolved.",
+    "Safe staging root and naming are not approved.",
+    "MATLAB/Custom_CARLIN dependency policy is unresolved.",
+    "Snakemake parse-time rsync/template-copy side-effect safety is unresolved."
+  ],
+  "preprocessing_run": false,
+  "snakemake_run": false,
+  "matlab_run": false,
+  "pear_fastqc_multiqc_run": false,
+  "data_moved": false,
+  "symlinks_created": false,
+  "raw_files_modified": false,
+  "ssd_writes": false,
+  "git_commit_created": false,
+  "exact_next_step": "Confirm exact template variant, cfg_type, cutoffs, safe staging root, and MATLAB/template-copy policy before DARLIN-01C dry-run-only staging."
+}
