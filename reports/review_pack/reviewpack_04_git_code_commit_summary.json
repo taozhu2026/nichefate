@@ -1,0 +1,70 @@
+{
+  "branch": "master",
+  "category_counts_included": {
+    "config": 19,
+    "documentation": 1,
+    "milestone_script": 71,
+    "production_script": 3,
+    "source_module": 19,
+    "test": 47
+  },
+  "commits_before": [
+    {
+      "hash": "b46141d35b37f7336e0c8a4a7148087b2fb7f1be",
+      "message": "Initialize review checkpoint documentation and packaging"
+    },
+    {
+      "hash": "beb453921d33d7d9f8a94a52a59fa7d9ad12b619",
+      "message": "Add Git initialization audit reports"
+    }
+  ],
+  "commits_created": [
+    {
+      "hash": "5e6a2397847cca2d71bb48c701bb00d9bb761044",
+      "message": "Add core package configs and tests"
+    },
+    {
+      "hash": "2e27c1f5b6a1f99597cc7b8fc66bf3e984bb2aad",
+      "message": "Add pipeline and milestone scripts"
+    },
+    {
+      "hash": "pending_self_reference",
+      "message": "Add code commit audit reports"
+    }
+  ],
+  "committed_file_count": 163,
+  "docs_uncommitted_changes": false,
+  "environment_file_classification": {
+    "environment.yml": "historical or compatibility environment file, not necessarily the final recommended environment",
+    "envs/nichefate-core.yml": "recommended ReviewPack draft environment; already tracked unchanged and not restaged",
+    "envs/nichefate-dev.yml": "recommended ReviewPack draft environment; already tracked unchanged and not restaged",
+    "envs/nichefate-gpcca.yml": "recommended ReviewPack draft environment; already tracked unchanged and not restaged",
+    "pyproject.toml": "package metadata / future packaging basis",
+    "requirements.txt": "historical or compatibility dependency file, not necessarily a locked reproducibility file"
+  },
+  "envs_uncommitted_changes": false,
+  "exact_next_step": "ReviewPack-05: branch naming review, GitHub remote setup plan, repository visibility choice, and first push preparation.",
+  "github_push_done": false,
+  "github_remote_added": false,
+  "heavy_analysis_launched": false,
+  "heavy_file_findings": {
+    "files_over_20m": [],
+    "heavy_files_staged_or_committed": false,
+    "scientific_heavy_files": [],
+    "tracked_heavy_scientific_files": [],
+    "tracked_protected_dirs": []
+  },
+  "pytest_collect_result": {
+    "command": "conda run --no-capture-output -n omicverse python -m pytest -q tests --collect-only",
+    "result": "passed",
+    "tests_collected": 359
+  },
+  "secret_scan_blockers": 0,
+  "secret_scan_harmless_findings": 194,
+  "secret_scan_review_findings": 0,
+  "syntax_check_result": {
+    "command": "python -m compileall -q src scripts",
+    "result": "passed"
+  },
+  "timestamp": "2026-05-09T02:33:05.809679Z"
+}
