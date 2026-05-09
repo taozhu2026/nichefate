@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-05-09T03:57:32Z",
+  "branch": "darlin-onboarding",
+  "selected_route": "Brain_031319A_E1_RA_TA_ST",
+  "meiji_sample_sheet_created": true,
+  "sailu_st_sheet_created": true,
+  "official_darlin_dryrun_can_start": false,
+  "st_processing_can_start": false,
+  "integration_matching_key_found": false,
+  "preprocessing_run": false,
+  "st_processing_run": false,
+  "data_moved": false,
+  "symlinks_created": false,
+  "git_commit_created": false,
+  "git_commit_created_definition": "No commit was created for DARLIN-01A outputs. A required pre-01A onboarding report commit is recorded separately.",
+  "pre_01a_onboarding_commit_created": true,
+  "pre_01a_onboarding_commit": "5622cac",
+  "exact_next_step": "DARLIN-01B config/template and staging-contract resolution. Official Snakemake dry-run should happen only after cfg_type/template are confirmed."
+}
