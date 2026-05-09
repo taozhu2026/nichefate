@@ -1,0 +1,66 @@
+schema_version: darlin_02b_candidate_configs_v1
+timestamp: "2026-05-09T13:06:39Z"
+branch: darlin-onboarding
+corrected_mapping_used: true
+deprecated_wrong_mapping_used: false
+scope: Meiji_E1_RA_TA_barcode_candidate_config_planning_only
+official_entrypoint:
+  part1: /home/zhutao/projects/darlin_cell_repro/code/snakemake_DARLIN/snakefiles/snakefile_matlab_DARLIN_Part1.py
+  part2: /home/zhutao/projects/darlin_cell_repro/code/snakemake_DARLIN/snakefiles/snakefile_matlab_DARLIN_Part2.py
+samples:
+  - sample_id: Brain_E1_all_TA
+    corrected_locus: Tigre
+    group_label: TA
+    source_fastqs:
+      r1: /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_TA.R1.raw.fastq.gz
+      r2: /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_TA.R2.raw.fastq.gz
+    template_candidates:
+      - Tigre
+      - Tigre_2022
+      - Tigre_2022_v2
+    cfg_type_candidates:
+      - BulkRNA_Tigre
+      - BulkDNA_Tigre
+      - BulkRNA_Tigre_10UMI
+      - BulkDNA_Tigre_10UMI
+      - BulkRNA_Tigre_12UMI
+      - BulkDNA_Tigre_12UMI
+      - BulkRNA_Tigre_14UMI
+      - BulkDNA_Tigre_14UMI
+    best_supported_template: unresolved_between_Tigre_2022_and_Tigre_2022_v2
+    best_supported_cfg_type: unresolved_between_BulkDNA_Tigre_and_BulkRNA_Tigre_variants
+    final_pre_execution_review_required: true
+  - sample_id: Brain_E1_all_RA
+    corrected_locus: Rosa
+    group_label: RA
+    source_fastqs:
+      r1: /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_RA.R1.raw.fastq.gz
+      r2: /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_RA.R2.raw.fastq.gz
+    template_candidates:
+      - Rosa
+      - Rosa_v2
+    cfg_type_candidates:
+      - BulkRNA_Rosa_12UMI
+      - BulkDNA_Rosa_12UMI
+      - BulkRNA_Rosa_14UMI
+      - BulkDNA_Rosa_14UMI
+    best_supported_template: unresolved_between_Rosa_and_Rosa_v2
+    best_supported_cfg_type: unresolved_between_BulkDNA_Rosa_and_BulkRNA_Rosa_variants
+    final_pre_execution_review_required: true
+required_config_fields:
+  - SampleList
+  - cfg_type
+  - template
+  - read_cutoff_UMI_override
+  - CARLIN_memory_factor
+  - sbatch
+  - CARLIN_max_run_time
+expected_fastq_pattern: raw_fastq/{sample}_R1.fastq.gz and raw_fastq/{sample}_R2.fastq.gz
+execution_policy:
+  run_snakemake_now: false
+  run_matlab_now: false
+  run_pear_fastqc_multiqc_now: false
+  create_symlinks_now: false
+  move_or_copy_raw_data_now: false
+  write_to_ssd_now: false
+dryrun_readiness_decision: blocked_pending_exact_template_variant

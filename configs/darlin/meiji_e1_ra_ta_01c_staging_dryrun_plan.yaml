@@ -1,0 +1,55 @@
+schema_version: darlin_02b_01c_staging_dryrun_plan_v1
+timestamp: "2026-05-09T13:06:39Z"
+branch: darlin-onboarding
+status: plan_only_not_executed
+corrected_mapping_used: true
+deprecated_wrong_mapping_used: false
+future_staging_root: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta
+write_to_ssd: false
+execution_policy:
+  run_snakemake_now: false
+  run_matlab_now: false
+  run_pear_fastqc_multiqc_now: false
+  create_symlinks_now: false
+  move_or_copy_raw_data_now: false
+  modify_raw_fastq_now: false
+  commit_now: false
+default_run_layout:
+  reason: TA and RA use different locus/template families, so separate roots are safer unless official docs confirm a combined convention.
+  runs:
+    - run_id: ta_tigre
+      sample_id: Brain_E1_all_TA
+      corrected_locus: Tigre
+      future_root: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta/ta_tigre
+      source_fastqs:
+        r1: /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_TA.R1.raw.fastq.gz
+        r2: /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_TA.R2.raw.fastq.gz
+      planned_symlinks:
+        r1: raw_fastq/Brain_E1_all_TA_R1.fastq.gz
+        r2: raw_fastq/Brain_E1_all_TA_R2.fastq.gz
+      config_status:
+        cfg_type: unresolved
+        template: unresolved_between_Tigre_2022_and_Tigre_2022_v2
+        read_cutoff_UMI_override: unresolved
+    - run_id: ra_rosa
+      sample_id: Brain_E1_all_RA
+      corrected_locus: Rosa
+      future_root: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta/ra_rosa
+      source_fastqs:
+        r1: /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_RA.R1.raw.fastq.gz
+        r2: /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_RA.R2.raw.fastq.gz
+      planned_symlinks:
+        r1: raw_fastq/Brain_E1_all_RA_R1.fastq.gz
+        r2: raw_fastq/Brain_E1_all_RA_R2.fastq.gz
+      config_status:
+        cfg_type: unresolved
+        template: unresolved_between_Rosa_and_Rosa_v2
+        read_cutoff_UMI_override: unresolved
+future_command_shape: conda run -n darlin-repro snakemake -s /home/zhutao/projects/darlin_cell_repro/code/snakemake_DARLIN/snakefiles/snakefile_matlab_DARLIN_Part1.py --configfile config.yaml --cores 1 --dry-run
+blocking_reviews:
+  - exact template variants
+  - exact cfg_type values
+  - read_cutoff_UMI_override
+  - safe staging root approval
+  - MATLAB/module/toolbox policy
+  - snakemake parse-time rsync/template-copy side-effect review
