@@ -1,0 +1,42 @@
+sample_id: Sailu_0313_19A_mixed_ST
+tissue_status: mixed_unresolved
+contains_putative_tissues:
+  - Brain_E1
+  - Pancreas_E2
+bc_folder: /data/zhutao/nichefate_data/202603131741_Pro019_A_SE30_1_0313_19A_BC
+e_folder: /data/zhutao/nichefate_data/202604271751_2211180001_B_1_ZHY_XBB_E_PE100_100
+r_folder: /data/zhutao/nichefate_data/202604271754_C2302270016_A_1_ZHY_XBB_R_PE100_250
+brain_pancreas_split_status: unresolved
+dataset_label_constraints:
+  allowed_label: Sailu_0313_19A_mixed_ST
+  forbidden_labels:
+    - Brain_E1_ST
+    - E1-only_ST
+    - Sailu_Brain_E1_ST
+allowed_outputs:
+  - QC
+  - expression_matrix
+  - coordinate_table
+  - clustering
+  - marker_annotation
+blocked_outputs:
+  - barcode_informed_NicheFate
+  - final_Brain_specific_inference
+  - formal_benchmark
+  - provider_ground_truth_Brain_Pancreas_split
+excluded_components:
+  - Meiji_Brain_E1_RA_TA_DARLIN_barcode
+  - Sailu_R_PE100_250_DARLIN_targeted_barcode_integration
+current_status:
+  mixed_st_processing_conceptually_allowed: true
+  st_script_entrypoint_found: false
+  smoke_run_ready: false
+  blocker: Sailu/Salus raw ST processing script entrypoint and input/output contract are missing.
+safety:
+  preprocessing_run: false
+  st_processing_run: false
+  darlin_preprocessing_run: false
+  nichefate_run: false
+  data_moved: false
+  symlinks_created: false
+  git_commit_created: false

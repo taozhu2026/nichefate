@@ -1,0 +1,13 @@
+component,status,evidence,blocker,next_action
+BC folder,ready_found,/data/zhutao/nichefate_data/202603131741_Pro019_A_SE30_1_0313_19A_BC exists,none,Use as BC component in mixed ST planning only.
+E/ST folder,ready_found,/data/zhutao/nichefate_data/202604271751_2211180001_B_1_ZHY_XBB_E_PE100_100 exists,none,Use as expression/ST component in mixed ST planning only.
+R/DARLIN folder,context_only_found,/data/zhutao/nichefate_data/202604271754_C2302270016_A_1_ZHY_XBB_R_PE100_250 exists,Not part of mixed ST smoke processing,Record for relationship context; do not integrate in ST00.
+Mixed ST sample identity,ready,Sailu_0313_19A_mixed_ST manifest created,none,Use this label for all future mixed ST outputs.
+Brain/Pancreas split,unresolved,Previous split-key and BC audits found no local split key,Provider split key or region/sample map missing,Do not label outputs as Brain_E1_ST or E1-only.
+ST raw processing entrypoint,blocked,Targeted inspection did not find Sailu/Salus raw ST script,Script path and command-line contract missing,User/provider supplies entrypoint before DARLIN-ST-01.
+ST output contract,blocked,No local contract for QC matrix coordinates metadata logs was found,Expected output paths and file formats missing,Define output contract with script entrypoint.
+Mixed ST smoke command,blocked,No safe command can be constructed without entrypoint and output contract,Entrypoint missing,Prepare command only after ST script contract is supplied.
+Marker annotation,future_only,Marker plan drafted but no processed matrix exists,Processed expression/spatial matrix missing,Run only after mixed ST processing and review.
+Brain mask,blocked_not_in_st00,ST00 explicitly does not create a Brain mask,Marker annotation and review pending,Do not create in ST00.
+Barcode integration,blocked_not_allowed,Meiji RA/TA excluded and barcode integration not part of ST00,Wrong phase for barcode-informed NicheFate,Continue separately in DARLIN-01B barcode track.
+NicheFate M0-M5,blocked_not_allowed,ST00 is feasibility only,Wrong phase and no processed mixed ST output,Do not run in ST00.
