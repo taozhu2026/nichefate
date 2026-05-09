@@ -1,0 +1,30 @@
+# DARLIN-00 First-Subset Selection
+
+Generated: 2026-05-09T03:01:07Z
+
+## First-Round Selected DARLIN Subset
+
+**Selected subset name:** `manual_confirmation_required`
+
+No concrete first-round subset is selected automatically. This is intentional: selecting a subset would be a methodological/data-contract decision because DARLIN barcode evidence, sample demultiplexing, and matched expression/spatial IDs are not all confirmed from the read-only inventory.
+
+## Candidate Subsets
+
+| subset_name | evidence_types_available | barcode_files_count | expression_files_count | metadata_files_count | spatial_files_count | processed_clone_files_count | logs_count | readiness_category | first_round_candidate | selection_reason | blockers | deferred_reason |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Brain_031319A_B1_CA_TA_RA_shared_PE100_250 | lane-paired raw sequencing; possible CA/TA/RA barcode loci; md5 and RunInfo present | 8 | 0 | 21 | 0 | 0 | 1762 | manual_confirmation_required | yes_recommended_after_confirmation | strongest local first-round candidate if lab confirms sample sheet/I7 demultiplexing and official cfg/template | CA/TA/RA split not visible in filenames; I7/sample sheet not found in inspected files; no processed barcode table; no direct expression/spatial ID bridge | not executed in DARLIN-00 |
+| Brain_031319A_E1_RA_TA_MeiJi_plus_ST_shared_PE100_100 | RA/TA barcode-like paired FASTQs plus separate ST/expression candidate directory | 4 | 0 | 24 | 8 | 0 | 1763 | manual_confirmation_required | yes_alternate_after_confirmation | useful if user/lab confirms Brain E1 identity and cross-vendor pairing of MeiJi barcode reads with Sailu ST data | mixed vendor/source directories; ST shared with Pancreas E2; no confirmed cell/spot/barcode matching key | defer until B1 candidate is rejected or E1 matching is confirmed |
+| Brain_or_Pancreas_ST_shared_PE100_100_only | ST/expression candidate lane FASTQs and many reports | 0 | 0 | 21 | 8 | 0 | 1762 | not_barcode_ready | no | not enough barcode evidence alone | shared Brain/Pancreas mapping unresolved; no matched DARLIN barcode table | defer until barcode pairing and sample split are confirmed |
+| HSC_MPP_darlin_test_or_legacy_run | small HSC/MPP raw FASTQs, config.yaml, Snakemake metadata, done flags | 4 | 0 | 1 | 0 | 4 | 0 | pipeline_context_only | no | useful for official pipeline format comparison but not matched NicheFate spatial onboarding | no matched spatial/scRNA metadata for NicheFate; done flags without Summary.mat/refined clone tables | defer as smoke-test/reference context only |
+| Public_GEO_DARLIN_metadata_GSE222246_222479_222486 | GEO SOFT metadata, sample TSVs, one RAW tar archive | 0 | 0 | 9 | 0 | 0 | 0 | metadata_only_local | no | not first local data onboarding subset | local expression matrices/barcode outputs not fully present; public accession mapping needs separate scope | defer to public-data reproduction branch if needed |
+| Salus_spatial_BC_delivery_031319A | spatial/ST delivery artifacts, SalusCallFile, images, logs | 0 | 0 | 16 | 0 | 0 | 94 | spatial_context_only | no | not enough lineage barcode evidence by itself | no DARLIN barcode table; no standardized expression/metadata export inspected | defer until expression/spatial output contract is clarified |
+
+## Recommended Confirmation Question Before DARLIN-01
+
+Confirm whether the first DARLIN-01 target should be `Brain_031319A_B1_CA_TA_RA_shared_PE100_250`, and provide or approve the lab-standard sample sheet/demultiplexing mapping for CA, TA, and RA. If not, confirm whether the alternate `Brain_031319A_E1_RA_TA_MeiJi_plus_ST_shared_PE100_100` should be used and how the MeiJi barcode reads match the Sailu ST/expression directory.
+
+## Deferred Subsets
+
+- `HSC_MPP_darlin_test_or_legacy_run`: useful for pipeline format comparison only; not matched to NicheFate spatial/scRNA onboarding.
+- `Public_GEO_DARLIN_metadata_GSE222246_222479_222486`: metadata/reference context only in this node; public data reproduction is separate scope.
+- `Salus_spatial_BC_delivery_031319A`: spatial delivery context only until expression/spatial export contract and barcode link are confirmed.

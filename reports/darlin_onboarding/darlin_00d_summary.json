@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-05-09T03:47:54Z",
+  "branch": "darlin-onboarding",
+  "selected_first_route": "Brain_031319A_E1_RA_TA_ST",
+  "route_status": "provider_confirmed_for_first_round_development",
+  "st_component": "Sailu_Brain_031319A_E1_ST",
+  "barcode_component": "Meiji_Brain_031319A_E1_RA_TA",
+  "missing_components": [
+    "E1_CA"
+  ],
+  "deferred_components": [
+    "Sailu_Brain_B1_CA_TA_RA_barcode_only",
+    "Pancreas_E2_ST",
+    "public/legacy references"
+  ],
+  "sailu_documents_found": 15,
+  "useful_sailu_documents_count": 0,
+  "exact_matching_key_found": false,
+  "preprocessing_run": false,
+  "st_processing_run": false,
+  "data_moved": false,
+  "symlinks_created": false,
+  "git_commit_created": false,
+  "exact_next_step": "DARLIN-01A E1 sample-sheet construction for Meiji RA/TA barcode preprocessing and Sailu E1 ST processing plan, using the Sailu document audit if it provides matching/sample-sheet evidence."
+}

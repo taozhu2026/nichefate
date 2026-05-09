@@ -1,0 +1,148 @@
+{
+  "timestamp": "2026-05-09T03:01:07Z",
+  "repo_root": "/home/zhutao/projects/nichefate",
+  "branch": "darlin-onboarding",
+  "github_remote": "https://github.com/taozhu2026/nichefate.git",
+  "inspected_roots": [
+    {
+      "root": "/data/zhutao/nichefate_data",
+      "status": "present",
+      "size": "156G",
+      "inspection_mode": "direct for DARLIN target roots; keyword-limited for broad roots"
+    },
+    {
+      "root": "/home/zhutao/scratch/nichefate/nichefate_data",
+      "status": "missing",
+      "size": "",
+      "inspection_mode": "not inspected"
+    },
+    {
+      "root": "/home/zhutao/scratch/nichefate",
+      "status": "present",
+      "size": "18G",
+      "inspection_mode": "direct for DARLIN target roots; keyword-limited for broad roots"
+    },
+    {
+      "root": "/home/zhutao",
+      "status": "present",
+      "size": "62G",
+      "inspection_mode": "direct for DARLIN target roots; keyword-limited for broad roots"
+    },
+    {
+      "root": "/data/zhutao",
+      "status": "present",
+      "size": "306G",
+      "inspection_mode": "direct for DARLIN target roots; keyword-limited for broad roots"
+    }
+  ],
+  "selected_first_subset": {
+    "name": "manual_confirmation_required",
+    "reason": "No inspected subset has confirmed demultiplexed DARLIN barcode evidence plus matched expression/spatial metadata and reliable cell/spot ID bridge.",
+    "recommended_candidates": [
+      "Brain_031319A_B1_CA_TA_RA_shared_PE100_250",
+      "Brain_031319A_E1_RA_TA_MeiJi_plus_ST_shared_PE100_100"
+    ],
+    "barcode_preprocessing_can_start": false,
+    "expression_spatial_matching_can_start": false
+  },
+  "candidate_subsets": [
+    "Brain_031319A_B1_CA_TA_RA_shared_PE100_250",
+    "Brain_031319A_E1_RA_TA_MeiJi_plus_ST_shared_PE100_100",
+    "Brain_or_Pancreas_ST_shared_PE100_100_only",
+    "HSC_MPP_darlin_test_or_legacy_run",
+    "Public_GEO_DARLIN_metadata_GSE222246_222479_222486",
+    "Salus_spatial_BC_delivery_031319A"
+  ],
+  "category_counts": {
+    "DARLIN barcode raw reads": 8,
+    "archives": 2,
+    "logs": 3619,
+    "metadata / sample sheet": 76,
+    "processed clone/barcode output": 4,
+    "raw sequencing": 16,
+    "unknown / unclassified": 21
+  },
+  "modality_counts": {
+    "DARLIN barcode / clone evidence": 8,
+    "DARLIN pipeline status flag": 4,
+    "QC/report artifact": 3619,
+    "compressed GEO metadata": 3,
+    "compressed archive": 2,
+    "documentation/report": 25,
+    "metadata": 32,
+    "official preprocessing reference/tooling": 7,
+    "sample/run metadata": 16,
+    "shared CA/TA/RA candidate barcode sequencing": 8,
+    "shared ST/expression sequencing candidate": 8,
+    "unknown": 14
+  },
+  "subset_counts": {
+    "Brain_031319A_B1_CA_TA_RA_shared_PE100_250": 1791,
+    "Brain_031319A_E1_RA_TA_MeiJi": 11,
+    "Brain_031319A_E1_or_Pancreas_E2_ST_shared_PE100_100": 1791,
+    "GSE222246_public_camellia_metadata": 4,
+    "GSE222479_public_bulk_carlin_metadata": 3,
+    "GSE222486_public_darlin_scRNA_metadata": 3,
+    "HSC_MPP_darlin_test_or_legacy_run": 18,
+    "Salus_spatial_BC_delivery_031319A": 110,
+    "official_DARLIN_reference_or_public_repro": 10,
+    "prior_DARLIN_inventory_checkpoint": 4,
+    "unknown": 1
+  },
+  "official_preprocessing_can_start": false,
+  "official_preprocessing_readiness_note": "Cannot start for a NicheFate first subset until sample-sheet/demultiplexing, cfg_type/template, and matched expression/spatial bridge are confirmed. HSC/MPP legacy test data is pipeline-context only.",
+  "sample_sheet_can_be_constructed": "partial_for_HSC_MPP_legacy_config; not_confirmed_for_local_NicheFate_subset",
+  "barcode_outputs_already_exist": false,
+  "barcode_outputs_note": "Only DARLIN_analysis.done flags were found under /data/zhutao/darlin_data; no Summary.mat/refined_results.csv clone table was observed in the inventoried outputs.",
+  "expression_matching_status": "unmatched; no direct cell_id or spatial anchor bridge confirmed",
+  "major_blockers": [
+    "CA/TA/RA demultiplexing/sample sheet for shared Sailu directories was not found in inspected files.",
+    "Official DARLIN cfg_type/template/locus selection for the new local TA/RA/CA data requires user or lab confirmation.",
+    "No standardized clone/barcode output table such as refined_results.csv or Summary-derived table was found for the local onboarding subset.",
+    "No direct cell_id/spot_id bridge between DARLIN barcode reads and expression/spatial metadata was confirmed.",
+    "Existing /data/zhutao/darlin_data HSC/MPP run has raw FASTQs and done flags but no matched NicheFate spatial/scRNA context."
+  ],
+  "dependency_probe": {
+    "commands_on_current_path": {
+      "snakemake": "",
+      "pear": "/opt/miniforge/bin/pear",
+      "matlab": "",
+      "fastqc": "",
+      "multiqc": ""
+    },
+    "conda_envs_present": {
+      "snakemake_darlin": true,
+      "darlin-repro": true
+    },
+    "official_sources": [
+      "https://github.com/ShouWenWang-Lab/snakemake_DARLIN",
+      "https://github.com/ShouWenWang-Lab/Custom_CARLIN"
+    ]
+  },
+  "output_files": [
+    "docs/darlin/darlin_00_data_inventory.md",
+    "docs/darlin/darlin_official_preprocessing_plan.md",
+    "docs/darlin/darlin_barcode_adapter_contract.md",
+    "docs/darlin/darlin_first_subset_selection.md",
+    "docs/darlin/darlin_expression_spatial_matching_contract.md",
+    "reports/darlin_onboarding/darlin_00_file_inventory.csv",
+    "reports/darlin_onboarding/darlin_00_data_category_summary.csv",
+    "reports/darlin_onboarding/darlin_00_subset_candidates.csv",
+    "reports/darlin_onboarding/darlin_00_gap_analysis.md",
+    "reports/darlin_onboarding/darlin_00_summary.json",
+    "configs/darlin/darlin_onboarding_manifest.yaml"
+  ],
+  "safety_checks": {
+    "git_status_initial": "main was clean before branch creation; branch darlin-onboarding created",
+    "active_process_matches": [
+      "764056  761209 Ss         00:09 python /tmp/generate_darlin00.py"
+    ],
+    "ssd_output_count": 0,
+    "ssd_matches": []
+  },
+  "data_moved": false,
+  "preprocessing_run": false,
+  "heavy_analysis_launched": false,
+  "git_commit_created": false,
+  "exact_next_step": "Manual confirmation of the first DARLIN subset and sample-sheet/demultiplexing contract before DARLIN-01. If confirmed, DARLIN-01 should construct a sample sheet and run only an official preprocessing dry-run for that one subset."
+}

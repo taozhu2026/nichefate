@@ -1,0 +1,51 @@
+timestamp: "2026-05-09T03:47:54Z"
+branch: darlin-onboarding
+selected_first_route: Brain_031319A_E1_RA_TA_ST
+route_status: provider_confirmed_for_first_round_development
+components:
+  st:
+    component_id: Sailu_Brain_031319A_E1_ST
+    sequencing_company: Sailu Medical
+    tissue: Brain
+    chip_position: 031319A-E1
+    group_label: ST
+    role: expression_spatial_component
+    local_path: /data/zhutao/nichefate_data/202604271751_2211180001_B_1_ZHY_XBB_E_PE100_100
+    processing_track: user_existing_st_scripts
+  barcode:
+    component_id: Meiji_Brain_031319A_E1_RA_TA
+    sequencing_company: Meiji Biology
+    tissue: Brain
+    chip_position: 031319A-E1
+    group_labels:
+      - RA
+      - TA
+    role: darlin_barcode_component
+    local_paths:
+      - /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_RA.R1.raw.fastq.gz
+      - /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_RA.R2.raw.fastq.gz
+      - /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_TA.R1.raw.fastq.gz
+      - /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_TA.R2.raw.fastq.gz
+    preprocessing_track: ShouWen_Wang_lab_official_DARLIN_pipeline
+missing_components:
+  - E1_CA
+deferred_components:
+  - Sailu_Brain_B1_CA_TA_RA_barcode_only
+  - Pancreas_E2_ST
+  - public/legacy references
+matching:
+  route_level_confirmation: provider_confirmed
+  exact_machine_readable_key_found: false
+  required_before_barcode_informed_nichefate:
+    - sample_sheet_for_meiji_e1_ra_ta
+    - sailu_e1_st_metadata_contract
+    - reviewed_barcode_match_key
+boundaries:
+  preprocessing_run: false
+  st_processing_run: false
+  nichefate_run: false
+  gpcca_cellrank_run: false
+  data_moved: false
+  symlinks_created: false
+  ssd_writes: false
+exact_next_step: DARLIN-01A E1 sample-sheet construction for Meiji RA/TA barcode preprocessing and Sailu E1 ST processing plan.

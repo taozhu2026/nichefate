@@ -1,0 +1,49 @@
+darlin_onboarding_manifest:
+  stage: DARLIN-00
+  generated_at_utc: "2026-05-09T03:01:07Z"
+  repo_root: /home/zhutao/projects/nichefate
+  branch: darlin-onboarding
+  github_remote: "https://github.com/taozhu2026/nichefate.git"
+  selected_first_subset: manual_confirmation_required
+  recommended_candidate_subsets:
+    - Brain_031319A_B1_CA_TA_RA_shared_PE100_250
+    - Brain_031319A_E1_RA_TA_MeiJi_plus_ST_shared_PE100_100
+  official_preprocessing_can_start: false
+  sample_sheet_can_be_constructed: partial_for_HSC_MPP_legacy_config_not_for_local_first_subset
+  barcode_outputs_already_exist: false
+  expression_matching_status: unmatched; no direct cell_id or spatial anchor bridge confirmed
+  input_roots:
+    - /data/zhutao/nichefate_data
+    - /home/zhutao/scratch/nichefate/nichefate_data
+    - /home/zhutao/scratch/nichefate
+    - /home/zhutao
+    - /data/zhutao
+  inventory_dirs:
+    - /data/zhutao/nichefate_data
+    - /data/zhutao/darlin_data
+    - /data/zhutao/darlin_cell_repro
+    - /data/zhutao/darlin_test_data
+    - /home/zhutao/projects/darlin_cell_repro/data
+    - /home/zhutao/projects/darlin_cell_repro/configs
+    - /home/zhutao/projects/darlin_cell_repro/results
+    - /home/zhutao/projects/darlin_cell_repro/logs
+    - /home/zhutao/scratch/nichefate/project_audit
+  required_outputs:
+    - docs/darlin/darlin_00_data_inventory.md
+    - docs/darlin/darlin_official_preprocessing_plan.md
+    - docs/darlin/darlin_barcode_adapter_contract.md
+    - docs/darlin/darlin_first_subset_selection.md
+    - docs/darlin/darlin_expression_spatial_matching_contract.md
+    - reports/darlin_onboarding/darlin_00_file_inventory.csv
+    - reports/darlin_onboarding/darlin_00_data_category_summary.csv
+    - reports/darlin_onboarding/darlin_00_subset_candidates.csv
+    - reports/darlin_onboarding/darlin_00_gap_analysis.md
+    - reports/darlin_onboarding/darlin_00_summary.json
+    - configs/darlin/darlin_onboarding_manifest.yaml
+  safety:
+    data_moved: false
+    preprocessing_run: false
+    heavy_analysis_launched: false
+    git_commit_created: false
+    ssd_output_count: 0
+  exact_next_step: "Manual confirmation of the first DARLIN subset and sample-sheet/demultiplexing contract before DARLIN-01. If confirmed, DARLIN-01 should construct a sample sheet and run only an official preprocessing dry-run for that one subset."

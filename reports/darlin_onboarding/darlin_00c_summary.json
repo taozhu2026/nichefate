@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-05-09T03:20:35Z",
+  "branch": "darlin-onboarding",
+  "selected_route_recommendation": "E1_matched_pending_provider_confirmation",
+  "route_confidence": "moderate",
+  "e1_matched_status": "present_and_plausible_but_provider_confirmation_required",
+  "b1_barcode_only_status": "present_clear_barcode_only_candidate_without_matched_st",
+  "b1_to_e1_forced_match_status": "not_recommended_different_chip_position",
+  "required_confirmations_count": 10,
+  "preprocessing_run": false,
+  "data_moved": false,
+  "symlinks_created": false,
+  "git_commit_created": false,
+  "exact_next_step": "User/provider confirms whether Meiji E1 RA/TA and Sailu E1 ST are truly matched. Only after that confirmation should DARLIN-01 sample-sheet construction and official preprocessing dry-run begin for one selected route.",
+  "manual_rows_present": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+  ],
+  "hypotheses": [
+    {
+      "hypothesis_name": "E1_matched",
+      "component_rows": "1,2,3",
+      "component_summary": "Brain 031319A-E1 Meiji RA/TA barcode-DARLIN plus Brain 031319A-E1 Sailu ST",
+      "classification": "recommended_pending_provider_confirmation",
+      "chip_position_relation": "all E1",
+      "tissue_relation": "all Brain",
+      "rationale": "Same tissue and same chip_position make this the most credible first matching route from the manual table.",
+      "risk": "Cross-company matching is unconfirmed; no explicit provider sample sheet or cell/spot-level bridge was found locally.",
+      "status": "plausible_present_pending_confirmation"
+    },
+    {
+      "hypothesis_name": "B1_barcode_only",
+      "component_rows": "5,6,7",
+      "component_summary": "Brain 031319A-B1 Sailu CA/TA/RA in shared PE100/250 folder",
+      "classification": "clear_barcode_only_candidate",
+      "chip_position_relation": "all B1",
+      "tissue_relation": "all Brain",
+      "rationale": "Same company, same folder, same chip_position, and explicit index mapping give a coherent barcode-only route.",
+      "risk": "No confirmed ST/expression counterpart was found for B1, so this is not yet a barcode-informed NicheFate route.",
+      "status": "present_barcode_only"
+    },
+    {
+      "hypothesis_name": "B1_to_E1_forced_match",
+      "component_rows": "3,5,6,7",
+      "component_summary": "Brain B1 Sailu CA/TA/RA forced to Brain E1 Sailu ST",
+      "classification": "not_recommended",
+      "chip_position_relation": "B1 vs E1 mismatch",
+      "tissue_relation": "all Brain",
+      "rationale": "This only preserves same-company provenance and ignores the stronger chip_position field.",
+      "risk": "Different chip_position means the route should not be treated as matched without explicit provider confirmation.",
+      "status": "rejected_without_provider_confirmation"
+    },
+    {
+      "hypothesis_name": "Pancreas_E2_deferred",
+      "component_rows": "4",
+      "component_summary": "Pancreas 031319A-E2 Sailu ST in shared PE100/100 folder",
+      "classification": "deferred",
+      "chip_position_relation": "E2 only",
+      "tissue_relation": "Pancreas only",
+      "rationale": "Different tissue and chip_position from the Brain-first routes make this unsuitable for the first development route.",
+      "risk": "Shared Sailu folder with Brain E1 ST suggests batch-level co-sequencing or mixed delivery, not biological matching.",
+      "status": "deferred_not_brain_first_round"
+    }
+  ]
+}

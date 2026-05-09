@@ -1,0 +1,5 @@
+route_name,selected_route,route_confidence,required_components_present,recommended_use,not_for_use_when,notes
+E1_matched,yes,moderate,true,first development route pending provider confirmation of Meiji E1 RA/TA to Sailu E1 ST matching key,provider cannot confirm same chip position section/adjacent section or cannot provide matching key,"Chip position and tissue align at E1/Brain; company mismatch remains a real risk, not a cosmetic one."
+B1_barcode_only,fallback_only,moderate,true,preprocessing smoke only; not barcode-informed NicheFate unless a matched B1 ST/expression component is confirmed,treated as matched to E1 ST without provider confirmation,B1 is coherent as a barcode-only bundle because folder and manual indices line up.
+B1_to_E1_forced_match,no,very_low,true,do not use unless provider explicitly confirms B1-to-E1 relationship,chip_position mismatch remains unresolved,Same Sailu provenance is weaker than chip_position consistency and should not override it.
+Pancreas_E2_deferred,no,n/a,true,defer from Brain-first onboarding,trying to support Brain-first route selection,Different tissue and chip position from the Brain onboarding target.
