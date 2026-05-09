@@ -1,0 +1,30 @@
+{
+  "authentication_method_used": "https",
+  "branch_after": "main",
+  "branch_before": "master",
+  "commit_count_pushed": 5,
+  "exact_next_step": "After successful push, start DARLIN-00 data inventory and official preprocessing plan, or continue optional local engineering cleanup on a new branch. Do not start DARLIN in this task.",
+  "github_push_done": true,
+  "github_remote_added": true,
+  "github_url": "https://github.com/taozhu2026/nichefate",
+  "head_at_report_creation": "cd1737df9c3fba181f928a862c06c16c67caf99c",
+  "heavy_analysis_launched": false,
+  "heavy_file_check_result": {
+    "files_over_20m": [],
+    "passed": true,
+    "tracked_heavy_scientific_files": []
+  },
+  "latest_commit_hash": "cd1737df9c3fba181f928a862c06c16c67caf99c",
+  "protected_path_check_result": {
+    "passed": true,
+    "tracked_protected_paths": []
+  },
+  "push_success": true,
+  "remote_url_used": "https://github.com/taozhu2026/nichefate.git",
+  "tag_created": true,
+  "tag_left_on_original_reviewpack_checkpoint": true,
+  "tag_name": "v0.3-reviewpack-checkpoint",
+  "tag_pushed": true,
+  "tag_target_commit": "cd1737df9c3fba181f928a862c06c16c67caf99c",
+  "timestamp": "2026-05-09T02:39:12.008019Z"
+}

@@ -1,0 +1,3 @@
+path,category,commit_group,reason
+reports/review_pack/reviewpack_05_github_push_summary.json,audit_report,reviewpack_05_audit,"Records branch rename, remote setup, main push, checkpoint tag, and safety results."
+reports/review_pack/reviewpack_05_changed_files.csv,audit_report,reviewpack_05_audit,Lists ReviewPack-05 audit report files added after checkpoint push.
