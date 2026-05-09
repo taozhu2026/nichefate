@@ -1,0 +1,5 @@
+check,status,evidence,interpretation,next_action
+"current_environment_import","failed_in_current_env","python import omicverse raised ModuleNotFoundError","Do not conclude OmicVerse is unsupported; it is only unavailable in the current shell environment.","Use only after processed matrix/AnnData exists and activate the correct environment if needed."
+"candidate_conda_environment","env_dir_found","/home/zhutao/software/conda_envs/omicverse exists","OmicVerse may be available in another local environment but was not executed for analysis.","Confirm environment only when downstream AnnData/spatial analysis starts."
+"raw_fastq_processing_relevance","not_confirmed","No local evidence that OmicVerse provides the missing Sailu raw FASTQ BC+E parser contract.","OmicVerse should not replace the missing Salus raw processing contract.","Resolve Salus/Sailu raw processing first."
+"processed_anndata_relevance","likely_relevant_later","02A bridge expects h5ad or processed matrix plus metadata before M0/downstream analysis.","OmicVerse may be useful after a processed AnnData object exists.","Revisit after matrix, coordinates, and metadata are generated."
