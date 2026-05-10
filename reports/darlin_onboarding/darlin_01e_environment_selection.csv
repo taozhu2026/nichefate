@@ -1,0 +1,14 @@
+candidate_env,tool,command_checked,status,version_or_path,exit_code,selection_note
+snakemake_darlin,python,conda run -n snakemake_darlin python --version,present,Python 3.9.23,0,fallback_env
+snakemake_darlin,snakemake,conda run -n snakemake_darlin snakemake --version,present,7.24.0,0,fallback_env
+snakemake_darlin,pear,conda run -n snakemake_darlin which pear,missing,ERROR conda.cli.main_run:execute(125): `conda run which pear` failed. (See above for error),1,fallback_env_missing_pear_fastqc_multiqc
+snakemake_darlin,fastqc,conda run -n snakemake_darlin which fastqc,missing,ERROR conda.cli.main_run:execute(125): `conda run which fastqc` failed. (See above for error),1,fallback_env_missing_pear_fastqc_multiqc
+snakemake_darlin,multiqc,conda run -n snakemake_darlin which multiqc,missing,ERROR conda.cli.main_run:execute(125): `conda run which multiqc` failed. (See above for error),1,fallback_env_missing_pear_fastqc_multiqc
+snakemake_darlin,matlab,conda run -n snakemake_darlin which matlab,missing,ERROR conda.cli.main_run:execute(125): `conda run which matlab` failed. (See above for error),1,fallback_env
+darlin-repro,python,conda run -n darlin-repro python --version,present,Python 3.9.23,0,selected_env_has_snakemake_pear_fastqc_multiqc
+darlin-repro,snakemake,conda run -n darlin-repro snakemake --version,present,7.24.0,0,selected_env_has_snakemake_pear_fastqc_multiqc
+darlin-repro,pear,conda run -n darlin-repro which pear,present,/home/zhutao/software/conda_envs/darlin-repro/bin/pear,0,selected_env_has_snakemake_pear_fastqc_multiqc
+darlin-repro,fastqc,conda run -n darlin-repro which fastqc,present,/home/zhutao/software/conda_envs/darlin-repro/bin/fastqc,0,selected_env_has_snakemake_pear_fastqc_multiqc
+darlin-repro,multiqc,conda run -n darlin-repro which multiqc,present,/home/zhutao/software/conda_envs/darlin-repro/bin/multiqc,0,selected_env_has_snakemake_pear_fastqc_multiqc
+darlin-repro,matlab,conda run -n darlin-repro which matlab,missing,ERROR conda.cli.main_run:execute(125): `conda run which matlab` failed. (See above for error),1,matlab_missing_real_preprocessing_may_fail
+selected,environment,policy,selected,darlin-repro,0,Selected because it has Snakemake plus PEAR/FastQC/MultiQC; MATLAB remains missing.

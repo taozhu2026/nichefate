@@ -1,0 +1,2 @@
+locus,sample_id,exit_code,run_status,log_path,reason_not_run,error_category,next_action
+Rosa,Brain_E1_all_RA,NA,not_run,/home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01e/logs/RA_Rosa_run.log,TA failed environment/tool-wrapper gate before meaningful success,not_run_due_to_ta_failed_environment,Resolve TA PEAR/FastQC wrapper failure before RA.

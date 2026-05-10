@@ -1,0 +1,5 @@
+staged_symlink,target_path,target_exists,target_size_bytes,target_mtime_ns
+/home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/TA_Tigre/raw_fastq/Brain_E1_all_TA_R1.fastq.gz,/data/zhutao/nichefate_data/MeiJi/Brain_E1_all_TA.R1.raw.fastq.gz,True,3889410484,1778118238990428794
+/home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/TA_Tigre/raw_fastq/Brain_E1_all_TA_R2.fastq.gz,/data/zhutao/nichefate_data/MeiJi/Brain_E1_all_TA.R2.raw.fastq.gz,True,4788219632,1778118888571393443
+/home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/RA_Rosa/raw_fastq/Brain_E1_all_RA_R1.fastq.gz,/data/zhutao/nichefate_data/MeiJi/Brain_E1_all_RA.R1.raw.fastq.gz,True,3861609660,1778118602545677736
+/home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/RA_Rosa/raw_fastq/Brain_E1_all_RA_R2.fastq.gz,/data/zhutao/nichefate_data/MeiJi/Brain_E1_all_RA.R2.raw.fastq.gz,True,4978082199,1778118418195543627
