@@ -1,0 +1,13 @@
+item_type,local_path,target_hpc_path_placeholder,required,md5_available,notes
+raw_fastq,/data/zhutao/nichefate_data/MeiJi/Brain_E1_all_TA.R1.raw.fastq.gz,<HPC_RAW_DATA>/MeiJi/Brain_E1_all_TA.R1.raw.fastq.gz,true,true,Brain_E1_all_TA R1 provider raw FASTQ; source exists on current server.
+raw_fastq,/data/zhutao/nichefate_data/MeiJi/Brain_E1_all_TA.R2.raw.fastq.gz,<HPC_RAW_DATA>/MeiJi/Brain_E1_all_TA.R2.raw.fastq.gz,true,true,Brain_E1_all_TA R2 provider raw FASTQ; source exists on current server.
+raw_fastq,/data/zhutao/nichefate_data/MeiJi/Brain_E1_all_RA.R1.raw.fastq.gz,<HPC_RAW_DATA>/MeiJi/Brain_E1_all_RA.R1.raw.fastq.gz,true,true,Brain_E1_all_RA R1 provider raw FASTQ; source exists on current server.
+raw_fastq,/data/zhutao/nichefate_data/MeiJi/Brain_E1_all_RA.R2.raw.fastq.gz,<HPC_RAW_DATA>/MeiJi/Brain_E1_all_RA.R2.raw.fastq.gz,true,true,Brain_E1_all_RA R2 provider raw FASTQ; source exists on current server.
+provider_md5,/data/zhutao/nichefate_data/MeiJi/raw_md5.txt,<HPC_RAW_DATA>/MeiJi/raw_md5.txt,true,true,Provider checksum file; use to verify transferred or located raw FASTQs.
+provider_qc,/data/zhutao/nichefate_data/MeiJi/others/rawdata.stat,<HPC_RAW_DATA>/MeiJi/others/rawdata.stat,false,false,Provider raw-data statistics; useful for audit.
+provider_report,/data/zhutao/nichefate_data/MeiJi/others/report.pdf,<HPC_RAW_DATA>/MeiJi/others/report.pdf,false,false,Provider report PDF; useful for audit.
+repo_local,/home/zhutao/projects/nichefate,<HPC_REPOS>/nichefate,true,false,Current repo with DARLIN handoff reports and configs.
+repo_remote,https://github.com/taozhu2026/nichefate.git,<HPC_REPOS>/nichefate,true,false,Git remote if cloning on HPC instead of copying local repo.
+config_plan,configs/darlin/meiji_e1_ra_ta_01c_protocol_resolved_staging_plan.yaml,<HPC_REPOS>/nichefate/configs/darlin/meiji_e1_ra_ta_01c_protocol_resolved_staging_plan.yaml,true,false,Protocol-resolved staging plan for audit; build fresh HPC staging rather than reusing current-server scratch.
+sample_sheet,configs/darlin/meiji_e1_ra_ta_barcode_sample_sheet_draft.csv,<HPC_REPOS>/nichefate/configs/darlin/meiji_e1_ra_ta_barcode_sample_sheet_draft.csv,true,false,Sample-to-provider-FASTQ mapping audit.
+01e_failure_summary,reports/darlin_onboarding/darlin_01e_summary.json,<HPC_REPOS>/nichefate/reports/darlin_onboarding/darlin_01e_summary.json,true,false,Current-server failure summary for HPC debugging context.

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-05-10T11:46:15Z",
+  "branch": "darlin-onboarding",
+  "handoff_reason": "Current server reached real official DARLIN TA/Tigre execution but failed early due to environment/tool-wrapper issues: PEAR rejected --min-assembly-length and FastQC wrapper expected module command; HPC is expected to provide the official module/toolchain and MATLAB environment.",
+  "barcode_mapping_resolved": true,
+  "ta_cfg_type": "BulkRNA_Tigre_14UMI",
+  "ta_template": "Tigre_2022_v2",
+  "ra_cfg_type": "BulkRNA_Rosa_14UMI",
+  "ra_template": "Rosa_v2",
+  "current_server_preprocessing_completed": false,
+  "current_server_failure_category": "ta_failed_environment_tool_wrapper_mismatch",
+  "hpc_next_step": "On HPC, verify module, MATLAB, PEAR, FastQC, MultiQC, and Snakemake availability; build fresh scratch staging; verify Meiji RA/TA FASTQ checksums; run TA_Tigre first; run RA_Rosa only after TA passes.",
+  "data_moved": false,
+  "raw_fastq_modified": false,
+  "preprocessing_run": false,
+  "sailu_st_run": false,
+  "nichefate_run": false,
+  "git_commit_created": false
+}
