@@ -1,0 +1,7 @@
+safety_item,status,evidence,risk,required_01c_action,notes
+snakefile parse may copy templates by rsync,risk_present_reviewed,Prior 02B observed possible template-copy/rsync behavior in official snakefile workflow.,dry-run parse may still perform file operations,Use throwaway scratch working directory and inspect command with no raw source tree writes.,No Snakemake command run in this task.
+dry-run could write files,risk_present_reviewed,Snakemake dry-run can still parse workflow and trigger Python-side setup logic.,scratch/config/template side effects,Run only inside dedicated scratch root after review.,No dry-run executed here.
+scratch root containment,planned,Plan uses /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c.,source tree contamination if working directory is wrong,Use explicit cd into throwaway TA_Tigre or RA_Rosa root before dry-run.,No scratch directories created here.
+first 01C command explicit working directory,required,Separate locus folders are planned.,relative output/template paths could land in the wrong tree,Use explicit working directory and log pwd before command.,Plan only.
+TMPDIR/TMP/TEMP,required,Temporary files should not default to /ssd or shared source dirs.,uncontrolled temporary writes,Set TMPDIR/TMP/TEMP to /home/zhutao/tmp or scratch before dry-run.,No environment changed here.
+output root not /ssd,planned_safe,Planned output roots are under /home/zhutao/scratch/nichefate/.,accidental /ssd output if config overrides are wrong,Inspect final config.yaml before dry-run.,No /ssd writes here.

@@ -1,0 +1,75 @@
+schema_version: darlin_02b_protocol_resolved_01c_staging_plan_v1
+timestamp: "2026-05-10T03:24:10Z"
+branch: darlin-onboarding
+status: plan_only_not_executed
+scope: Meiji_E1_RA_TA_protocol_resolved_barcode_dryrun_staging
+protocol_table_applied: true
+corrected_mapping_used: true
+deprecated_wrong_mapping_used: false
+future_scratch_root: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c
+write_to_ssd: false
+execution_policy:
+  run_snakemake_now: false
+  run_darlin_preprocessing_now: false
+  run_matlab_now: false
+  run_pear_fastqc_multiqc_now: false
+  create_symlinks_now: false
+  create_scratch_config_files_now: false
+  move_or_copy_raw_data_now: false
+  modify_raw_fastq_now: false
+  run_st_processing_now: false
+  run_nichefate_now: false
+  commit_now: false
+planned_runs:
+  - run_id: TA_Tigre
+    sample_id: Brain_E1_all_TA
+    locus: TA / TC
+    official_family: Tigre
+    future_root: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/TA_Tigre
+    future_raw_fastq_dir: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/TA_Tigre/raw_fastq
+    future_output_dir: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/TA_Tigre/output
+    source_fastqs:
+      r1: /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_TA.R1.raw.fastq.gz
+      r2: /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_TA.R2.raw.fastq.gz
+    planned_symlinks:
+      r1: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/TA_Tigre/raw_fastq/Brain_E1_all_TA_L001_R1_001.fastq.gz
+      r2: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/TA_Tigre/raw_fastq/Brain_E1_all_TA_L001_R2_001.fastq.gz
+    planned_config_yaml:
+      path: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/TA_Tigre/config.yaml
+      SampleList:
+        - Brain_E1_all_TA
+      cfg_type: BulkRNA_Tigre_14UMI
+      template: Tigre_2022_v2
+      read_cutoff_UMI_override:
+        - 3
+        - 10
+      sbatch: choose_later_based_on_environment
+  - run_id: RA_Rosa
+    sample_id: Brain_E1_all_RA
+    locus: RA / RC
+    official_family: Rosa / Rosa26
+    future_root: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/RA_Rosa
+    future_raw_fastq_dir: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/RA_Rosa/raw_fastq
+    future_output_dir: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/RA_Rosa/output
+    source_fastqs:
+      r1: /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_RA.R1.raw.fastq.gz
+      r2: /data/zhutao/nichefate_data/MeiJi/Brain_E1_all_RA.R2.raw.fastq.gz
+    planned_symlinks:
+      r1: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/RA_Rosa/raw_fastq/Brain_E1_all_RA_L001_R1_001.fastq.gz
+      r2: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/RA_Rosa/raw_fastq/Brain_E1_all_RA_L001_R2_001.fastq.gz
+    planned_config_yaml:
+      path: /home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01c/RA_Rosa/config.yaml
+      SampleList:
+        - Brain_E1_all_RA
+      cfg_type: BulkRNA_Rosa_14UMI
+      template: Rosa_v2
+      read_cutoff_UMI_override:
+        - 3
+        - 10
+      sbatch: choose_later_based_on_environment
+remaining_blockers:
+  - safe_scratch_staging_root_approval
+  - dependency_environment_activation
+  - matlab_custom_carlin_policy
+  - snakemake_parse_time_side_effect_review
+  - output_root_safety_confirmation
