@@ -1,0 +1,10 @@
+check_scope,tool_or_env,command_checked,status,version_or_path,blocks_future_dryrun,notes
+current_path,snakemake,command -v snakemake,missing,NA,no_candidate_env_available,"Snakemake is not on PATH; use candidate conda env for future dry-run command text."
+current_path,matlab,command -v matlab,missing,no_for_snakemake_dryrun_yes_for_execution,"MATLAB was not run. MATLAB policy remains required before real preprocessing."
+current_path,pear,command -v pear,present,/opt/miniforge/bin/pear,no_for_dryrun_not_run,"PEAR availability was checked only; PEAR processing was not run."
+current_path,fastqc,command -v fastqc,missing,no_for_dryrun_not_run,"FastQC processing was not run."
+current_path,multiqc,command -v multiqc,missing,no_for_dryrun_not_run,"MultiQC processing was not run."
+conda_env,snakemake_darlin,conda run -n snakemake_darlin python --version,present,Python 3.9.23,no,"Version check only; no workflow command was run."
+conda_env,snakemake_darlin,conda run -n snakemake_darlin snakemake --version,present,7.24.0,no,"Version check only; no Snakemake workflow dry-run was run."
+conda_env,darlin-repro,conda run -n darlin-repro python --version,present,Python 3.9.23,no,"Version check only; no workflow command was run."
+conda_env,darlin-repro,conda run -n darlin-repro snakemake --version,present,7.24.0,no,"Version check only; no Snakemake workflow dry-run was run."
