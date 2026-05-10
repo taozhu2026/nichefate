@@ -1,0 +1,6 @@
+barcode_candidate,umi_candidate,overlap_bp,non_overlapping,usable_as_joint_parser,notes
+CAND_R1_BC_1_8,CAND_R1_UMI_15_30,0,true,true,Candidate-only overlap review.
+CAND_R1_BC_1_10,CAND_R1_UMI_15_30,0,true,true,Candidate-only overlap review.
+CAND_R1_ALT_8_18,CAND_R1_UMI_15_30,4,false,false,ST03 best barcode/UMI pair overlaps and must not be treated as final.
+CAND_R1_ALT_10_20,CAND_R1_UMI_15_30,6,false,false,Candidate-only overlap review.
+CAND_R2_ALT_1_20,CAND_R1_UMI_15_30,6,false,false,Candidate-only overlap review.

@@ -1,0 +1,7 @@
+candidate_id,read_label,window_start,window_end,proposed_role,records_parsed,unique_count,duplication_rate,top_barcode_frequency,n_rate,lane_consistency,cross_lane_overlap,interpretation,concern
+CAND_R1_BC_1_8,R1,1,8,candidate_barcode_like,400000,58904,0.85274,1446,3.44e-06,0.05694124,0.09832417,weak_or_unstable_extraction_candidate,none
+CAND_R1_BC_1_10,R1,1,10,candidate_barcode_like,400000,293031,0.2674225,1396,3e-06,0.0067801,0.21800697,weak_or_unstable_extraction_candidate,none
+CAND_R1_ALT_8_18,R1,8,18,candidate_barcode_or_umi_like,400000,357368,0.10658,1448,5e-06,0.00202704,0.60938005,stable_extraction_candidate,overlaps_ST03_best_umi_by_4bp_not_final_joint_parser
+CAND_R1_ALT_10_20,R1,10,20,candidate_barcode_or_umi_like,400000,355266,0.111835,2616,6.36e-06,0.00273432,0.53885067,stable_extraction_candidate,none
+CAND_R1_UMI_15_30,R1,15,30,candidate_umi_like_stress_test,400000,369007,0.0774825,2566,1.25e-05,0.00354639,0.5642673,stable_extraction_candidate,overlaps_ST03_best_barcode_by_4bp_not_final_joint_parser
+CAND_R2_ALT_1_20,R2,1,20,candidate_r2_structure_control,400000,255754,0.360615,5771,3.65e-05,0.01784991,0.72251115,stable_extraction_candidate,R2 was mixed_or_unknown in ST02/ST03; control only
