@@ -1,0 +1,7 @@
+candidate_id,read_label,window_start,window_end,proposed_role,reason_selected,confidence_from_st02,notes
+CAND_R1_BC_1_8,R1,1,8,candidate_barcode_like,R1 leading 1-8 was repeatedly classified as possible_spatial_barcode_or_umi with low duplication and high entropy in ST-02.,low,Candidate only; not final barcode position.
+CAND_R1_BC_1_10,R1,1,10,candidate_barcode_like,R1 leading 1-10 is a stronger-diversity extension of the 1-8 candidate.,low,Candidate only; not final barcode position.
+CAND_R1_ALT_8_18,R1,8,18,candidate_barcode_or_umi_like,R1 internal 8-18 was classified as possible_spatial_barcode_or_umi and tests shifted-window stability.,low,Candidate only; overlaps leading candidates.
+CAND_R1_ALT_10_20,R1,10,20,candidate_barcode_or_umi_like,R1 internal 10-20 was classified as possible_spatial_barcode_or_umi and tests shifted-window stability.,low,Candidate only; overlaps leading candidates.
+CAND_R1_UMI_15_30,R1,15,30,candidate_umi_like_stress_test,R1 15-30 was a short high-diversity internal candidate in ST-02; used here as provisional UMI companion.,low,Candidate only; could also be transcript-like or shifted barcode-like without chemistry contract.
+CAND_R2_ALT_1_20,R2,1,20,candidate_r2_structure_control,R2 leading 1-20 had some possible structure in ST-02 but aggregate R2 role remained mixed_or_unknown.,low,Optional R2 control; not final barcode/UMI position.
