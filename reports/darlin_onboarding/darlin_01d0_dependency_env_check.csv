@@ -1,0 +1,11 @@
+check_scope,tool_or_env,command_checked,status,version_or_path,blocks_01d_contained_dryrun,notes
+conda,env_list,conda env list,present,snakemake_darlin; darlin-repro,false,Both candidate envs are available.
+conda_env,snakemake_darlin python,conda run -n snakemake_darlin python --version,present,Python 3.9.23,false,Version check only; no workflow command was run.
+conda_env,snakemake_darlin snakemake,conda run -n snakemake_darlin snakemake --version,present,7.24.0,false,Selected future dry-run environment.
+conda_env,darlin-repro python,conda run -n darlin-repro python --version,present,Python 3.9.23,false,Fallback candidate env.
+conda_env,darlin-repro snakemake,conda run -n darlin-repro snakemake --version,present,7.24.0,false,Fallback candidate env.
+current_path,matlab,command -v matlab,missing,NA,false_for_dryrun_true_for_execution,"MATLAB was not run. Missing MATLAB blocks real preprocessing, not Snakemake dry-run planning."
+conda_env,snakemake_darlin matlab,conda run -n snakemake_darlin which matlab,missing,NA,false_for_dryrun_true_for_execution,which-only check; MATLAB was not run.
+conda_env,darlin-repro matlab,conda run -n darlin-repro which matlab,missing,NA,false_for_dryrun_true_for_execution,which-only check; MATLAB was not run.
+python_import,darlin without PYTHONPATH,conda run -n snakemake_darlin python -c find_spec,present_original_source,/home/zhutao/projects/darlin_cell_repro/code/snakemake_DARLIN/darlin/__init__.py,true_without_containment,This would route update_CARLIN_dir to original CARLIN_pipeline.
+python_import,darlin with scratch PYTHONPATH,PYTHONPATH=<scratch>/code_copy/snakemake_DARLIN conda run -n snakemake_darlin python -c find_spec,present_scratch_copy,/home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01d0/code_copy/snakemake_DARLIN/darlin/__init__.py,false,Prepared commands must include PYTHONPATH.

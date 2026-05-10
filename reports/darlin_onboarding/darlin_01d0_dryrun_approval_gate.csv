@@ -1,0 +1,10 @@
+gate,status,evidence,blocker,next_action
+scratch code copy exists,pass,/home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01d0/code_copy,none,Use scratch-copy Snakefile and PYTHONPATH in 01D.
+original code roots unchanged,pass,precheck and postcheck CSV are identical,none,Keep pre/post manifests as audit record.
+dry-run commands use scratch code copy,pass,/home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01d0/code_copy/snakemake_DARLIN/snakefiles/snakefile_matlab_DARLIN_Part1.py,none,Do not use original Snakefile path.
+darlin import resolves to scratch copy,pass,/home/zhutao/scratch/nichefate/darlin_meiji_e1_ra_ta_01d0/code_copy/snakemake_DARLIN/darlin/__init__.py,none,Keep PYTHONPATH in command.
+output roots scratch-only,pass,commands cd into 01C scratch staging; settings CARLIN_dir resolves under 01D0 scratch copy,none,Run one locus at a time in 01D.
+no /ssd paths,pass,all planned execution paths use /home/zhutao/scratch or /home/zhutao/tmp,none,Do not add /ssd overrides.
+Snakemake available,pass,snakemake_darlin snakemake 7.24.0,none,Use snakemake_darlin unless user requests darlin-repro.
+MATLAB policy recorded,pass,MATLAB missing; not required for dry-run but blocks real execution,none_for_dryrun,Resolve MATLAB before preprocessing.
+approval decision,approved_for_01D_contained_dryrun,all approval criteria passed for dry-run-only command,none_for_dryrun,Start DARLIN-01D dry-run-only node when requested.
