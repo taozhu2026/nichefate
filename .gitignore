@@ -36,11 +36,16 @@ Thumbs.db
 
 # Local logs, caches, temporary files, and generated results
 *.log
+*.out
+*.err
+*.tmp
+*.tmp.*
 logs/
 tmp/
 temp/
 cache/
 scratch/
+ssd/
 outputs/
 output/
 results/
@@ -51,6 +56,8 @@ work/
 data/
 raw/
 external/
+darlin_evidence/
+barcode_evidence/
 
 # Heavy scientific matrix/table/object formats
 *.h5ad

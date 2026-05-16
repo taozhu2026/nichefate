@@ -1,0 +1,84 @@
+{
+  "all_required_patterns_present": true,
+  "generated_at_utc": "2026-05-16T02:05:26.193095+00:00",
+  "gitignore_path": ".gitignore",
+  "note": "Absolute /home/zhutao/scratch and /ssd outputs are outside the repository; repo-local scratch/ and ssd/ are ignored and staging audit checks for forbidden absolute path strings.",
+  "patterns": [
+    {
+      "pattern": "scratch/",
+      "present": true
+    },
+    {
+      "pattern": "data/",
+      "present": true
+    },
+    {
+      "pattern": "raw/",
+      "present": true
+    },
+    {
+      "pattern": "processed/",
+      "present": true
+    },
+    {
+      "pattern": "*.h5ad",
+      "present": true
+    },
+    {
+      "pattern": "*.fastq",
+      "present": true
+    },
+    {
+      "pattern": "*.fastq.gz",
+      "present": true
+    },
+    {
+      "pattern": "*.fq.gz",
+      "present": true
+    },
+    {
+      "pattern": "*.parquet",
+      "present": true
+    },
+    {
+      "pattern": "*.npz",
+      "present": true
+    },
+    {
+      "pattern": "__pycache__/",
+      "present": true
+    },
+    {
+      "pattern": ".pytest_cache/",
+      "present": true
+    },
+    {
+      "pattern": "*.log",
+      "present": true
+    },
+    {
+      "pattern": "*.out",
+      "present": true
+    },
+    {
+      "pattern": "*.err",
+      "present": true
+    },
+    {
+      "pattern": "*.tmp",
+      "present": true
+    },
+    {
+      "pattern": "ssd/",
+      "present": true
+    },
+    {
+      "pattern": "darlin_evidence/",
+      "present": true
+    },
+    {
+      "pattern": "barcode_evidence/",
+      "present": true
+    }
+  ]
+}

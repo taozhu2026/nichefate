@@ -1,0 +1,351 @@
+{
+  "darlin_paths_staged": [],
+  "decision": "STAGING_AUDIT_PASSED",
+  "downstream_fate_paths_staged": [],
+  "generated_at_utc": "2026-05-16T02:09:32.567739+00:00",
+  "git_diff_cached_check": {
+    "cmd": "git diff --cached --check",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  "large_data_files_staged": [],
+  "note": "References to DARLIN, Kmix_A, GPCCA, fate, absorption, and /ssd inside docs/reports are policy/exclusion text only; no such output paths or data artifacts are staged.",
+  "raw_data_staged": [],
+  "scratch_or_ssd_paths_staged": [],
+  "staged_file_count": 47,
+  "staged_files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 1262,
+      "suffix": "",
+      "violations": []
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 5506,
+      "suffix": ".md",
+      "violations": []
+    },
+    {
+      "path": "configs/planA_k/full_m2_5_feature_lock.draft.json",
+      "size_bytes": 22233,
+      "suffix": ".json",
+      "violations": []
+    },
+    {
+      "path": "docs/planA_k_gpcca/04_niche_state_coarsening_design.md",
+      "size_bytes": 1546,
+      "suffix": ".md",
+      "violations": []
+    },
+    {
+      "path": "docs/planA_k_gpcca/05_m2_5_metaniche_pilot_protocol.md",
+      "size_bytes": 1990,
+      "suffix": ".md",
+      "violations": []
+    },
+    {
+      "path": "docs/planA_k_gpcca/06_m2_5_state_contract_v2.md",
+      "size_bytes": 2245,
+      "suffix": ".md",
+      "violations": []
+    },
+    {
+      "path": "docs/planA_k_m0_m2_5_backbone.md",
+      "size_bytes": 4020,
+      "suffix": ".md",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/00_GIT_PREFLIGHT.json",
+      "size_bytes": 32738,
+      "suffix": ".json",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/00_GIT_PREFLIGHT.md",
+      "size_bytes": 20139,
+      "suffix": ".md",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/01_M0_M2_5_FILE_INVENTORY.json",
+      "size_bytes": 624486,
+      "suffix": ".json",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/01_M0_M2_5_FILE_INVENTORY.md",
+      "size_bytes": 10594,
+      "suffix": ".md",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/01_M0_M2_5_FILE_INVENTORY.tsv",
+      "size_bytes": 294961,
+      "suffix": ".tsv",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/02_GITIGNORE_AUDIT.json",
+      "size_bytes": 1564,
+      "suffix": ".json",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/02_GITIGNORE_AUDIT.md",
+      "size_bytes": 853,
+      "suffix": ".md",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/03_M0_M2_5_VALIDATION.json",
+      "size_bytes": 1455,
+      "suffix": ".json",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/03_M0_M2_5_VALIDATION.md",
+      "size_bytes": 1156,
+      "suffix": ".md",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/04_PROPOSED_STAGING_LIST.json",
+      "size_bytes": 7965,
+      "suffix": ".json",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/04_PROPOSED_STAGING_LIST.md",
+      "size_bytes": 4284,
+      "suffix": ".md",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/04_PROPOSED_STAGING_LIST.tsv",
+      "size_bytes": 3763,
+      "suffix": ".tsv",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/05_STAGING_AUDIT.json",
+      "size_bytes": 9557,
+      "suffix": ".json",
+      "violations": []
+    },
+    {
+      "path": "reports/git_freeze_m0_m2_5/05_STAGING_AUDIT.md",
+      "size_bytes": 3408,
+      "suffix": ".md",
+      "violations": []
+    },
+    {
+      "path": "scripts/planA_k_04_m2_inventory.py",
+      "size_bytes": 4274,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "scripts/planA_k_05_metaniche_pilot.py",
+      "size_bytes": 3124,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "scripts/planA_k_06_metaniche_qc.py",
+      "size_bytes": 3204,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "scripts/planA_k_07_coordinate_rescue.py",
+      "size_bytes": 4626,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "scripts/planA_k_08_metaniche_hardening_qc.py",
+      "size_bytes": 3245,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "scripts/planA_k_09_stratified_metaniche_pilot.py",
+      "size_bytes": 5205,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "scripts/planA_k_21_production_preflight.py",
+      "size_bytes": 1734,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "scripts/planA_k_22_full_run_blueprint.py",
+      "size_bytes": 1657,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "scripts/planA_k_23_run_full_m2_5_production.py",
+      "size_bytes": 3298,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "src/nichefate/planA_k/__init__.py",
+      "size_bytes": 675,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "src/nichefate/planA_k/coordinates.py",
+      "size_bytes": 23648,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "src/nichefate/planA_k/full_m2_5_production.py",
+      "size_bytes": 37755,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "src/nichefate/planA_k/io.py",
+      "size_bytes": 5139,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "src/nichefate/planA_k/kernel_qc.py",
+      "size_bytes": 13162,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "src/nichefate/planA_k/m2_inventory.py",
+      "size_bytes": 16645,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "src/nichefate/planA_k/metaniche.py",
+      "size_bytes": 59040,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "src/nichefate/planA_k/production_preflight.py",
+      "size_bytes": 49971,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "src/nichefate/planA_k/rare_state.py",
+      "size_bytes": 4532,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "src/nichefate/planA_k/reporting.py",
+      "size_bytes": 637,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "src/nichefate/planA_k/schemas.py",
+      "size_bytes": 3886,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "src/nichefate/planA_k/validation.py",
+      "size_bytes": 1186,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "src/nichefate/planA_k_gpcca.py",
+      "size_bytes": 1026,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "tests/test_planA_k_full_m2_5_production.py",
+      "size_bytes": 8271,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "tests/test_planA_k_metaniche_hardening.py",
+      "size_bytes": 5034,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "tests/test_planA_k_metaniche_pilot.py",
+      "size_bytes": 6128,
+      "suffix": ".py",
+      "violations": []
+    },
+    {
+      "path": "tests/test_planA_k_production_preflight.py",
+      "size_bytes": 6776,
+      "suffix": ".py",
+      "violations": []
+    }
+  ],
+  "staged_name_status": [
+    "M\t.gitignore",
+    "M\tREADME.md",
+    "A\tconfigs/planA_k/full_m2_5_feature_lock.draft.json",
+    "A\tdocs/planA_k_gpcca/04_niche_state_coarsening_design.md",
+    "A\tdocs/planA_k_gpcca/05_m2_5_metaniche_pilot_protocol.md",
+    "A\tdocs/planA_k_gpcca/06_m2_5_state_contract_v2.md",
+    "A\tdocs/planA_k_m0_m2_5_backbone.md",
+    "A\treports/git_freeze_m0_m2_5/00_GIT_PREFLIGHT.json",
+    "A\treports/git_freeze_m0_m2_5/00_GIT_PREFLIGHT.md",
+    "A\treports/git_freeze_m0_m2_5/01_M0_M2_5_FILE_INVENTORY.json",
+    "A\treports/git_freeze_m0_m2_5/01_M0_M2_5_FILE_INVENTORY.md",
+    "A\treports/git_freeze_m0_m2_5/01_M0_M2_5_FILE_INVENTORY.tsv",
+    "A\treports/git_freeze_m0_m2_5/02_GITIGNORE_AUDIT.json",
+    "A\treports/git_freeze_m0_m2_5/02_GITIGNORE_AUDIT.md",
+    "A\treports/git_freeze_m0_m2_5/03_M0_M2_5_VALIDATION.json",
+    "A\treports/git_freeze_m0_m2_5/03_M0_M2_5_VALIDATION.md",
+    "A\treports/git_freeze_m0_m2_5/04_PROPOSED_STAGING_LIST.json",
+    "A\treports/git_freeze_m0_m2_5/04_PROPOSED_STAGING_LIST.md",
+    "A\treports/git_freeze_m0_m2_5/04_PROPOSED_STAGING_LIST.tsv",
+    "A\treports/git_freeze_m0_m2_5/05_STAGING_AUDIT.json",
+    "A\treports/git_freeze_m0_m2_5/05_STAGING_AUDIT.md",
+    "A\tscripts/planA_k_04_m2_inventory.py",
+    "A\tscripts/planA_k_05_metaniche_pilot.py",
+    "A\tscripts/planA_k_06_metaniche_qc.py",
+    "A\tscripts/planA_k_07_coordinate_rescue.py",
+    "A\tscripts/planA_k_08_metaniche_hardening_qc.py",
+    "A\tscripts/planA_k_09_stratified_metaniche_pilot.py",
+    "A\tscripts/planA_k_21_production_preflight.py",
+    "A\tscripts/planA_k_22_full_run_blueprint.py",
+    "A\tscripts/planA_k_23_run_full_m2_5_production.py",
+    "A\tsrc/nichefate/planA_k/__init__.py",
+    "A\tsrc/nichefate/planA_k/coordinates.py",
+    "A\tsrc/nichefate/planA_k/full_m2_5_production.py",
+    "A\tsrc/nichefate/planA_k/io.py",
+    "A\tsrc/nichefate/planA_k/kernel_qc.py",
+    "A\tsrc/nichefate/planA_k/m2_inventory.py",
+    "A\tsrc/nichefate/planA_k/metaniche.py",
+    "A\tsrc/nichefate/planA_k/production_preflight.py",
+    "A\tsrc/nichefate/planA_k/rare_state.py",
+    "A\tsrc/nichefate/planA_k/reporting.py",
+    "A\tsrc/nichefate/planA_k/schemas.py",
+    "A\tsrc/nichefate/planA_k/validation.py",
+    "A\tsrc/nichefate/planA_k_gpcca.py",
+    "A\ttests/test_planA_k_full_m2_5_production.py",
+    "A\ttests/test_planA_k_metaniche_hardening.py",
+    "A\ttests/test_planA_k_metaniche_pilot.py",
+    "A\ttests/test_planA_k_production_preflight.py"
+  ],
+  "violations": []
+}

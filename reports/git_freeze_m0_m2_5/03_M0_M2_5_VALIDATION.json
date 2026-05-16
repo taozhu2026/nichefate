@@ -1,0 +1,37 @@
+{
+  "commands": [
+    {
+      "command": "python -m py_compile <selected M0/M1/M2/M2.5 modules and scripts>",
+      "name": "py_compile_backbone_modules_and_scripts",
+      "returncode": 0,
+      "status": "passed"
+    },
+    {
+      "command": "conda run --no-capture-output -n omicverse python -m pytest -q tests/test_config.py tests/test_verify_raw_files.py tests/test_graph.py tests/test_spatial.py tests/test_metadata.py tests/test_niche.py tests/test_niche_qc.py tests/test_m2_representation.py tests/test_m2_full_runner.py tests/test_planA_k_metaniche_pilot.py tests/test_planA_k_metaniche_hardening.py tests/test_planA_k_full_m2_5_production.py tests/test_planA_k_production_preflight.py",
+      "name": "pytest_backbone_subset",
+      "returncode": 0,
+      "status": "passed",
+      "tests_passed": 68,
+      "warnings": [
+        "SparseEfficiencyWarning in tests/test_graph.py::test_radius_graph_returns_csr"
+      ]
+    }
+  ],
+  "decision": "M0_M2_5_VALIDATION_PASSED",
+  "generated_at_utc": "2026-05-16T02:06:33.015221+00:00",
+  "production_data_touched": false,
+  "raw_data_modified": false,
+  "scope": "M0-M2.5 backbone validation only",
+  "scratch_outputs_modified": false,
+  "skipped_by_design": [
+    "Kmix_A tests",
+    "GPCCA tests",
+    "macrostate annotation tests",
+    "absorption tests",
+    "DARLIN tests",
+    "full M2.5 production computation",
+    "Kmix_A production",
+    "GPCCA production"
+  ],
+  "ssd_output_used": false
+}

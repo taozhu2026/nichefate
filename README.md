@@ -20,6 +20,7 @@ initialization planning. Start with:
 - [Installation](docs/installation.md)
 - [Quickstart](docs/quickstart.md)
 - [Git initialization plan](docs/git_initialization_plan.md)
+- [PlanA-K M0-M2.5 spatial niche backbone](docs/planA_k_m0_m2_5_backbone.md)
 
 Checkpoint status:
 
