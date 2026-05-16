@@ -1,0 +1,276 @@
+{
+  "generated_at_utc": "2026-05-16T02:08:06.380369+00:00",
+  "rows": [
+    {
+      "file_size_bytes": 1262,
+      "path": ".gitignore",
+      "reason": "freeze policy/documentation pointer update",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 5506,
+      "path": "README.md",
+      "reason": "freeze policy/documentation pointer update",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 22233,
+      "path": "configs/planA_k/full_m2_5_feature_lock.draft.json",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 1546,
+      "path": "docs/planA_k_gpcca/04_niche_state_coarsening_design.md",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 1990,
+      "path": "docs/planA_k_gpcca/05_m2_5_metaniche_pilot_protocol.md",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 2245,
+      "path": "docs/planA_k_gpcca/06_m2_5_state_contract_v2.md",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 4020,
+      "path": "docs/planA_k_m0_m2_5_backbone.md",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 32738,
+      "path": "reports/git_freeze_m0_m2_5/00_GIT_PREFLIGHT.json",
+      "reason": "small freeze audit report",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 20139,
+      "path": "reports/git_freeze_m0_m2_5/00_GIT_PREFLIGHT.md",
+      "reason": "small freeze audit report",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 624486,
+      "path": "reports/git_freeze_m0_m2_5/01_M0_M2_5_FILE_INVENTORY.json",
+      "reason": "small freeze audit report",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 10594,
+      "path": "reports/git_freeze_m0_m2_5/01_M0_M2_5_FILE_INVENTORY.md",
+      "reason": "small freeze audit report",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 294961,
+      "path": "reports/git_freeze_m0_m2_5/01_M0_M2_5_FILE_INVENTORY.tsv",
+      "reason": "small freeze audit report",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 1564,
+      "path": "reports/git_freeze_m0_m2_5/02_GITIGNORE_AUDIT.json",
+      "reason": "small freeze audit report",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 853,
+      "path": "reports/git_freeze_m0_m2_5/02_GITIGNORE_AUDIT.md",
+      "reason": "small freeze audit report",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 1455,
+      "path": "reports/git_freeze_m0_m2_5/03_M0_M2_5_VALIDATION.json",
+      "reason": "small freeze audit report",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 1156,
+      "path": "reports/git_freeze_m0_m2_5/03_M0_M2_5_VALIDATION.md",
+      "reason": "small freeze audit report",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 7416,
+      "path": "reports/git_freeze_m0_m2_5/04_PROPOSED_STAGING_LIST.json",
+      "reason": "small freeze audit report",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 3993,
+      "path": "reports/git_freeze_m0_m2_5/04_PROPOSED_STAGING_LIST.md",
+      "reason": "small freeze audit report",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 3490,
+      "path": "reports/git_freeze_m0_m2_5/04_PROPOSED_STAGING_LIST.tsv",
+      "reason": "small freeze audit report",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 4274,
+      "path": "scripts/planA_k_04_m2_inventory.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 3124,
+      "path": "scripts/planA_k_05_metaniche_pilot.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 3204,
+      "path": "scripts/planA_k_06_metaniche_qc.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 4626,
+      "path": "scripts/planA_k_07_coordinate_rescue.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 3245,
+      "path": "scripts/planA_k_08_metaniche_hardening_qc.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 5205,
+      "path": "scripts/planA_k_09_stratified_metaniche_pilot.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 1734,
+      "path": "scripts/planA_k_21_production_preflight.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 1657,
+      "path": "scripts/planA_k_22_full_run_blueprint.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 3298,
+      "path": "scripts/planA_k_23_run_full_m2_5_production.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 675,
+      "path": "src/nichefate/planA_k/__init__.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 23648,
+      "path": "src/nichefate/planA_k/coordinates.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 37755,
+      "path": "src/nichefate/planA_k/full_m2_5_production.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 5139,
+      "path": "src/nichefate/planA_k/io.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 13162,
+      "path": "src/nichefate/planA_k/kernel_qc.py",
+      "reason": "shared import compatibility for M2.5 modules; no kernel outputs included",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 16645,
+      "path": "src/nichefate/planA_k/m2_inventory.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 59040,
+      "path": "src/nichefate/planA_k/metaniche.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 49971,
+      "path": "src/nichefate/planA_k/production_preflight.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 4532,
+      "path": "src/nichefate/planA_k/rare_state.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 637,
+      "path": "src/nichefate/planA_k/reporting.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 3886,
+      "path": "src/nichefate/planA_k/schemas.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 1186,
+      "path": "src/nichefate/planA_k/validation.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 1026,
+      "path": "src/nichefate/planA_k_gpcca.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 8271,
+      "path": "tests/test_planA_k_full_m2_5_production.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 5034,
+      "path": "tests/test_planA_k_metaniche_hardening.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 6128,
+      "path": "tests/test_planA_k_metaniche_pilot.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    },
+    {
+      "file_size_bytes": 6776,
+      "path": "tests/test_planA_k_production_preflight.py",
+      "reason": "approved M0-M2.5 backbone file",
+      "stage": "yes"
+    }
+  ],
+  "violations": []
+}
