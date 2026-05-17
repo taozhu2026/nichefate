@@ -1,0 +1,19 @@
+{
+  "boundary": "PlanA-ST-only v1 is barcode-free. DARLIN/barcode validation is future work.",
+  "excluded_claims": [
+    "warning-level terminal-like candidate",
+    "maybe terminal",
+    "validated biological endpoint",
+    "DARLIN-supported fate",
+    "barcode-backed transition",
+    "final clone-supported fate"
+  ],
+  "required_wording": {
+    "barcode_boundary": "This is ST-only / barcode-free; DARLIN/barcode validation is future work.",
+    "comparator": "M4 is a D35-enriched non-terminal comparator.",
+    "fate_probability": "Kmix_A absorption to M5 is the PlanA-inferred absorption/fate probability.",
+    "initial_state": "No primary initial macrostate was selected.",
+    "intermediate_states": "M2/M3 are intermediate/transient macrostates with source tendency.",
+    "terminal_macrostate": "M5 is the PlanA-inferred terminal/sink macrostate with structural/stromal context."
+  }
+}

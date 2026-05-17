@@ -1,0 +1,215 @@
+{
+  "changed_tracked_file_count": 46,
+  "current_branch": "refactor/planA-st-only-production-modules",
+  "date_utc": "2026-05-17T02:16:58.881891+00:00",
+  "frozen_backbone_commit": "6f921694fb81613d73b1a4ad3dfe2622b869fbba",
+  "git_remote_v": "origin\thttps://github.com/taozhu2026/nichefate.git (fetch)\norigin\thttps://github.com/taozhu2026/nichefate.git (push)",
+  "git_status_short": "## refactor/planA-st-only-production-modules...origin/main\nM  README.md\nM  docs/pipeline_module_index.md\nA  docs/planA_st_only_v1_production_modules.md\nA  reports/git_update_planA_st_only_modules/00_GIT_PREFLIGHT.json\nA  reports/git_update_planA_st_only_modules/00_GIT_PREFLIGHT.md\nA  reports/git_update_planA_st_only_modules/00_PLAN_A_ST_ONLY_MODULE_REORG_SUMMARY.json\nA  reports/git_update_planA_st_only_modules/00_PLAN_A_ST_ONLY_MODULE_REORG_SUMMARY.md\nA  reports/git_update_planA_st_only_modules/01_PLAN_A_FILE_INVENTORY.json\nA  reports/git_update_planA_st_only_modules/01_PLAN_A_FILE_INVENTORY.md\nA  reports/git_update_planA_st_only_modules/01_PLAN_A_FILE_INVENTORY.tsv\nA  reports/git_update_planA_st_only_modules/02_LEGACY_TO_PRODUCTION_MODULE_MAP.json\nA  reports/git_update_planA_st_only_modules/02_LEGACY_TO_PRODUCTION_MODULE_MAP.md\nA  reports/git_update_planA_st_only_modules/02_LEGACY_TO_PRODUCTION_MODULE_MAP.tsv\nA  reports/git_update_planA_st_only_modules/03_VALIDATION.json\nA  reports/git_update_planA_st_only_modules/03_VALIDATION.md\nA  reports/git_update_planA_st_only_modules/04_PROPOSED_STAGING_LIST.json\nA  reports/git_update_planA_st_only_modules/04_PROPOSED_STAGING_LIST.md\nA  reports/git_update_planA_st_only_modules/04_PROPOSED_STAGING_LIST.tsv\nA  reports/git_update_planA_st_only_modules/05_STAGING_AUDIT.json\nA  reports/git_update_planA_st_only_modules/05_STAGING_AUDIT.md\nA  reports/planA_st_only_v1_index/00_PLAN_A_ST_ONLY_V1_INDEX.json\nA  reports/planA_st_only_v1_index/00_PLAN_A_ST_ONLY_V1_INDEX.md\nA  reports/planA_st_only_v1_index/01_MODULE_REGISTRY.tsv\nA  reports/planA_st_only_v1_index/02_FINAL_RESULT_MANIFEST.tsv\nA  reports/planA_st_only_v1_index/03_FINAL_FIGURE_INDEX.md\nA  reports/planA_st_only_v1_index/03_FINAL_FIGURE_INDEX.tsv\nA  reports/planA_st_only_v1_index/04_CLAIM_BOUNDARY.json\nA  reports/planA_st_only_v1_index/04_CLAIM_BOUNDARY.md\nA  scripts/planA_st_only_00_module_inventory.py\nA  scripts/planA_st_only_01_validate_frozen_outputs.py\nA  scripts/planA_st_only_02_build_result_index.py\nA  src/nichefate/planA_st_only/__init__.py\nA  src/nichefate/planA_st_only/biological_annotation.py\nA  src/nichefate/planA_st_only/endpoint_markov_inference.py\nA  src/nichefate/planA_st_only/fate_probability.py\nA  src/nichefate/planA_st_only/gpcca_macrostate_inference.py\nA  src/nichefate/planA_st_only/kernel_assembly.py\nA  src/nichefate/planA_st_only/metaniche_coarsener.py\nA  src/nichefate/planA_st_only/module_registry.py\nA  src/nichefate/planA_st_only/niche_builder.py\nA  src/nichefate/planA_st_only/niche_encoder.py\nA  src/nichefate/planA_st_only/result_package.py\nA  src/nichefate/planA_st_only/result_visualization.py\nA  src/nichefate/planA_st_only/spatial_dataset_adapter.py\nA  src/nichefate/planA_st_only/transition_evidence.py\nA  tests/test_planA_st_only_facades.py\n?? configs/darlin/meiji_e1_ra_ta_staging_plan.yaml\n?? configs/planA_k/full_kmix_A.draft.yaml\n?? docs/README.md\n?? docs/darlin/darlin_01a_bc_spatial_barcode_audit.md\n?? docs/darlin/darlin_01a_bc_st_split_feasibility.md\n?? docs/darlin/darlin_01b_cfg_type_template_review.md\n?? docs/darlin/darlin_01b_dependency_resolution.md\n?? docs/darlin/darlin_01b_next_step_recommendation.md\n?? docs/darlin/darlin_01b_official_config_contract.md\n?? docs/darlin/darlin_01b_provider_confirmation_questions.md\n?? docs/darlin/darlin_01b_staging_contract.md\n?? docs/darlin/darlin_hpc02_completion_check_report.md\n?? docs/darlin/darlin_sailu_pe100_100_split_key_inspection.md\n?? docs/planA_k_gpcca/01_planA_mainline_reframe.md\n?? docs/planA_k_gpcca/02_niche_definition.md\n?? docs/planA_k_gpcca/03_sparse_markov_kernel_design.md\n?? docs/planA_k_gpcca/06_minimal_gpcca_pilot_plan.md\n?? docs/planA_k_gpcca/07_cellrank_like_kernel_stabilization.md\n?? docs/planA_st_only_v1_freeze.md\n?? docs/planB_branchsbm/\n?? reports/darlin_onboarding/darlin_01a_bc_e_r_relationship_probe.csv\n?? reports/darlin_onboarding/darlin_01a_bc_fastq_header_probe.csv\n?? reports/darlin_onboarding/darlin_01a_bc_file_inventory.csv\n?? reports/darlin_onboarding/darlin_01a_bc_remaining_questions.md\n?? reports/darlin_onboarding/darlin_01a_bc_saluscallfile_probe.csv\n?? reports/darlin_onboarding/darlin_01a_bc_split_decision.json\n?? reports/darlin_onboarding/darlin_01b_cfg_type_template_candidates.csv\n?? reports/darlin_onboarding/darlin_01b_config_fields_inventory.csv\n?? reports/darlin_onboarding/darlin_01b_confirmation_decision_table.csv\n?? reports/darlin_onboarding/darlin_01b_confirmation_summary.json\n?? reports/darlin_onboarding/darlin_01b_dependency_status.csv\n?? reports/darlin_onboarding/darlin_01b_dryrun_readiness_decision.csv\n?? reports/darlin_onboarding/darlin_01b_staging_file_map.csv\n?? reports/darlin_onboarding/darlin_01b_summary.json\n?? reports/darlin_onboarding/darlin_hpc02_completion_gate_check.csv\n?? reports/darlin_onboarding/darlin_hpc02_job_status.csv\n?? reports/darlin_onboarding/darlin_hpc02_output_inventory.csv\n?? reports/darlin_onboarding/darlin_hpc02_summary.json\n?? reports/darlin_onboarding/sailu_pe100_100_fastq_header_probe.csv\n?? reports/darlin_onboarding/sailu_pe100_100_html_report_probe.csv\n?? reports/darlin_onboarding/sailu_pe100_100_metadata_inventory.csv\n?? reports/darlin_onboarding/sailu_pe100_100_split_decision.json\n?? reports/git_freeze_m0_m2_5/00_M0_M2_5_GITHUB_FREEZE_SUMMARY.json\n?? reports/git_freeze_m0_m2_5/00_M0_M2_5_GITHUB_FREEZE_SUMMARY.md\n?? reports/planA_k_cellrank_aligned_fate_freeze/\n?? reports/planA_k_final_result_package/\n?? reports/planA_k_full_gpcca/\n?? reports/planA_k_full_gpcca_feature_only/\n?? reports/planA_k_full_gpcca_feature_only_smoke/\n?? reports/planA_k_full_kmix_A/\n?? reports/planA_k_full_kmix_A_feature_only/\n?? reports/planA_k_full_m2_5_implementation/\n?? reports/planA_k_full_m2_5_production/\n?? reports/planA_k_full_m2_5_qc/\n?? reports/planA_k_full_macrostate_annotation/\n?? reports/planA_k_full_macrostate_annotation_feature_only/\n?? reports/planA_k_full_result_packet/\n?? reports/planA_k_full_result_visualization/\n?? reports/planA_k_full_result_visualization_feature_only/\n?? reports/planA_k_gpcca_redesign/\n?? reports/planA_k_gpcca_stabilization/\n?? reports/planA_k_macrostate_annotation_probe/\n?? reports/planA_k_metaniche_hardening/\n?? reports/planA_k_metaniche_pilot/\n?? reports/planA_k_production_preflight/\n?? reports/planA_k_refactor/\n?? reports/planA_k_source_terminal_absorption/\n?? reports/planA_k_sparse_kernel_pilot/\n?? reports/planA_k_spatial_kernel_integrity_audit/\n?? reports/planA_k_tiny_gpcca_probe/\n?? reports/planA_readiness/\n?? reports/planA_readiness_patch_sprint/\n?? reports/planB_branchsbm/\n?? scripts/planA_01_readiness_audit.py\n?? scripts/planA_02_advisor_patch_sprint.py\n?? scripts/planA_k_00_index_existing_kernels.py\n?? scripts/planA_k_01_kernel_qc_inspect.py\n?? scripts/planA_k_02_metaniche_coarsening_probe.py\n?? scripts/planA_k_03_sparse_kernel_design_probe.py\n?? scripts/planA_k_10_sparse_kernel_pilot.py\n?? scripts/planA_k_11_sparse_kernel_qc.py\n?? scripts/planA_k_12_gpcca_readiness_probe.py\n?? scripts/planA_k_13_tiny_gpcca_probe.py\n?? scripts/planA_k_14_gpcca_probe_qc.py\n?? scripts/planA_k_15_build_within_time_kernel.py\n?? scripts/planA_k_16_build_stabilized_gpcca_kernels.py\n?? scripts/planA_k_17_tiny_gpcca_retry_stabilized.py\n?? scripts/planA_k_18_macrostate_annotation_probe.py\n?? scripts/planA_k_19_macrostate_triviality_qc.py\n?? scripts/planA_k_20_macrostate_figures.py\n?? scripts/planA_k_25_build_full_kmix_A.py\n?? scripts/planA_k_26_full_kernel_qc.py\n?? scripts/planA_k_27_run_full_gpcca.py\n?? scripts/planA_k_28_annotate_full_macrostates.py\n?? scripts/planA_k_29_full_result_packet.py\n?? scripts/planA_k_30_full_result_visualization.py\n?? scripts/planA_k_31_source_terminal_role_scoring.py\n?? scripts/planA_k_31_spatial_kernel_integrity_audit.py\n?? scripts/planA_k_35_cellrank_aligned_terminal_audit.py\n?? scripts/planA_k_36_compute_cellrank_aligned_absorption.py\n?? scripts/planA_k_37_compute_kforward_absorption_sensitivity.py\n?? scripts/planA_k_38_visualize_cellrank_aligned_absorption.py\n?? scripts/planB_00_branchsbm_scaffold.py\n?? src/nichefate/planA_k/absorption_fate.py\n?? src/nichefate/planA_k/cellrank_aligned_terminal.py\n?? src/nichefate/planA_k/figures.py\n?? src/nichefate/planA_k/full_gpcca.py\n?? src/nichefate/planA_k/full_kmix_a.py\n?? src/nichefate/planA_k/full_macrostate_annotation.py\n?? src/nichefate/planA_k/full_result_packet.py\n?? src/nichefate/planA_k/full_result_visualization.py\n?? src/nichefate/planA_k/gpcca_probe.py\n?? src/nichefate/planA_k/gpcca_stabilization.py\n?? src/nichefate/planA_k/legacy.py\n?? src/nichefate/planA_k/macrostate_annotation.py\n?? src/nichefate/planA_k/source_terminal_roles.py\n?? src/nichefate/planA_k/sparse_kernel.py\n?? src/nichefate/planA_k/spatial_kernel_integrity_audit.py\n?? tests/test_planA_advisor_patch_sprint.py\n?? tests/test_planA_k_absorption_fate.py\n?? tests/test_planA_k_cellrank_aligned_terminal.py\n?? tests/test_planA_k_full_gpcca.py\n?? tests/test_planA_k_full_kmix_A.py\n?? tests/test_planA_k_full_macrostate_annotation.py\n?? tests/test_planA_k_full_result_packet.py\n?? tests/test_planA_k_full_result_visualization.py\n?? tests/test_planA_k_gpcca_stabilization.py\n?? tests/test_planA_k_kernel_qc.py\n?? tests/test_planA_k_macrostate_annotation_probe.py\n?? tests/test_planA_k_scaffold.py\n?? tests/test_planA_k_source_terminal_roles.py\n?? tests/test_planA_k_sparse_kernel_pilot.py\n?? tests/test_planA_k_spatial_kernel_integrity_audit.py\n?? tests/test_planA_k_tiny_gpcca_probe.py\n?? tests/test_planA_readiness_audit.py\n?? tests/test_planB_branchsbm_scaffold.py",
+  "gitignore_status": {
+    "exists": true,
+    "has_fastq_rule": true,
+    "has_h5ad_rule": true,
+    "has_npz_rule": true,
+    "has_parquet_rule": true,
+    "size": 1262
+  },
+  "hostname": "c461c74de0a4",
+  "large_untracked_files": [
+    {
+      "file_size": 74408677,
+      "path": "reports/planA_k_full_result_visualization/tables/anchor_spatial_plot_sample.tsv"
+    },
+    {
+      "file_size": 73934660,
+      "path": "reports/planA_k_full_result_visualization_feature_only/tables/anchor_spatial_plot_sample.tsv"
+    },
+    {
+      "file_size": 11831980,
+      "path": "reports/planA_k_final_result_package/tables/per_slice_absorption_plot_table.tsv"
+    },
+    {
+      "file_size": 9577633,
+      "path": "reports/planA_k_full_result_visualization_feature_only/key_result_figures/tables/per_slice_spatial_plot_table.tsv"
+    },
+    {
+      "file_size": 7931981,
+      "path": "reports/planA_k_metaniche_hardening/coordinate_join_preview/anchor_coordinates.preview.tsv"
+    },
+    {
+      "file_size": 7931981,
+      "path": "reports/planA_k_metaniche_hardening/stratified_pilot_outputs/coordinate_join_preview/anchor_coordinates.preview.tsv"
+    },
+    {
+      "file_size": 4941973,
+      "path": "reports/planA_k_metaniche_hardening/stratified_pilot_outputs/anchor_to_metaniche.tsv"
+    },
+    {
+      "file_size": 4941973,
+      "path": "reports/planA_k_metaniche_pilot/pilot_outputs/anchor_to_metaniche.tsv"
+    },
+    {
+      "file_size": 3559266,
+      "path": "reports/planA_k_full_result_visualization_feature_only/key_result_figures/tables/metaniche_state_table_for_key_figures.tsv"
+    },
+    {
+      "file_size": 3164673,
+      "path": "reports/planA_k_cellrank_aligned_fate_freeze/figures/spatial_absorption_maps/cellrank_aligned_spatial_absorption_maps.png"
+    },
+    {
+      "file_size": 3066620,
+      "path": "reports/planA_k_final_result_package/figures/Figure_2_GPCCA_k6_macrostate_atlas.pdf"
+    },
+    {
+      "file_size": 3066620,
+      "path": "reports/planA_k_final_result_package/figures/supplementary_figures/Figure_S1_original_PCA_state_space_atlas.pdf"
+    },
+    {
+      "file_size": 3064321,
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_2_UMAP_GPCCA_k6_macrostate_atlas.pdf"
+    },
+    {
+      "file_size": 2944296,
+      "path": "reports/planA_k_full_result_visualization_feature_only/key_result_figures/tables/macrostate_membership_long.tsv"
+    },
+    {
+      "file_size": 2827761,
+      "path": "reports/planA_k_final_result_package/figures/supplementary_figures/Figure_S3_membership_vs_absorption_probability_to_M5.png"
+    },
+    {
+      "file_size": 2791426,
+      "path": "reports/planA_k_full_result_visualization_feature_only/figures/key_results/Figure_3_membership_probability_maps.png"
+    },
+    {
+      "file_size": 2758944,
+      "path": "reports/planA_k_full_result_visualization/tables/metaniche_spatial_plot_table.tsv"
+    },
+    {
+      "file_size": 2744372,
+      "path": "reports/planA_k_full_result_visualization_feature_only/tables/metaniche_spatial_plot_table.tsv"
+    },
+    {
+      "file_size": 2183782,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/100221_D9_m5_2_slice_1_membership_probabilities.png"
+    },
+    {
+      "file_size": 1888644,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/062921_D9_m5_1_slice_1_membership_probabilities.png"
+    },
+    {
+      "file_size": 1879250,
+      "path": "reports/planA_k_metaniche_pilot/pilot_outputs/metaniche_feature_centroids.csv"
+    },
+    {
+      "file_size": 1840556,
+      "path": "reports/planA_k_metaniche_hardening/stratified_pilot_outputs/metaniche_feature_centroids.csv"
+    },
+    {
+      "file_size": 1822794,
+      "path": "reports/planA_k_cellrank_aligned_fate_freeze/figures/spatial_absorption_maps/cellrank_aligned_spatial_absorption_maps.pdf"
+    },
+    {
+      "file_size": 1665326,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/082421_D21_m1_1_slice_2_membership_probabilities.png"
+    },
+    {
+      "file_size": 1580987,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/062921_D0_m3a_1_slice_2_membership_probabilities.png"
+    },
+    {
+      "file_size": 1576828,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/092421_D3_m1_1_slice_2_membership_probabilities.png"
+    },
+    {
+      "file_size": 1568975,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/092421_D3_m1_1_slice_3_membership_probabilities.png"
+    },
+    {
+      "file_size": 1556738,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/100221_D9_m5_2_slice_1_single_slice_sanity.png"
+    },
+    {
+      "file_size": 1517997,
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_2_UMAP_GPCCA_k6_macrostate_atlas.png"
+    },
+    {
+      "file_size": 1517228,
+      "path": "reports/planA_k_final_result_package/figures/Figure_2_GPCCA_k6_macrostate_atlas.png"
+    },
+    {
+      "file_size": 1517228,
+      "path": "reports/planA_k_final_result_package/figures/supplementary_figures/Figure_S1_original_PCA_state_space_atlas.png"
+    },
+    {
+      "file_size": 1497588,
+      "path": "reports/planA_k_final_result_package/figures/Figure_3_representative_per_slice_macrostate_maps.png"
+    },
+    {
+      "file_size": 1497588,
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_3_representative_per_slice_macrostate_maps.png"
+    },
+    {
+      "file_size": 1492360,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/062921_D0_m3a_1_slice_1_membership_probabilities.png"
+    },
+    {
+      "file_size": 1479401,
+      "path": "reports/planA_k_full_result_visualization_feature_only/figures/key_results/Figure_2_per_slice_macrostate_maps.png"
+    },
+    {
+      "file_size": 1375924,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/062921_D9_m5_1_slice_1_single_slice_sanity.png"
+    },
+    {
+      "file_size": 1354502,
+      "path": "reports/planA_k_final_result_package/figures/Figure_5_terminal_M5_absorption_fate_probability_maps.png"
+    },
+    {
+      "file_size": 1354502,
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_5_PlanA_inferred_absorption_fate_probability_to_M5.png"
+    },
+    {
+      "file_size": 1303929,
+      "path": "reports/planA_k_full_result_visualization_feature_only/figures/key_results/Figure_1_metaniche_state_atlas.png"
+    },
+    {
+      "file_size": 1273161,
+      "path": "reports/planA_k_final_result_package/tables/umap_macrostate_atlas_table.tsv"
+    },
+    {
+      "file_size": 1187297,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/082421_D21_m1_1_slice_2_single_slice_sanity.png"
+    },
+    {
+      "file_size": 1168562,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/092421_D3_m1_1_slice_2_single_slice_sanity.png"
+    },
+    {
+      "file_size": 1154385,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/092421_D3_m1_1_slice_3_single_slice_sanity.png"
+    },
+    {
+      "file_size": 1152711,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/062921_D0_m3a_1_slice_2_single_slice_sanity.png"
+    },
+    {
+      "file_size": 1145934,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/082421_D21_m1_1_slice_1_membership_probabilities.png"
+    },
+    {
+      "file_size": 1096540,
+      "path": "reports/planA_k_spatial_kernel_integrity_audit/figures/per_slice/062921_D0_m3a_1_slice_1_single_slice_sanity.png"
+    }
+  ],
+  "latest_commit_hash": "57cbb3b82abbe908a4de31722cb0603d9a9df968",
+  "origin_main_includes_frozen_backbone_commit": true,
+  "pwd": "/home/zhutao/projects/nichefate",
+  "untracked_file_count": 1363,
+  "untracked_file_summary": {
+    "configs": 2,
+    "docs": 20,
+    "reports": 1278,
+    "scripts": 30,
+    "src": 15,
+    "tests": 18
+  }
+}

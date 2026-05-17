@@ -1,0 +1,8 @@
+{
+  "claim_boundary": "ST-only / barcode-free; DARLIN/barcode validation is future work.",
+  "decision": "PLAN_A_ST_ONLY_V1_MODULE_REORG_READY_FOR_REVIEW",
+  "frozen_backbone_commit": "6f921694fb81613d73b1a4ad3dfe2622b869fbba",
+  "origin_main_includes_frozen_backbone_commit": true,
+  "staging_audit_decision": "PASS",
+  "validation_decision": "PASS"
+}
