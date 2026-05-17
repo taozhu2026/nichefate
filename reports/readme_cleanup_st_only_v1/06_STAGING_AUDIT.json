@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "check": "only_approved_paths_staged",
+      "status": "pass"
+    },
+    {
+      "check": "no_raw_data_staged",
+      "status": "pass"
+    },
+    {
+      "check": "no_h5ad_or_fastq_staged",
+      "status": "pass"
+    },
+    {
+      "check": "no_parquet_or_npz_outputs_staged",
+      "status": "pass"
+    },
+    {
+      "check": "no_scratch_outputs_staged",
+      "status": "pass"
+    },
+    {
+      "check": "no_darlin_evidence_staged",
+      "status": "pass"
+    },
+    {
+      "check": "no_ssd_root_paths_staged",
+      "status": "pass"
+    },
+    {
+      "check": "no_figure_binaries_staged",
+      "status": "pass"
+    },
+    {
+      "check": "no_deletions_or_untracking_staged",
+      "status": "pass"
+    }
+  ],
+  "decision": "PASS",
+  "staged_file_count": 24,
+  "staged_files": [
+    "README.md",
+    "docs/index.md",
+    "docs/pipeline_module_index.md",
+    "docs/planA_st_only_v1_production_modules.md",
+    "docs/project_status_checkpoint.md",
+    "docs/quickstart.md",
+    "docs/reproducibility_guide.md",
+    "reports/readme_cleanup_st_only_v1/00_PREFLIGHT.json",
+    "reports/readme_cleanup_st_only_v1/00_PREFLIGHT.md",
+    "reports/readme_cleanup_st_only_v1/00_README_CLEANUP_SUMMARY.json",
+    "reports/readme_cleanup_st_only_v1/00_README_CLEANUP_SUMMARY.md",
+    "reports/readme_cleanup_st_only_v1/01_README_DOC_AUDIT.json",
+    "reports/readme_cleanup_st_only_v1/01_README_DOC_AUDIT.md",
+    "reports/readme_cleanup_st_only_v1/02_DOC_INDEX_CLEANUP.json",
+    "reports/readme_cleanup_st_only_v1/02_DOC_INDEX_CLEANUP.md",
+    "reports/readme_cleanup_st_only_v1/03_LEGACY_CLEANUP_PROPOSAL.json",
+    "reports/readme_cleanup_st_only_v1/03_LEGACY_CLEANUP_PROPOSAL.md",
+    "reports/readme_cleanup_st_only_v1/03_LEGACY_CLEANUP_PROPOSAL.tsv",
+    "reports/readme_cleanup_st_only_v1/04_CLAIM_BOUNDARY_AUDIT.json",
+    "reports/readme_cleanup_st_only_v1/04_CLAIM_BOUNDARY_AUDIT.md",
+    "reports/readme_cleanup_st_only_v1/05_VALIDATION.json",
+    "reports/readme_cleanup_st_only_v1/05_VALIDATION.md",
+    "reports/readme_cleanup_st_only_v1/06_STAGING_AUDIT.json",
+    "reports/readme_cleanup_st_only_v1/06_STAGING_AUDIT.md"
+  ]
+}

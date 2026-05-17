@@ -2,6 +2,10 @@
 
 Generated for ReviewPack-02 on 2026-05-08.
 
+> Superseded / legacy: this quickstart is retained for checkpoint provenance.
+> For the current frozen barcode-free ST-only workflow, start with `README.md`
+> and `docs/index.md`.
+
 This quickstart is conservative. It is for inspecting the checkpoint and running
 lightweight checks, not for launching full production analyses.
 

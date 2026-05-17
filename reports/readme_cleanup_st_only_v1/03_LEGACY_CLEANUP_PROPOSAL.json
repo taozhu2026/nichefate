@@ -1,0 +1,39 @@
+{
+  "archive_required": false,
+  "decision": "NO_DESTRUCTIVE_CLEANUP",
+  "delete_files": [],
+  "git_rm_cached_files": [],
+  "policy": "keep ambiguous legacy files tracked; mark or redirect public references",
+  "rows": [
+    {
+      "path": "docs/project_status_checkpoint.md",
+      "recommended_action": "mark legacy",
+      "risk_level": "low",
+      "status": "legacy"
+    },
+    {
+      "path": "docs/quickstart.md",
+      "recommended_action": "mark legacy",
+      "risk_level": "low",
+      "status": "legacy"
+    },
+    {
+      "path": "docs/reproducibility_guide.md",
+      "recommended_action": "mark legacy",
+      "risk_level": "low",
+      "status": "legacy"
+    },
+    {
+      "path": "src/nichefate/planA_st_only/",
+      "recommended_action": "keep",
+      "risk_level": "low",
+      "status": "current"
+    },
+    {
+      "path": "untracked local PlanA/DARLIN work files",
+      "recommended_action": "do not touch",
+      "risk_level": "medium",
+      "status": "unknown"
+    }
+  ]
+}

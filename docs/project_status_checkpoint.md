@@ -2,6 +2,11 @@
 
 Generated for ReviewPack-01 on 2026-05-08.
 
+> Superseded / legacy: this checkpoint is retained for provenance. The current
+> GitHub-facing entry point is the frozen NicheFate ST-only workflow v1 in
+> `README.md`, `docs/index.md`, and
+> `docs/planA_st_only_v1_production_modules.md`.
+
 This checkpoint freezes the current workspace for review and packaging. It is
 documentation-only: no new biological analysis, GPCCA, CellRank, terminal-state
 design, fate propagation, BranchSBM, barcode, or DARLIN preprocessing is part of
@@ -34,4 +39,3 @@ this stage.
 - Existing GPCCA-related outputs are completed/pilot artifacts only.
 - Large scratch outputs are external artifacts and should not be uploaded to
   GitHub.
-
