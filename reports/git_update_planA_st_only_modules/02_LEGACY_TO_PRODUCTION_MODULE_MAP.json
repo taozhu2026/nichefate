@@ -1,0 +1,257 @@
+{
+  "legacy_to_production": [
+    {
+      "legacy_milestone": "M0",
+      "production_module": "SpatialDatasetAdapter",
+      "status_or_note": "Stable ST input adapter and direct re-export."
+    },
+    {
+      "legacy_milestone": "M1",
+      "production_module": "NicheBuilder",
+      "status_or_note": "Stable anchor-centered niche construction re-export."
+    },
+    {
+      "legacy_milestone": "M2",
+      "production_module": "NicheEncoder",
+      "status_or_note": "Stable aligned niche representation re-export."
+    },
+    {
+      "legacy_milestone": "M2.5",
+      "production_module": "MetanicheCoarsener / NicheStateCoarsener",
+      "status_or_note": "Stable metaniche state coarsening re-export."
+    },
+    {
+      "legacy_milestone": "M3-v1",
+      "production_module": "TransitionEvidence[pseudo_broad]",
+      "status_or_note": "Legacy broad pseudo-transition evidence re-export."
+    },
+    {
+      "legacy_milestone": "M3-v2",
+      "production_module": "TransitionEvidence[pseudo_sharpened]",
+      "status_or_note": "Legacy sharpened pseudo-transition evidence re-export."
+    },
+    {
+      "legacy_milestone": "M4A",
+      "production_module": "KernelAssembly",
+      "status_or_note": "Frozen corrected feature-only Kmix_A outputs indexed; clean re-export pending."
+    },
+    {
+      "legacy_milestone": "K_gpcca",
+      "production_module": "GPCCAMacrostateInference",
+      "status_or_note": "Frozen corrected full GPCCA outputs indexed; clean re-export pending."
+    },
+    {
+      "legacy_milestone": "M4C / P_fate",
+      "production_module": "EndpointMarkovInference / FateProbability",
+      "status_or_note": "Frozen P_fate context plus Kmix_A absorption outputs indexed."
+    },
+    {
+      "legacy_milestone": "M4E",
+      "production_module": "BiologicalAnnotation",
+      "status_or_note": "Frozen annotation and role diagnostics indexed; clean re-export pending."
+    },
+    {
+      "legacy_milestone": "Visualization scripts",
+      "production_module": "ResultVisualization",
+      "status_or_note": "Frozen figure generation and QA outputs indexed; clean re-export pending."
+    },
+    {
+      "legacy_milestone": "Final result package",
+      "production_module": "ResultPackage / FreezePackage",
+      "status_or_note": "Frozen final ST-only result package indexed; clean re-export pending."
+    },
+    {
+      "legacy_milestone": "Future DARLIN adapter",
+      "production_module": "BarcodeEvidenceAdapter",
+      "status_or_note": "Future extension, excluded from this freeze."
+    }
+  ],
+  "production_pipeline": [
+    {
+      "facade": "nichefate.planA_st_only.spatial_dataset_adapter",
+      "legacy_name": "M0",
+      "module_name": "SpatialDatasetAdapter",
+      "order": 0,
+      "primary_legacy_modules": [
+        "nichefate.io",
+        "nichefate.metadata",
+        "nichefate.spatial"
+      ],
+      "primary_legacy_scripts": [
+        "scripts/m0_00_check_environment.py",
+        "scripts/m0_01_inspect_raw_anndata.py"
+      ],
+      "role": "Adapt spatial transcriptomics inputs into the M0 slice-level contract.",
+      "status": "stable-reexport"
+    },
+    {
+      "facade": "nichefate.planA_st_only.niche_builder",
+      "legacy_name": "M1",
+      "module_name": "NicheBuilder",
+      "order": 1,
+      "primary_legacy_modules": [
+        "nichefate.niche",
+        "nichefate.niche_qc"
+      ],
+      "primary_legacy_scripts": [
+        "scripts/m1_03_build_niche_full.py",
+        "scripts/m1_04_build_niche_full_by_slice.py"
+      ],
+      "role": "Build anchor-centered multi-scale niche feature tables.",
+      "status": "stable-reexport"
+    },
+    {
+      "facade": "nichefate.planA_st_only.niche_encoder",
+      "legacy_name": "M2",
+      "module_name": "NicheEncoder",
+      "order": 2,
+      "primary_legacy_modules": [
+        "nichefate.representation",
+        "nichefate.embedding"
+      ],
+      "primary_legacy_scripts": [
+        "scripts/m2_01_prepare_representation_matrix.py",
+        "scripts/m2_02_build_full_representation_by_slice.py"
+      ],
+      "role": "Encode M1 niche features into aligned per-anchor representation matrices.",
+      "status": "stable-reexport"
+    },
+    {
+      "facade": "nichefate.planA_st_only.metaniche_coarsener",
+      "legacy_name": "M2.5",
+      "module_name": "MetanicheCoarsener",
+      "order": 3,
+      "primary_legacy_modules": [
+        "nichefate.planA_k.metaniche",
+        "nichefate.planA_k.full_m2_5_production"
+      ],
+      "primary_legacy_scripts": [
+        "scripts/planA_k_23_run_full_m2_5_production.py"
+      ],
+      "role": "Coarsen M2 anchors into metaniche states while preserving provenance.",
+      "status": "stable-reexport"
+    },
+    {
+      "facade": "nichefate.planA_st_only.transition_evidence",
+      "legacy_name": "M3-v1 / M3-v2",
+      "module_name": "TransitionEvidence",
+      "order": 4,
+      "primary_legacy_modules": [
+        "nichefate.transition",
+        "nichefate.m3_v2_kernel"
+      ],
+      "primary_legacy_scripts": [
+        "scripts/m3_15_run_full_m3_by_shard.py",
+        "scripts/m3_v2_06_run_full_by_shard.py"
+      ],
+      "role": "Represent pseudo-broad and pseudo-sharpened transition evidence.",
+      "status": "legacy-compatible-reexport"
+    },
+    {
+      "facade": "nichefate.planA_st_only.kernel_assembly",
+      "legacy_name": "M4A / Kmix_A",
+      "module_name": "KernelAssembly",
+      "order": 5,
+      "primary_legacy_modules": [
+        "nichefate.planA_k.full_kmix_a",
+        "nichefate.planA_k.sparse_kernel"
+      ],
+      "primary_legacy_scripts": [
+        "scripts/planA_k_25_build_full_kmix_A.py",
+        "scripts/planA_k_26_full_kernel_qc.py"
+      ],
+      "role": "Assemble corrected feature-only Kmix_A transition kernels from metaniche states.",
+      "status": "documented-only; pending clean re-export"
+    },
+    {
+      "facade": "nichefate.planA_st_only.gpcca_macrostate_inference",
+      "legacy_name": "K_gpcca",
+      "module_name": "GPCCAMacrostateInference",
+      "order": 6,
+      "primary_legacy_modules": [
+        "nichefate.planA_k.full_gpcca",
+        "nichefate.planA_k.gpcca_probe"
+      ],
+      "primary_legacy_scripts": [
+        "scripts/planA_k_27_run_full_gpcca.py"
+      ],
+      "role": "Run corrected full GPCCA and select the k=6 macrostate model.",
+      "status": "documented-only; pending clean re-export"
+    },
+    {
+      "facade": "nichefate.planA_st_only.biological_annotation",
+      "legacy_name": "M4E",
+      "module_name": "BiologicalAnnotation",
+      "order": 7,
+      "primary_legacy_modules": [
+        "nichefate.planA_k.full_macrostate_annotation",
+        "nichefate.planA_k.source_terminal_roles"
+      ],
+      "primary_legacy_scripts": [
+        "scripts/planA_k_28_annotate_full_macrostates.py",
+        "scripts/planA_k_31_source_terminal_role_scoring.py"
+      ],
+      "role": "Annotate macrostates and score source, transient, and terminal roles.",
+      "status": "documented-only; pending clean re-export"
+    },
+    {
+      "facade": "nichefate.planA_st_only.endpoint_markov_inference",
+      "legacy_name": "M4C / P_fate",
+      "module_name": "EndpointMarkovInference",
+      "order": 8,
+      "primary_legacy_modules": [],
+      "primary_legacy_scripts": [
+        "scripts/m4c_01_compute_markov_fate_probabilities.py",
+        "scripts/planA_00_freeze_p_fate_branch.py"
+      ],
+      "role": "Document the frozen endpoint Markov/P_fate baseline used only as historical context.",
+      "status": "documented-only; frozen baseline"
+    },
+    {
+      "facade": "nichefate.planA_st_only.fate_probability",
+      "legacy_name": "M4C absorption",
+      "module_name": "FateProbability",
+      "order": 9,
+      "primary_legacy_modules": [
+        "nichefate.planA_k.absorption_fate",
+        "nichefate.planA_k.cellrank_aligned_terminal"
+      ],
+      "primary_legacy_scripts": [
+        "scripts/planA_k_35_cellrank_aligned_terminal_audit.py",
+        "scripts/planA_k_36_compute_cellrank_aligned_absorption.py"
+      ],
+      "role": "Compute Kmix_A absorption/fate probability to terminal macrostate M5.",
+      "status": "documented-only; pending clean re-export"
+    },
+    {
+      "facade": "nichefate.planA_st_only.result_visualization",
+      "legacy_name": "Visualization scripts",
+      "module_name": "ResultVisualization",
+      "order": 10,
+      "primary_legacy_modules": [
+        "nichefate.planA_k.full_result_visualization",
+        "nichefate.planA_k.figures"
+      ],
+      "primary_legacy_scripts": [
+        "scripts/planA_k_30_full_result_visualization.py",
+        "scripts/planA_k_38_visualize_cellrank_aligned_absorption.py"
+      ],
+      "role": "Build final ST-only figures and visualization QA artifacts.",
+      "status": "documented-only; pending clean re-export"
+    },
+    {
+      "facade": "nichefate.planA_st_only.result_package",
+      "legacy_name": "Final result package",
+      "module_name": "ResultPackage",
+      "order": 11,
+      "primary_legacy_modules": [
+        "nichefate.planA_k.full_result_packet"
+      ],
+      "primary_legacy_scripts": [
+        "scripts/planA_k_29_full_result_packet.py"
+      ],
+      "role": "Package final roles, figure provenance, interpretation, validation, and QA.",
+      "status": "documented-only; pending clean re-export"
+    }
+  ]
+}

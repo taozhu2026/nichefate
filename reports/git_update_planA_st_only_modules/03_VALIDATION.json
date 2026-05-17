@@ -1,0 +1,299 @@
+{
+  "checks": [
+    {
+      "check": "py_compile_new_facades_and_scripts",
+      "detail": "conda run -n omicverse python -m py_compile completed",
+      "path": "src/nichefate/planA_st_only; scripts/planA_st_only_*",
+      "status": "pass"
+    },
+    {
+      "check": "import_test_planA_st_only",
+      "detail": "all production facade modules import in the omicverse environment",
+      "path": "nichefate.planA_st_only",
+      "status": "pass"
+    },
+    {
+      "check": "focused_pytest_planA_st_only_production_subset",
+      "detail": "62 passed in the PlanA-ST-only production module focused subset",
+      "path": "tests/test_planA_st_only_facades.py; tests/test_planA_readiness_audit.py; tests/test_planA_advisor_patch_sprint.py; tests/test_planA_k_full_m2_5_production.py; tests/test_planA_k_full_kmix_A.py; tests/test_planA_k_full_gpcca.py; tests/test_planA_k_full_macrostate_annotation.py; tests/test_planA_k_full_result_packet.py; tests/test_planA_k_full_result_visualization.py; tests/test_planA_k_source_terminal_roles.py; tests/test_planA_k_cellrank_aligned_terminal.py; tests/test_planA_k_absorption_fate.py; tests/test_planA_k_spatial_kernel_integrity_audit.py",
+      "status": "pass"
+    },
+    {
+      "check": "focused_pytest_backbone_markov_support_subset",
+      "detail": "47 passed in the M0/M2/M4 lightweight support subset",
+      "path": "tests/test_metadata.py; tests/test_spatial.py; tests/test_m2_representation.py; tests/test_m2_full_runner.py; tests/test_m4a_markov_assembly.py; tests/test_m4c_fate_probability.py; tests/test_m4v_visualization_outputs.py",
+      "status": "pass"
+    },
+    {
+      "check": "focused_pytest_legacy_planA_k_gpcca_aggregator_tests",
+      "detail": "collection requires legacy planA_k_gpcca aggregate re-exports outside the approved PlanA-ST-only module reorg staging scope",
+      "path": "tests/test_planA_k_kernel_qc.py; tests/test_planA_k_sparse_kernel_pilot.py; tests/test_planA_k_gpcca_stabilization.py; tests/test_planA_k_tiny_gpcca_probe.py; tests/test_planA_k_macrostate_annotation_probe.py; tests/test_planA_k_scaffold.py",
+      "status": "skip"
+    },
+    {
+      "check": "json_parse",
+      "detail": "valid JSON",
+      "path": "reports/git_update_planA_st_only_modules/00_GIT_PREFLIGHT.json",
+      "status": "pass"
+    },
+    {
+      "check": "json_parse",
+      "detail": "valid JSON",
+      "path": "reports/git_update_planA_st_only_modules/00_PLAN_A_ST_ONLY_MODULE_REORG_SUMMARY.json",
+      "status": "pass"
+    },
+    {
+      "check": "json_parse",
+      "detail": "valid JSON",
+      "path": "reports/git_update_planA_st_only_modules/01_PLAN_A_FILE_INVENTORY.json",
+      "status": "pass"
+    },
+    {
+      "check": "json_parse",
+      "detail": "valid JSON",
+      "path": "reports/git_update_planA_st_only_modules/02_LEGACY_TO_PRODUCTION_MODULE_MAP.json",
+      "status": "pass"
+    },
+    {
+      "check": "json_parse",
+      "detail": "valid JSON",
+      "path": "reports/git_update_planA_st_only_modules/03_VALIDATION.json",
+      "status": "pass"
+    },
+    {
+      "check": "json_parse",
+      "detail": "valid JSON",
+      "path": "reports/git_update_planA_st_only_modules/04_PROPOSED_STAGING_LIST.json",
+      "status": "pass"
+    },
+    {
+      "check": "json_parse",
+      "detail": "valid JSON",
+      "path": "reports/git_update_planA_st_only_modules/05_STAGING_AUDIT.json",
+      "status": "pass"
+    },
+    {
+      "check": "json_parse",
+      "detail": "valid JSON",
+      "path": "reports/planA_st_only_v1_index/00_PLAN_A_ST_ONLY_V1_INDEX.json",
+      "status": "pass"
+    },
+    {
+      "check": "json_parse",
+      "detail": "valid JSON",
+      "path": "reports/planA_st_only_v1_index/04_CLAIM_BOUNDARY.json",
+      "status": "pass"
+    },
+    {
+      "check": "tsv_consistency",
+      "detail": "1646 data rows",
+      "path": "reports/git_update_planA_st_only_modules/01_PLAN_A_FILE_INVENTORY.tsv",
+      "status": "pass"
+    },
+    {
+      "check": "tsv_consistency",
+      "detail": "13 data rows",
+      "path": "reports/git_update_planA_st_only_modules/02_LEGACY_TO_PRODUCTION_MODULE_MAP.tsv",
+      "status": "pass"
+    },
+    {
+      "check": "tsv_consistency",
+      "detail": "46 data rows",
+      "path": "reports/git_update_planA_st_only_modules/04_PROPOSED_STAGING_LIST.tsv",
+      "status": "pass"
+    },
+    {
+      "check": "tsv_consistency",
+      "detail": "12 data rows",
+      "path": "reports/planA_st_only_v1_index/01_MODULE_REGISTRY.tsv",
+      "status": "pass"
+    },
+    {
+      "check": "tsv_consistency",
+      "detail": "53 data rows",
+      "path": "reports/planA_st_only_v1_index/02_FINAL_RESULT_MANIFEST.tsv",
+      "status": "pass"
+    },
+    {
+      "check": "tsv_consistency",
+      "detail": "9 data rows",
+      "path": "reports/planA_st_only_v1_index/03_FINAL_FIGURE_INDEX.tsv",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "173964 bytes",
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_1_PlanA_ST_only_v1_workflow.png",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "23731 bytes",
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_1_PlanA_ST_only_v1_workflow.pdf",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "1517997 bytes",
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_2_UMAP_GPCCA_k6_macrostate_atlas.png",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "3064321 bytes",
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_2_UMAP_GPCCA_k6_macrostate_atlas.pdf",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "1497588 bytes",
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_3_representative_per_slice_macrostate_maps.png",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "413003 bytes",
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_3_representative_per_slice_macrostate_maps.pdf",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "340240 bytes",
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_4_final_macrostate_role_summary.png",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "24380 bytes",
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_4_final_macrostate_role_summary.pdf",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "1354502 bytes",
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_5_PlanA_inferred_absorption_fate_probability_to_M5.png",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "472757 bytes",
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_5_PlanA_inferred_absorption_fate_probability_to_M5.pdf",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "167333 bytes",
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_6_M4_D35_enriched_non_terminal_comparator.png",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "22054 bytes",
+      "path": "reports/planA_k_final_result_package/figures/main_figures/Figure_6_M4_D35_enriched_non_terminal_comparator.pdf",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "1517228 bytes",
+      "path": "reports/planA_k_final_result_package/figures/supplementary_figures/Figure_S1_original_PCA_state_space_atlas.png",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "3066620 bytes",
+      "path": "reports/planA_k_final_result_package/figures/supplementary_figures/Figure_S1_original_PCA_state_space_atlas.pdf",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "467869 bytes",
+      "path": "reports/planA_k_final_result_package/figures/supplementary_figures/Figure_S2_KmixA_primary_vs_Kforward_sensitivity.png",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "773398 bytes",
+      "path": "reports/planA_k_final_result_package/figures/supplementary_figures/Figure_S2_KmixA_primary_vs_Kforward_sensitivity.pdf",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "2827761 bytes",
+      "path": "reports/planA_k_final_result_package/figures/supplementary_figures/Figure_S3_membership_vs_absorption_probability_to_M5.png",
+      "status": "pass"
+    },
+    {
+      "check": "figure_nonempty",
+      "detail": "946236 bytes",
+      "path": "reports/planA_k_final_result_package/figures/supplementary_figures/Figure_S3_membership_vs_absorption_probability_to_M5.pdf",
+      "status": "pass"
+    },
+    {
+      "check": "claim_guardrail",
+      "detail": "forbidden phrase absent: DARLIN-supported fate",
+      "path": "reports/planA_st_only_v1_index/04_CLAIM_BOUNDARY.md",
+      "status": "pass"
+    },
+    {
+      "check": "claim_guardrail",
+      "detail": "forbidden phrase absent: barcode-backed transition",
+      "path": "reports/planA_st_only_v1_index/04_CLAIM_BOUNDARY.md",
+      "status": "pass"
+    },
+    {
+      "check": "claim_guardrail",
+      "detail": "forbidden phrase absent: final clone-supported fate",
+      "path": "reports/planA_st_only_v1_index/04_CLAIM_BOUNDARY.md",
+      "status": "pass"
+    },
+    {
+      "check": "claim_guardrail",
+      "detail": "forbidden phrase absent: validated biological endpoint",
+      "path": "reports/planA_st_only_v1_index/04_CLAIM_BOUNDARY.md",
+      "status": "pass"
+    },
+    {
+      "check": "no_raw_data_staged",
+      "detail": "46 staged files",
+      "path": "git index",
+      "status": "pass"
+    },
+    {
+      "check": "no_h5ad_fastq_staged",
+      "detail": "46 staged files",
+      "path": "git index",
+      "status": "pass"
+    },
+    {
+      "check": "no_scratch_outputs_staged",
+      "detail": "46 staged files",
+      "path": "git index",
+      "status": "pass"
+    },
+    {
+      "check": "no_large_matrices_staged",
+      "detail": "46 staged files",
+      "path": "git index",
+      "status": "pass"
+    },
+    {
+      "check": "no_darlin_evidence_staged",
+      "detail": "46 staged files",
+      "path": "git index",
+      "status": "pass"
+    },
+    {
+      "check": "no_figure_binaries_staged",
+      "detail": "46 staged files",
+      "path": "git index",
+      "status": "pass"
+    },
+    {
+      "check": "no_ssd_paths_staged",
+      "detail": "46 staged files",
+      "path": "git index",
+      "status": "pass"
+    }
+  ],
+  "decision": "PASS"
+}

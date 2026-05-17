@@ -1,19 +1,37 @@
 # nichefate
 
 `nichefate` is a spatial transcriptomics engineering project for niche-level
-fate inference. The current review checkpoint preserves a frozen P_fate
-baseline/control, an experimental K_gpcca pilot branch, and deferred DARLIN /
-barcode and BranchSBM directions. Large raw data, scratch outputs, and generated
-scientific artifacts are external to the repository.
+fate inference. The current PlanA-ST-only v1 pipeline is barcode-free and uses
+spatial transcriptomics data only. Large raw data, scratch outputs, production
+matrices, and generated scientific artifacts are external to the repository.
 
-## Review Checkpoint
+## PlanA-ST-only v1 status
 
-ReviewPack-01 freezes the current workspace as a documentation-only checkpoint.
-ReviewPack-02 adds packaging preparation, draft environments, and Git
-initialization planning. Start with:
+- The M0-M2.5 spatial niche backbone is frozen and merged.
+- The barcode-free PlanA-ST-only v1 pipeline has completed through corrected
+  feature-only Kmix_A, corrected full GPCCA k=6, macrostate annotation,
+  terminal audit, PlanA-inferred terminal/sink macrostate M5, Kmix_A
+  absorption/fate probability to M5, final result packaging, and final
+  visualization package QA.
+- Production-style module organization is documented in
+  [PlanA-ST-only v1 production modules](docs/planA_st_only_v1_production_modules.md).
+- Early backbone facades re-export existing modules; later frozen v1 result
+  stages are indexed as documented-only boundaries pending a clean standalone
+  PlanA-K refactor.
+- The final result package is under `reports/planA_k_final_result_package/`.
+- This is ST-only / barcode-free. DARLIN/barcode integration is the next
+  separate development stage and is not part of this freeze.
 
-- [Project status checkpoint](docs/project_status_checkpoint.md)
+## Current Project Index
+
+Start with the PlanA-ST-only v1 module and result indexes:
+
 - [Pipeline module index](docs/pipeline_module_index.md)
+- [PlanA-ST-only v1 production modules](docs/planA_st_only_v1_production_modules.md)
+- [PlanA-ST-only v1 result index](reports/planA_st_only_v1_index/00_PLAN_A_ST_ONLY_V1_INDEX.md)
+- [PlanA-ST-only v1 claim boundary](reports/planA_st_only_v1_index/04_CLAIM_BOUNDARY.md)
+- [PlanA-ST-only module reorg validation](reports/git_update_planA_st_only_modules/03_VALIDATION.md)
+- [Project status checkpoint](docs/project_status_checkpoint.md)
 - [Reproducibility guide](docs/reproducibility_guide.md)
 - [Environment and dependencies](docs/environment_and_dependencies.md)
 - [GitHub packaging plan](docs/github_packaging_plan.md)
@@ -24,8 +42,10 @@ initialization planning. Start with:
 
 Checkpoint status:
 
-- Frozen baseline/control: P_fate.
-- Experimental branch: K_gpcca pilot and bounded revisions.
+- Frozen backbone: M0-M2.5 spatial niche construction.
+- Completed ST-only v1: corrected feature-only Kmix_A, corrected GPCCA k=6,
+  PlanA-inferred terminal/sink M5, absorption/fate probability to M5, result
+  package, and visualization package QA.
 - Deferred: DARLIN / barcode adapter and BranchSBM / Plan B.
 - External: large data and generated outputs under `/data` and scratch roots.
 
@@ -34,12 +54,10 @@ Checkpoint status:
 - Code root: `/home/zhutao/projects/nichefate`
 - Raw dataset root: `/data/zhutao/datasets/merfish_colitis_moffitt_2024/raw`
 - Temporary M0 output root: `/data/zhutao/work/nichefate/m0`
-- Future high-I/O output root: `/ssd/zhutao/nichefate/m0`
 
-`/ssd` is currently full and must not be used for active outputs until it has
-enough free space. Keep raw data and temporary working outputs under `/data`
-for now. Do not write large raw data, intermediate files, caches, or model
-outputs directly into the project code root.
+Keep raw data and temporary working outputs outside the project code root. Do
+not write large raw data, intermediate files, caches, or model outputs directly
+into the repository.
 
 ## Raw Data Policy
 
@@ -86,8 +104,8 @@ conda run -n omicverse python scripts/m0_00_check_environment.py --config config
 ```
 
 `environment.yml` is kept as a historical future reproducible environment
-specification. ReviewPack-02 adds draft environments under `envs/`; they are
-not fully locked until regression validation is complete.
+specification. Draft environments under `envs/` are not fully locked until
+regression validation is complete.
 
 ## Pipeline Entry Points
 

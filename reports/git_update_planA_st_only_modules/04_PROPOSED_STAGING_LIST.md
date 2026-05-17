@@ -1,0 +1,52 @@
+# Proposed Staging List
+
+Only approved PlanA-ST-only reorg source, scripts, docs, tests, and small reports are proposed.
+
+|path|git_status|proposed_action|reason|file_size|
+|---|---|---|---|---|
+|README.md|M|stage|approved reorg source, script, doc, test, or small report|6611|
+|docs/pipeline_module_index.md|M|stage|approved reorg source, script, doc, test, or small report|6399|
+|docs/planA_st_only_v1_production_modules.md|A|stage|approved reorg source, script, doc, test, or small report|4285|
+|reports/git_update_planA_st_only_modules/00_GIT_PREFLIGHT.json|AM|stage|approved reorg source, script, doc, test, or small report|18142|
+|reports/git_update_planA_st_only_modules/00_GIT_PREFLIGHT.md|AM|stage|approved reorg source, script, doc, test, or small report|15398|
+|reports/git_update_planA_st_only_modules/00_PLAN_A_ST_ONLY_MODULE_REORG_SUMMARY.json|A|stage|approved reorg source, script, doc, test, or small report|353|
+|reports/git_update_planA_st_only_modules/00_PLAN_A_ST_ONLY_MODULE_REORG_SUMMARY.md|A|stage|approved reorg source, script, doc, test, or small report|369|
+|reports/git_update_planA_st_only_modules/01_PLAN_A_FILE_INVENTORY.json|AM|stage|approved reorg source, script, doc, test, or small report|647131|
+|reports/git_update_planA_st_only_modules/01_PLAN_A_FILE_INVENTORY.md|AM|stage|approved reorg source, script, doc, test, or small report|24472|
+|reports/git_update_planA_st_only_modules/01_PLAN_A_FILE_INVENTORY.tsv|AM|stage|approved reorg source, script, doc, test, or small report|324622|
+|reports/git_update_planA_st_only_modules/02_LEGACY_TO_PRODUCTION_MODULE_MAP.json|A|stage|approved reorg source, script, doc, test, or small report|9287|
+|reports/git_update_planA_st_only_modules/02_LEGACY_TO_PRODUCTION_MODULE_MAP.md|A|stage|approved reorg source, script, doc, test, or small report|1352|
+|reports/git_update_planA_st_only_modules/02_LEGACY_TO_PRODUCTION_MODULE_MAP.tsv|A|stage|approved reorg source, script, doc, test, or small report|1275|
+|reports/git_update_planA_st_only_modules/03_VALIDATION.json|A|stage|approved reorg source, script, doc, test, or small report|10835|
+|reports/git_update_planA_st_only_modules/03_VALIDATION.md|A|stage|approved reorg source, script, doc, test, or small report|7051|
+|reports/git_update_planA_st_only_modules/04_PROPOSED_STAGING_LIST.json|A|stage|approved reorg source, script, doc, test, or small report|383407|
+|reports/git_update_planA_st_only_modules/04_PROPOSED_STAGING_LIST.md|A|stage|approved reorg source, script, doc, test, or small report|6170|
+|reports/git_update_planA_st_only_modules/04_PROPOSED_STAGING_LIST.tsv|A|stage|approved reorg source, script, doc, test, or small report|5932|
+|reports/git_update_planA_st_only_modules/05_STAGING_AUDIT.json|A|stage|approved reorg source, script, doc, test, or small report|4249|
+|reports/git_update_planA_st_only_modules/05_STAGING_AUDIT.md|A|stage|approved reorg source, script, doc, test, or small report|3577|
+|reports/planA_st_only_v1_index/00_PLAN_A_ST_ONLY_V1_INDEX.json|A|stage|approved reorg source, script, doc, test, or small report|272|
+|reports/planA_st_only_v1_index/00_PLAN_A_ST_ONLY_V1_INDEX.md|A|stage|approved reorg source, script, doc, test, or small report|712|
+|reports/planA_st_only_v1_index/01_MODULE_REGISTRY.tsv|A|stage|approved reorg source, script, doc, test, or small report|3791|
+|reports/planA_st_only_v1_index/02_FINAL_RESULT_MANIFEST.tsv|A|stage|approved reorg source, script, doc, test, or small report|8276|
+|reports/planA_st_only_v1_index/03_FINAL_FIGURE_INDEX.md|A|stage|approved reorg source, script, doc, test, or small report|5800|
+|reports/planA_st_only_v1_index/03_FINAL_FIGURE_INDEX.tsv|A|stage|approved reorg source, script, doc, test, or small report|5716|
+|reports/planA_st_only_v1_index/04_CLAIM_BOUNDARY.json|A|stage|approved reorg source, script, doc, test, or small report|899|
+|reports/planA_st_only_v1_index/04_CLAIM_BOUNDARY.md|A|stage|approved reorg source, script, doc, test, or small report|752|
+|scripts/planA_st_only_00_module_inventory.py|A|stage|approved reorg source, script, doc, test, or small report|22048|
+|scripts/planA_st_only_01_validate_frozen_outputs.py|A|stage|approved reorg source, script, doc, test, or small report|8797|
+|scripts/planA_st_only_02_build_result_index.py|A|stage|approved reorg source, script, doc, test, or small report|8203|
+|src/nichefate/planA_st_only/__init__.py|A|stage|approved reorg source, script, doc, test, or small report|793|
+|src/nichefate/planA_st_only/biological_annotation.py|A|stage|approved reorg source, script, doc, test, or small report|1305|
+|src/nichefate/planA_st_only/endpoint_markov_inference.py|A|stage|approved reorg source, script, doc, test, or small report|894|
+|src/nichefate/planA_st_only/fate_probability.py|A|stage|approved reorg source, script, doc, test, or small report|1290|
+|src/nichefate/planA_st_only/gpcca_macrostate_inference.py|A|stage|approved reorg source, script, doc, test, or small report|1028|
+|src/nichefate/planA_st_only/kernel_assembly.py|A|stage|approved reorg source, script, doc, test, or small report|1142|
+|src/nichefate/planA_st_only/metaniche_coarsener.py|A|stage|approved reorg source, script, doc, test, or small report|395|
+|src/nichefate/planA_st_only/module_registry.py|A|stage|approved reorg source, script, doc, test, or small report|8833|
+|src/nichefate/planA_st_only/niche_builder.py|A|stage|approved reorg source, script, doc, test, or small report|162|
+|src/nichefate/planA_st_only/niche_encoder.py|A|stage|approved reorg source, script, doc, test, or small report|174|
+|src/nichefate/planA_st_only/result_package.py|A|stage|approved reorg source, script, doc, test, or small report|979|
+|src/nichefate/planA_st_only/result_visualization.py|A|stage|approved reorg source, script, doc, test, or small report|1108|
+|src/nichefate/planA_st_only/spatial_dataset_adapter.py|A|stage|approved reorg source, script, doc, test, or small report|398|
+|src/nichefate/planA_st_only/transition_evidence.py|A|stage|approved reorg source, script, doc, test, or small report|190|
+|tests/test_planA_st_only_facades.py|A|stage|approved reorg source, script, doc, test, or small report|1341|

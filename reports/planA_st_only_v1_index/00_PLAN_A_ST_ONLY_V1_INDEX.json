@@ -1,0 +1,8 @@
+{
+  "claim_boundary": "ST-only / barcode-free; DARLIN/barcode validation is future work.",
+  "decision": "PLAN_A_ST_ONLY_V1_INDEX_READY",
+  "figure_count": 9,
+  "final_result_package": "reports/planA_k_final_result_package",
+  "manifest_count": 53,
+  "module_count": 12
+}
