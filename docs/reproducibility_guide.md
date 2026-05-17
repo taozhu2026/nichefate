@@ -2,6 +2,11 @@
 
 Generated for ReviewPack-01 on 2026-05-08.
 
+> Superseded / legacy: this guide records historical checkpoint commands. The
+> current GitHub-facing workflow is the frozen NicheFate ST-only workflow v1.
+> Start with `README.md`, `docs/index.md`, and
+> `docs/planA_st_only_v1_production_modules.md`.
+
 This guide records how existing outputs were produced or can be reproduced in a
 controlled rerun. ReviewPack-01 itself must not run these commands. During
 ReviewPack, the listed modules are safe to inspect only.
@@ -17,7 +22,7 @@ Do not run during ReviewPack-01:
 - P_fate propagation
 - BranchSBM
 - barcode or DARLIN preprocessing
-- data movement or writes to `/ssd`
+- data movement or writes to unvalidated SSD-root storage
 
 ## Module Commands And Artifacts
 
@@ -56,4 +61,3 @@ Do not run during ReviewPack-01:
 - `/home/zhutao/scratch/nichefate/k_gpcca_pilot`
 - `/home/zhutao/scratch/nichefate/k_gpcca_pilot_benchmark`
 - `/home/zhutao/scratch/nichefate/k_gpcca_revision`
-

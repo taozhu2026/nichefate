@@ -1,0 +1,18 @@
+{
+  "decision": "PASS",
+  "darlin_barcode_future_work": true,
+  "main_result_claims": {
+    "comparator": "M4 is a D35-enriched non-terminal comparator.",
+    "fate_probability": "Kmix_A absorption to M5 is the inferred absorption/fate probability.",
+    "initial_state": "No primary initial macrostate was selected.",
+    "macrostate_count": "NicheFate ST-only workflow v1 infers k=6 niche macrostates.",
+    "terminal_macrostate": "M5 is the inferred terminal/sink macrostate with structural/stromal context."
+  },
+  "not_claimed": [
+    "lineage-supported fate",
+    "barcode-derived transition support",
+    "clone-matrix fate validation",
+    "biologically validated endpoint",
+    "regulator discovery completion"
+  ]
+}

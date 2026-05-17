@@ -1,0 +1,14 @@
+path	current role	status	recommended action	reason	risk level
+docs/project_status_checkpoint.md	ReviewPack checkpoint status	legacy	mark legacy	Historical checkpoint is useful provenance but no longer current GitHub entry point.	low
+docs/quickstart.md	ReviewPack quickstart	legacy	mark legacy	Useful for historical lightweight checks but superseded by README and docs index for onboarding.	low
+docs/reproducibility_guide.md	Historical command inventory	legacy	mark legacy	Records prior command families; should not drive current public workflow.	low
+docs/environment_and_dependencies.md	Historical environment inventory	legacy	keep	Still useful for environment provenance.	low
+docs/github_packaging_plan.md	Old packaging plan	superseded	do not touch	Historical packaging notes are not current but are harmless when not linked as entry point.	low
+docs/git_initialization_plan.md	Old Git initialization plan	superseded	do not touch	No longer current after repository setup, but retained as provenance.	low
+docs/planA_k_gpcca/	Historical GPCCA design docs	legacy	keep	Useful provenance for corrected GPCCA path; not current README entry point.	medium
+docs/darlin/	Future DARLIN/barcode planning docs	legacy	keep	Useful for next-stage planning; must not be presented as completed.	medium
+scripts/planA_st_only_*.py	ST-only metadata/index scripts	current	keep	Current validation and indexing helpers.	low
+src/nichefate/planA_st_only/	ST-only production facade	current	keep	Current metadata-only production facade and provenance registry.	low
+reports/planA_st_only_v1_index/	ST-only result index	current	keep	Current frozen result index and claim boundary.	low
+reports/planA_k_final_result_package/	Frozen final result package	local/generated reference	do not touch	Referenced as final result package; do not stage figure binaries in this cleanup.	medium
+untracked local PlanA/DARLIN work files	Local work products	unknown	do not touch	Not part of GitHub-facing README cleanup; leave untouched.	medium

@@ -1,12 +1,16 @@
 # Nichefate Pipeline Module Index
 
-Updated for the PlanA-ST-only v1 module reorg on 2026-05-17.
+Updated for the ST-only workflow v1 module reorg on 2026-05-17.
+
+> Current entry point: start with `README.md` and `docs/index.md`. This file is
+> a provenance map from legacy milestone names to the functional module names
+> used by the frozen NicheFate ST-only workflow v1.
 
 This index maps the milestone-style repository into production module names.
-PlanA-ST-only v1 now exposes those names through
+The frozen ST-only workflow exposes those names through
 `nichefate.planA_st_only`. Early backbone facades re-export existing modules;
-later frozen v1 result stages are documented-only module boundaries until a
-clean standalone refactor lands. Heavy outputs are external paths and should be
+later frozen v1 result stages are documented-only module boundaries until clean
+standalone implementations land. Heavy outputs are external paths and should be
 documented, not uploaded to GitHub.
 
 ## Legacy To Production Mapping
@@ -27,17 +31,16 @@ documented, not uploaded to GitHub.
 | Final result package | ResultPackage / FreezePackage |
 | Future DARLIN adapter | BarcodeEvidenceAdapter, excluded from ST-only v1 |
 
-## PlanA-ST-only v1
+## NicheFate ST-only Workflow v1
 
-The completed barcode-free PlanA-ST-only v1 pipeline has run through corrected
+The completed barcode-free ST-only workflow v1 has run through corrected
 feature-only Kmix_A, corrected full GPCCA k=6, macrostate annotation,
 source/terminal role diagnostics, CellRank-aligned terminal audit, Kmix_A
 absorption/fate probability to M5, K_forward sensitivity, final result package,
 and visualization QA.
 
-- M5 is the PlanA-inferred terminal/sink macrostate with structural/stromal
-  context.
-- Kmix_A absorption to M5 is the PlanA-inferred absorption/fate probability.
+- M5 is the inferred terminal/sink macrostate with structural/stromal context.
+- Kmix_A absorption to M5 is the inferred absorption/fate probability.
 - M4 is a D35-enriched non-terminal comparator.
 - M2/M3 are intermediate/transient macrostates with source tendency.
 - No primary initial macrostate was selected.

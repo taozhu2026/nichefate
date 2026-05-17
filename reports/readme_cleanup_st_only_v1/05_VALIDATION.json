@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "check": "production_facade_import",
+      "detail": "PYTHONPATH=src import check passed for nichefate.planA_st_only modules referenced by README.",
+      "status": "pass"
+    },
+    {
+      "check": "markdown_link_sanity",
+      "detail": "README and docs cleanup links resolve in the local workspace where feasible.",
+      "status": "pass"
+    },
+    {
+      "check": "json_validation",
+      "detail": "All new readme_cleanup_st_only_v1 JSON files parse.",
+      "status": "pass"
+    },
+    {
+      "check": "tsv_validation",
+      "detail": "03_LEGACY_CLEANUP_PROPOSAL.tsv has required columns and 13 rows.",
+      "status": "pass"
+    },
+    {
+      "check": "claim_boundary_grep",
+      "detail": "Current-facing README/docs cleanup files do not contain forbidden main-result wording.",
+      "status": "pass"
+    },
+    {
+      "check": "git_diff_check",
+      "detail": "git diff --check passed.",
+      "status": "pass"
+    },
+    {
+      "check": "py_compile",
+      "detail": "Skipped because no code files were changed.",
+      "status": "skip"
+    },
+    {
+      "check": "focused_pytest",
+      "detail": "Skipped because no code files were changed.",
+      "status": "skip"
+    }
+  ],
+  "darlin_or_barcode_processing": false,
+  "decision": "PASS",
+  "fate_probability_rerun": false,
+  "gpcca_rerun": false,
+  "kmix_a_rerun": false,
+  "m2_5_rerun": false,
+  "numerical_behavior_changed": false,
+  "raw_data_modified": false
+}

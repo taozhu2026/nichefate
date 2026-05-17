@@ -1,0 +1,36 @@
+{
+  "branch_created": "docs/readme-st-only-v1-cleanup",
+  "code_behavior_changed": false,
+  "commit_hash": "assigned_after_commit_creation_final_handoff_records_pushed_hash",
+  "decision": "README_ST_ONLY_V1_CLEANUP_READY_FOR_REVIEW",
+  "docs_index_files_updated": [
+    "docs/index.md",
+    "docs/pipeline_module_index.md",
+    "docs/planA_st_only_v1_production_modules.md",
+    "docs/project_status_checkpoint.md",
+    "docs/quickstart.md",
+    "docs/reproducibility_guide.md"
+  ],
+  "large_data_files_staged": false,
+  "legacy_references_cleaned_or_marked": true,
+  "pushed": "pending_at_report_write_time_final_handoff_records_status",
+  "readme_avoids_implying_darlin_barcode_complete": true,
+  "readme_presents_frozen_st_only_workflow_by_functional_modules": true,
+  "readme_sections_changed": [
+    "project_title_and_overview",
+    "current_status",
+    "module_workflow",
+    "repository_layout",
+    "frozen_results_and_reports",
+    "legacy_provenance",
+    "what_is_not_included",
+    "next_stage",
+    "development_and_validation"
+  ],
+  "review_before_merge": [
+    "confirm public naming should stay NicheFate ST-only workflow v1",
+    "confirm final result package links are acceptable as report/index references",
+    "confirm legacy ReviewPack docs should remain tracked with legacy notices",
+    "confirm no additional old entry points should be marked legacy"
+  ]
+}

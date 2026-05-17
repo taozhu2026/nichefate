@@ -1,0 +1,25 @@
+{
+  "actions": [
+    "rewrite_readme_public_entry",
+    "add_docs_index",
+    "mark_legacy_entry_docs",
+    "reword_public_workflow_as_nichefate_st_only_v1",
+    "keep_legacy_names_as_provenance"
+  ],
+  "decision": "CLEANUP_REQUIRED_AND_COMPLETED",
+  "files_audited": [
+    "README.md",
+    "docs/pipeline_module_index.md",
+    "docs/planA_st_only_v1_production_modules.md",
+    "docs/project_status_checkpoint.md",
+    "docs/quickstart.md",
+    "docs/reproducibility_guide.md",
+    "reports/planA_st_only_v1_index/00_PLAN_A_ST_ONLY_V1_INDEX.md",
+    "src/nichefate/planA_st_only/module_registry.py",
+    "scripts/planA_st_only_00_module_inventory.py",
+    "scripts/planA_st_only_01_validate_frozen_outputs.py",
+    "scripts/planA_st_only_02_build_result_index.py"
+  ],
+  "numerical_behavior_changed": false,
+  "raw_or_scratch_outputs_modified": false
+}
