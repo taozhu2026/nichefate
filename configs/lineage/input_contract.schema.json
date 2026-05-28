@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NicheFate Lineage Input Contract",
+  "type": "object",
+  "required": [
+    "primary_join_key",
+    "assay_list",
+    "lineage_evidence_required_columns",
+    "allele_annotation_required_columns"
+  ],
+  "properties": {
+    "primary_join_key": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 3
+    },
+    "assay_list": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 3
+    },
+    "lineage_evidence_required_columns": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "allele_annotation_required_columns": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

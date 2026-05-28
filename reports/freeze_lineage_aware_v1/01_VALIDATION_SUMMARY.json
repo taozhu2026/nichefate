@@ -1,0 +1,12 @@
+{
+  "validation_status": "PASS",
+  "py_compile_pass": true,
+  "pytest_total": 13,
+  "pytest_passed": 13,
+  "json_files_parsed": 6,
+  "tsv_manifest_parsed": true,
+  "claim_hits": [],
+  "h5ad_schema_pass": true,
+  "benchmark_config_loaded": true,
+  "git_staging_audit_status": "pending"
+}

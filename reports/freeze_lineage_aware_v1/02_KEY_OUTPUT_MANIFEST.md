@@ -1,0 +1,12 @@
+# Key Output Manifest
+
+| path | description |
+|---|---|
+| `reports/l126_full_barcode_niche_characterization/key_figure_candidates/cellbin_lineage_coverage_spatial.png` | barcode feature coverage |
+| `reports/l126_darlin_joint_clone_niche_v1/key_figure_candidates/reference_only_vs_unified_recovery.png` | reference-only vs unified joint clone recovery |
+| `reports/l126_darlin_joint_clone_niche_v1/key_figure_candidates/clone_size_distribution.png` | clone size distribution |
+| `reports/l126_darlin_joint_clone_niche_v1/key_figure_candidates/tile_clone_coverage.png` | tile clone coverage |
+| `reports/l126_darlin_joint_clone_niche_v1/key_figure_candidates/tile_clone_entropy.png` | tile clone entropy |
+| `reports/l126_darlin_joint_clone_niche_v1/key_figure_candidates/tile_dominant_clone_fraction.png` | dominant clone fraction |
+| `reports/l126_darlin_joint_clone_niche_v1/key_figure_candidates/reference_support_fraction_qc.png` | reference-support QC |
+| `reports/l126_darlin_joint_clone_niche_v1/key_figure_candidates/workflow_schematic.png` | workflow schematic |

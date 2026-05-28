@@ -1,0 +1,13 @@
+{
+  "selected_policy": "gr + mapped_rare_plus_empirical_denovo",
+  "joint_clone_count": 20668,
+  "assigned_fraction_lineage_positive": 0.7727695575096976,
+  "assigned_fraction_all_st": 0.4172997360302167,
+  "largest_clone_fraction": 0.02474617848138642,
+  "qc_status": {
+    "pass": 3186,
+    "warning": 17482,
+    "filtered": 0
+  },
+  "reference_only_assigned_fraction_lineage_positive": 0.17737349270707178
+}

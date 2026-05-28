@@ -1,0 +1,22 @@
+{
+  "benchmark_label": "L126_SPATIODARLIN_BENCHMARK_READY_WITH_QC_WARNINGS",
+  "section_summary": [
+    {
+      "sample_id": "L126_Brain_s1",
+      "cellbin_count": 67970,
+      "fraction_lineage_positive": 0.5043107253199941
+    },
+    {
+      "sample_id": "L126_Brain_s2",
+      "cellbin_count": 72884,
+      "fraction_lineage_positive": 0.5432193622742989
+    },
+    {
+      "sample_id": "L126_Brain_s3",
+      "cellbin_count": 70155,
+      "fraction_lineage_positive": 0.5712493763808709
+    }
+  ],
+  "lineage_channels": ["CA", "TA", "RA"],
+  "annotation_role": "qc_metadata_only"
+}

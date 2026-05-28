@@ -1,18 +1,15 @@
 # NicheFate Documentation Index
 
-Start here for the current frozen barcode-free ST-only workflow:
+Start here for the lineage-aware freeze:
 
-- [NicheFate ST-only workflow v1 production modules](planA_st_only_v1_production_modules.md)
-- [M0-M2.5 frozen spatial niche backbone](planA_k_m0_m2_5_backbone.md)
-- [ST-only v1 result index](../reports/planA_st_only_v1_index/00_PLAN_A_ST_ONLY_V1_INDEX.md)
-- [Final result summary](../reports/planA_k_final_result_package/00_PLAN_A_ST_ONLY_V1_FINAL_RESULT_SUMMARY.md)
-- [Final visualization QA](../reports/planA_k_final_result_package/06_FINAL_VISUALIZATION_QA.md)
-- [Pipeline module/provenance index](pipeline_module_index.md)
+- [Lineage-aware NicheFate overview](modules/lineage_aware_nichefate.md)
+- [Lineage input contract](modules/lineage_input_contract.md)
+- [Lineage evidence adapter](modules/lineage_evidence_adapter.md)
+- [DARLIN-style joint clone calling](modules/darlin_joint_clone_calling.md)
+- [Clone x niche integration](modules/clone_niche_integration.md)
+- [Lineage dynamics interface](modules/lineage_dynamics_interface.md)
+- [L126 spatio-DARLIN benchmark](benchmarks/l126_spatiodarlin.md)
+- [Pipeline module index](pipeline_module_index.md)
 
-The current GitHub-facing workflow is the NicheFate ST-only workflow v1. Older
-ReviewPack and M-stage documents are retained for provenance, but they are not
-the public entry point for the frozen baseline.
-
-DARLIN/barcode integration is a future separate stage. The current freeze does
-not include barcode-supported fate inference, clone matrix integration, or
-barcode-derived transition support.
+The current public entry point is the lineage-aware NicheFate baseline v1.
+L126 spatio-DARLIN is the first benchmark used to validate it.

@@ -1,0 +1,20 @@
+{
+  "staged_file_count": 102,
+  "forbidden_data_file_count": 0,
+  "git_diff_check_pass": true,
+  "largest_staged_file": "scripts/planC_l126_darlin_clone_integration_round1.py",
+  "largest_staged_file_bytes": 102546,
+  "included_categories": [
+    "code",
+    "docs",
+    "configs",
+    "tests",
+    "small_reports"
+  ],
+  "excluded_categories": [
+    "raw_packet_data",
+    "processed_outputs",
+    "scratch_outputs",
+    "large_matrix_artifacts"
+  ]
+}
