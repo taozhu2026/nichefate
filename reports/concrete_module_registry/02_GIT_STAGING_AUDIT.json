@@ -1,0 +1,36 @@
+{
+  "staging_audit_status": "PASS",
+  "staged_files_after_adding_audit": 16,
+  "staged_forbidden_data_files": 0,
+  "git_diff_cached_check": "passed",
+  "largest_staged_files": [
+    {
+      "path": "configs/module_registry/nichefate_module_registry.json",
+      "size_bytes": 10031
+    },
+    {
+      "path": "docs/pipeline_module_index.md",
+      "size_bytes": 6521
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 6102
+    }
+  ],
+  "included": [
+    "concrete algorithm module registry config",
+    "public registry and pipeline docs",
+    "lineage insertion point documentation",
+    "script-to-module mapping docs",
+    "concrete module audit, validation, and staging audit reports",
+    "focused registry tests"
+  ],
+  "excluded": [
+    "raw data inputs",
+    "h5ad, FASTQ, mtx, npz, parquet, and large TSV artifacts",
+    "processed outputs",
+    "figure directories",
+    "scratch outputs",
+    "unrelated untracked files from prior work"
+  ]
+}
