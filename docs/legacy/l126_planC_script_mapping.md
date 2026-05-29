@@ -1,6 +1,7 @@
-# L126 PlanC Script Mapping
+# L126 Legacy Script Mapping
 
-Legacy L126-specific scripts are retained for provenance only.
+Legacy L126-specific `planC_l126_*` scripts are retained for provenance only.
+Public docs should use the generic module names and wrappers.
 
 | Legacy script | Generic public wrapper |
 |---|---|

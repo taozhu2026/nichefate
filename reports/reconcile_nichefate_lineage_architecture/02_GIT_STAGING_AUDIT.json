@@ -1,0 +1,33 @@
+{
+  "staging_audit_status": "PASS",
+  "staged_files": 18,
+  "staged_forbidden_data_files": 0,
+  "git_diff_cached_check": "passed",
+  "largest_staged_files": [
+    {
+      "path": "README.md",
+      "size_bytes": 5077
+    },
+    {
+      "path": "docs/nichefate_architecture.md",
+      "size_bytes": 2538
+    },
+    {
+      "path": "reports/reconcile_nichefate_lineage_architecture/00_ARCHITECTURE_AUDIT.md",
+      "size_bytes": 2006
+    }
+  ],
+  "included": [
+    "README and public architecture docs",
+    "module index and lineage module pages",
+    "L126 benchmark page",
+    "architecture audit and validation reports"
+  ],
+  "excluded": [
+    "raw data inputs",
+    "processed outputs",
+    "scratch outputs",
+    "h5ad, FASTQ, mtx, npz, parquet, and large TSV artifacts",
+    "unrelated untracked files from earlier work"
+  ]
+}
