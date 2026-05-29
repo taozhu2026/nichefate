@@ -1,6 +1,8 @@
 # Lineage Input Contract
 
-NF-L0 defines the join contract for lineage-aware NicheFate.
+The lineage input contract is part of the lineage-aware evidence regime. It
+defines how processed barcode evidence joins to the shared NicheFate spatial
+units.
 
 ## Required Contract
 
@@ -15,3 +17,5 @@ NF-L0 defines the join contract for lineage-aware NicheFate.
 - Distinct CA/TA/RA loci
 - Benchmark-specific sample names and paths stay outside the generic module
   names
+- Compatibility with the shared M0-M2.5 substrate rather than a separate
+  lineage-only workflow

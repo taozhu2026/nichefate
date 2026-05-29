@@ -1,0 +1,32 @@
+{
+  "validation_status": "PASS",
+  "claim_language_audit": "PASS",
+  "markdown_link_sanity": "PASS",
+  "json_parse": "PASS",
+  "pycompile": "N/A",
+  "tests": {
+    "tests/test_lineage_freeze_contract.py": "passed",
+    "tests/test_lineage_freeze_joint_clone.py": "passed",
+    "tests/test_lineage_freeze_claim_language.py": "passed"
+  },
+  "audit_scope": [
+    "README.md",
+    "docs/index.md",
+    "docs/pipeline_module_index.md",
+    "docs/nichefate_architecture.md",
+    "docs/modules/lineage_aware_nichefate.md",
+    "docs/modules/lineage_input_contract.md",
+    "docs/modules/lineage_evidence_adapter.md",
+    "docs/modules/darlin_joint_clone_calling.md",
+    "docs/modules/clone_niche_integration.md",
+    "docs/modules/lineage_dynamics_interface.md",
+    "docs/benchmarks/l126_spatiodarlin.md",
+    "docs/legacy/l126_planC_script_mapping.md",
+    "reports/reconcile_nichefate_lineage_architecture"
+  ],
+  "forbidden_positive_claims_found": [],
+  "notes": [
+    "Repo contains many unrelated untracked files from prior work.",
+    "No raw data or generated processed outputs were modified."
+  ]
+}

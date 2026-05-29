@@ -1,0 +1,27 @@
+{
+  "decision_label": "NICHEFATE_ARCHITECTURE_RECONCILIATION_READY",
+  "starting_branch": "freeze/lineage-aware-nichefate-v1",
+  "target_branch": "docs/reconcile-nichefate-lineage-architecture",
+  "audit_answers": {
+    "readme_makes_lineage_look_like_whole_project": true,
+    "m0_m2_5_and_plana_st_clearly_visible": false,
+    "st_only_and_lineage_parallel_regimes": false,
+    "l126_names_leak_into_generic_modules": "partial_public_docs_and_legacy_scripts",
+    "docs_need_repair": [
+      "README.md",
+      "docs/index.md",
+      "docs/pipeline_module_index.md",
+      "docs/modules/lineage_aware_nichefate.md",
+      "docs/modules/darlin_joint_clone_calling.md",
+      "docs/modules/clone_niche_integration.md",
+      "docs/benchmarks/l126_spatiodarlin.md"
+    ]
+  },
+  "repair_strategy": [
+    "present one NicheFate framework with shared M0-M2.5 substrate modules",
+    "present E0 and E1-E3 as parallel evidence regimes",
+    "present PlanA and PlanB as dynamics engines",
+    "keep ST-only baseline prominent and not legacy",
+    "keep L126 as benchmark naming only"
+  ]
+}
