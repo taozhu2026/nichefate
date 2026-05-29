@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DARLIN Joint Clone Policy",
+  "type": "object",
+  "required": [
+    "reference_bank_policy",
+    "allele_policy",
+    "threshold_label",
+    "normalized_count_cutoff",
+    "sample_count_cutoff",
+    "min_cellbins_per_allele"
+  ],
+  "properties": {
+    "reference_bank_policy": {
+      "type": "string",
+      "enum": ["plain", "gr", "union"]
+    },
+    "allele_policy": { "type": "string" },
+    "threshold_label": { "type": "string" },
+    "normalized_count_cutoff": { "type": "number" },
+    "sample_count_cutoff": { "type": "integer" },
+    "min_cellbins_per_allele": { "type": "integer" }
+  },
+  "additionalProperties": true
+}

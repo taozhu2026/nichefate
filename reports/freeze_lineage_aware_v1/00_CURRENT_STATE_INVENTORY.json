@@ -1,0 +1,43 @@
+{
+  "scope": "lineage-aware freeze inventory",
+  "benchmark": "L126_SPATIODARLIN",
+  "categories": {
+    "generic_mainline_candidate": [
+      "src/nichefate/lineage/*",
+      "src/nichefate/darlin/*",
+      "docs/modules/*",
+      "docs/benchmarks/l126_spatiodarlin.md",
+      "configs/lineage/*",
+      "configs/darlin/*",
+      "configs/datasets/l126_spatiodarlin.yaml",
+      "scripts/nichefate_*"
+    ],
+    "l126_benchmark_specific": [
+      "scripts/planC_l126_*.py",
+      "reports/l126_*darlin*",
+      "reports/l126_full_barcode_niche_characterization*",
+      "reports/benchmarks/l126_spatiodarlin/*",
+      "docs/legacy/l126_planC_script_mapping.md"
+    ],
+    "legacy_or_ablation": [
+      "src/nichefate/planA_k/*",
+      "src/nichefate/planA_l/*",
+      "src/nichefate/planA_st_only/*",
+      "src/nichefate/planB_nichebranchsbm/*",
+      "reports/l126_plana_*",
+      "docs/legacy/lineage_clone_ablation_history.md"
+    ],
+    "superseded": [
+      "src/nichefate/darlin_joint_clone_niche_v1.py",
+      "scripts/planC_l126_darlin_joint_clone_niche_v1.py",
+      "scripts/planC_l126_clone_membership_rescue_round2_1.py",
+      "scripts/planC_l126_darlin_style_clone_calling_audit.py"
+    ]
+  },
+  "exclude_from_github": [
+    "raw FASTQ and other raw packet inputs",
+    "large processed tables and matrices",
+    "scratch outputs",
+    "generated .h5ad, .mtx, .npz, and large .tsv.gz artifacts"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NicheFate Clone x Niche Integration",
+  "type": "object",
+  "required": [
+    "clone_matrix",
+    "tile_units",
+    "group_units",
+    "metaniche_units"
+  ],
+  "properties": {
+    "clone_matrix": { "type": "string" },
+    "tile_units": { "type": "array", "items": { "type": "string" } },
+    "group_units": { "type": "array", "items": { "type": "string" } },
+    "metaniche_units": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,6 @@
+{
+  "supports_future_dynamics_claims": false,
+  "section_role": "serial_sections_not_timepoints",
+  "reference_only_role": "conservative_benchmark",
+  "qc_warnings_present": true
+}

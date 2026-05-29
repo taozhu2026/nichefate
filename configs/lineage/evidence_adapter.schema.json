@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NicheFate Lineage Evidence Adapter",
+  "type": "object",
+  "required": [
+    "input_packet_root",
+    "processed_lineage_evidence",
+    "processed_allele_annotation",
+    "primary_join_key"
+  ],
+  "properties": {
+    "input_packet_root": { "type": "string" },
+    "processed_lineage_evidence": { "type": "string" },
+    "processed_allele_annotation": { "type": "string" },
+    "primary_join_key": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

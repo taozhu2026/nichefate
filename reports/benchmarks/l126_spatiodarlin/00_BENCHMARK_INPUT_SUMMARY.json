@@ -1,0 +1,12 @@
+{
+  "benchmark_label": "L126_SPATIODARLIN_BENCHMARK_READY_WITH_QC_WARNINGS",
+  "dataset_id": "L126_SPATIODARLIN",
+  "matched_st_and_lineage": true,
+  "precomputed_joint_clone_table": false,
+  "sample_ids": [
+    "L126_Brain_s1",
+    "L126_Brain_s2",
+    "L126_Brain_s3"
+  ],
+  "section_role": "serial_sections_not_timepoints"
+}

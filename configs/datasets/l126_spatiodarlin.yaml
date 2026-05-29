@@ -1,0 +1,18 @@
+dataset_id: L126_SPATIODARLIN
+benchmark_label: L126_SPATIODARLIN_BENCHMARK_READY_WITH_QC_WARNINGS
+sample_ids:
+  - L126_Brain_s1
+  - L126_Brain_s2
+  - L126_Brain_s3
+section_orders: [1, 2, 3]
+input_packet_root: /home/zhutao/scratch/nichefate/spatio_darlin_public_brain_hpc/input_packet
+barcode_root: processed/barcode_adapter_l126_round1
+full_characterization_root: processed/l126_full_barcode_niche_characterization
+round1_clone_root: processed/l126_darlin_clone_integration_round1
+round2_audit_root: processed/l126_darlin_style_clone_calling_audit
+joint_clone_root: processed/l126_darlin_joint_clone_niche_v1
+selected_reference_bank_policy: gr
+selected_allele_policy: mapped_rare_plus_empirical_denovo
+notes:
+  - L126 is the first benchmark dataset for the lineage-aware freeze.
+  - Serial sections are benchmark material and are not timepoints.

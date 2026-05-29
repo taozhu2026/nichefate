@@ -1,0 +1,41 @@
+{
+  "final_algorithm_decision_label": "NICHEFATE_LINEAGE_AWARE_BASELINE_V1_READY_WITH_QC_WARNINGS",
+  "benchmark_label": "L126_SPATIODARLIN_BENCHMARK_READY_WITH_QC_WARNINGS",
+  "branch_name": "freeze/lineage-aware-nichefate-v1",
+  "code_freeze_commit_hash": "44001ee9e677aa4fda899a52c7352e0c4ffc1212",
+  "public_modules": {
+    "NF-L0": "lineage input contract",
+    "NF-L1": "lineage evidence adapter",
+    "NF-L2": "DARLIN-style joint clone calling",
+    "NF-L3": "clone x niche integration",
+    "NF-L4": "lineage-aware spatial niche characterization",
+    "NF-L5": "dynamics interface design"
+  },
+  "selected_unified_clone_policy": "gr + mapped_rare_plus_empirical_denovo",
+  "unified_clone_definition": "validated DARLIN-style joint clone",
+  "reference_de_novo_role": "allele_level_qc_metadata_only",
+  "validation_status": "PASS",
+  "staging_audit_status": "PASS",
+  "included": [
+    "generic lineage and DARLIN facades",
+    "benchmark-backed implementation code",
+    "documentation and benchmark summaries",
+    "config schemas and benchmark config",
+    "focused tests",
+    "small validation and audit reports"
+  ],
+  "excluded": [
+    "raw FASTQ and packet inputs",
+    "processed outputs",
+    "scratch outputs",
+    "large matrices and tables",
+    "future-dynamics claims from serial sections"
+  ],
+  "remaining_limitations": [
+    "L126 is the first benchmark only",
+    "serial sections do not justify future-dynamics claims",
+    "reference-only calling remains a conservative benchmark",
+    "QC warnings remain part of the frozen result set"
+  ],
+  "next_recommended_step": "review the freeze branch and decide whether to tag nichefate-lineage-aware-v1"
+}
