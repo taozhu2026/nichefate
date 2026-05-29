@@ -129,5 +129,20 @@ Benchmarks validate module contracts and outputs. They are not method names.
 | PlanA | Markov-GPCCA baseline and lineage-aware design interface |
 | PlanB | Branch/clone-aware niche dynamics, in progress |
 
+## Concrete Algorithm Modules
+
+| Public module | Layer | Current surface |
+|---|---|---|
+| SpatialInputContract | M0 | `src/nichefate/planA_st_only/spatial_dataset_adapter.py` |
+| NicheConstructor | M1 | `src/nichefate/planA_st_only/niche_builder.py` |
+| NicheEncoder / NicheRepresentationBuilder | M2 | `src/nichefate/planA_st_only/niche_encoder.py`; `src/nichefate/representation.py` |
+| MetaNicheCoarsener | M2.5 | `src/nichefate/planA_st_only/metaniche_coarsener.py` |
+| TransitionKernelBuilder | M3 / PlanA input | `src/nichefate/planA_st_only/transition_evidence.py`; `src/nichefate/planA_k/sparse_kernel.py` |
+| DARLINJointCloneCaller | E2 | `src/nichefate/darlin/joint_clone_calling.py` |
+| CloneNicheIntegrator | E3 | `src/nichefate/lineage/clone_niche.py` |
+| PlanA Markov-GPCCA Engine | PlanA | `src/nichefate/planA_st_only/gpcca_macrostate_inference.py` |
+| PlanB Branch/Clone-Aware Engine | PlanB | `src/nichefate/planB_nichebranchsbm/` |
+
 Start with `docs/nichefate_architecture.md` and
-`docs/pipeline_module_index.md` for the integrated architecture.
+`docs/pipeline_module_index.md` for the integrated architecture. The concrete
+module registry is in `docs/algorithm_module_registry.md`.

@@ -8,6 +8,7 @@ evidence, dynamics, and benchmark docs.
 
 - [NicheFate architecture](nichefate_architecture.md)
 - [Pipeline module index](pipeline_module_index.md)
+- [Concrete algorithm module registry](algorithm_module_registry.md)
 
 ## Shared Spatial-Niche Substrate
 
@@ -26,6 +27,7 @@ evidence, dynamics, and benchmark docs.
 - [DARLIN-style joint clone calling](modules/darlin_joint_clone_calling.md)
 - [Clone x niche integration](modules/clone_niche_integration.md)
 - [Lineage dynamics interface](modules/lineage_dynamics_interface.md)
+- [Lineage insertion points](modules/lineage_insertion_points.md)
 
 ## Benchmarks
 
@@ -35,6 +37,7 @@ evidence, dynamics, and benchmark docs.
 ## Legacy And Provenance
 
 - [L126 legacy script mapping](legacy/l126_planC_script_mapping.md)
+- [Script to module mapping](legacy/script_to_module_mapping.md)
 - [Lineage clone ablation history](legacy/lineage_clone_ablation_history.md)
 
 Legacy/provenance documents record development probes. They do not redefine the

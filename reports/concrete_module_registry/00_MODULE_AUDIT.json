@@ -1,0 +1,78 @@
+{
+  "decision_label": "CONCRETE_MODULE_REGISTRY_READY",
+  "target_branch": "docs/concrete-module-registry",
+  "niche_encoder_status": {
+    "found": true,
+    "surface": "src/nichefate/planA_st_only/niche_encoder.py",
+    "implementation_note": "NicheEncoder is a facade over nichefate.embedding and nichefate.representation rather than a monolithic class."
+  },
+  "classifications": [
+    {
+      "item": "Spatial input adapter",
+      "surface": ["src/nichefate/planA_st_only/spatial_dataset_adapter.py", "src/nichefate/io.py", "src/nichefate/spatial.py"],
+      "classification": "shared_core_algorithm",
+      "public_module": "SpatialInputContract"
+    },
+    {
+      "item": "Niche construction",
+      "surface": ["src/nichefate/planA_st_only/niche_builder.py", "src/nichefate/niche.py", "src/nichefate/niche_qc.py"],
+      "classification": "shared_core_algorithm",
+      "public_module": "NicheConstructor"
+    },
+    {
+      "item": "Niche encoding",
+      "surface": ["src/nichefate/planA_st_only/niche_encoder.py", "src/nichefate/representation.py", "src/nichefate/embedding.py"],
+      "classification": "shared_core_algorithm",
+      "public_module": "NicheEncoder"
+    },
+    {
+      "item": "Metaniche coarsening",
+      "surface": ["src/nichefate/planA_st_only/metaniche_coarsener.py", "src/nichefate/planA_k/metaniche.py"],
+      "classification": "shared_core_algorithm",
+      "public_module": "MetaNicheCoarsener"
+    },
+    {
+      "item": "Lineage facade",
+      "surface": ["src/nichefate/lineage/"],
+      "classification": "evidence_specific_lineage",
+      "public_module": "LineageEvidenceAdapter / CloneNicheIntegrator"
+    },
+    {
+      "item": "DARLIN facade",
+      "surface": ["src/nichefate/darlin/"],
+      "classification": "evidence_specific_lineage",
+      "public_module": "DARLINJointCloneCaller"
+    },
+    {
+      "item": "PlanA ST-only facades",
+      "surface": ["src/nichefate/planA_st_only/"],
+      "classification": "dynamics_engine",
+      "public_module": "PlanA Markov-GPCCA Engine"
+    },
+    {
+      "item": "PlanB implementation",
+      "surface": ["src/nichefate/planB_nichebranchsbm/", "src/nichefate/nichebranchsbm/"],
+      "classification": "dynamics_engine",
+      "public_module": "PlanB Branch/Clone-Aware Engine"
+    },
+    {
+      "item": "L126 PlanC wrappers",
+      "surface": ["scripts/planC_l126_*.py"],
+      "classification": "benchmark_wrapper",
+      "public_module": "E1/E2/E3 wrappers"
+    },
+    {
+      "item": "CloneSignature probes",
+      "surface": ["src/nichefate/darlin_clone_signature/", "scripts/planC_l126_darlin_clone_signature_round2.py"],
+      "classification": "superseded",
+      "public_module": "lineage clone ablation"
+    }
+  ],
+  "repair_actions": [
+    "add machine-readable module registry",
+    "add human-readable algorithm registry page",
+    "update README and pipeline index",
+    "add lineage insertion point documentation",
+    "expand script-to-module mapping"
+  ]
+}
